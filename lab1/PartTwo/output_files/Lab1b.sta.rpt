@@ -1,0 +1,1062 @@
+TimeQuest Timing Analyzer report for Lab1b
+Fri Sep 29 01:03:55 2017
+Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1100mV 85C Model Metastability Summary
+ 15. Slow 1100mV 0C Model Fmax Summary
+ 16. Slow 1100mV 0C Model Setup Summary
+ 17. Slow 1100mV 0C Model Hold Summary
+ 18. Slow 1100mV 0C Model Recovery Summary
+ 19. Slow 1100mV 0C Model Removal Summary
+ 20. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1100mV 0C Model Metastability Summary
+ 24. Fast 1100mV 85C Model Setup Summary
+ 25. Fast 1100mV 85C Model Hold Summary
+ 26. Fast 1100mV 85C Model Recovery Summary
+ 27. Fast 1100mV 85C Model Removal Summary
+ 28. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1100mV 85C Model Metastability Summary
+ 32. Fast 1100mV 0C Model Setup Summary
+ 33. Fast 1100mV 0C Model Hold Summary
+ 34. Fast 1100mV 0C Model Recovery Summary
+ 35. Fast 1100mV 0C Model Removal Summary
+ 36. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 37. Propagation Delay
+ 38. Minimum Propagation Delay
+ 39. Fast 1100mV 0C Model Metastability Summary
+ 40. Multicorner Timing Analysis Summary
+ 41. Propagation Delay
+ 42. Minimum Propagation Delay
+ 43. Board Trace Model Assignments
+ 44. Input Transition Times
+ 45. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 46. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 47. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 48. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 49. Clock Transfers
+ 50. Report TCCS
+ 51. Report RSKM
+ 52. Unconstrained Paths
+ 53. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
+; Revision Name      ; Lab1b                                              ;
+; Device Family      ; Cyclone V                                          ;
+; Device Name        ; 5CSEMA5F31C6                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1100mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1100mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1100mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------------+
+; Propagation Delay                                               ;
++---------------+-------------+--------+--------+--------+--------+
+; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++---------------+-------------+--------+--------+--------+--------+
+; A[0]          ; SWLEDS[0]   ; 9.870  ; 10.038 ; 10.206 ; 10.407 ;
+; A[0]          ; SWLEDS[1]   ; 9.799  ; 9.917  ; 10.134 ; 10.285 ;
+; A[0]          ; SWLEDS[2]   ; 11.036 ; 11.470 ; 11.348 ; 11.768 ;
+; A[0]          ; SWLEDS[3]   ; 9.389  ; 9.589  ; 9.703  ; 9.889  ;
+; A[0]          ; SWLEDS[4]   ; 10.620 ;        ;        ; 11.088 ;
+; A[1]          ; SWLEDS[1]   ; 8.843  ; 8.912  ; 9.063  ; 9.118  ;
+; A[1]          ; SWLEDS[2]   ; 9.982  ; 10.416 ; 10.183 ; 10.603 ;
+; A[1]          ; SWLEDS[3]   ; 8.335  ; 8.535  ; 8.538  ; 8.724  ;
+; A[1]          ; SWLEDS[4]   ; 9.566  ;        ;        ; 9.923  ;
+; A[1]          ; SWLEDS[5]   ; 7.759  ;        ;        ; 8.168  ;
+; A[2]          ; SWLEDS[2]   ; 10.471 ; 10.953 ; 10.837 ; 11.354 ;
+; A[2]          ; SWLEDS[3]   ; 8.837  ; 9.085  ; 9.206  ; 9.489  ;
+; A[2]          ; SWLEDS[4]   ; 9.872  ;        ;        ; 10.337 ;
+; A[2]          ; SWLEDS[6]   ; 10.971 ;        ;        ; 11.980 ;
+; A[3]          ; SWLEDS[3]   ; 9.129  ; 9.378  ; 9.540  ; 9.822  ;
+; A[3]          ; SWLEDS[4]   ; 10.163 ;        ;        ; 10.657 ;
+; A[3]          ; SWLEDS[7]   ; 9.240  ;        ;        ; 9.902  ;
+; B[0]          ; SWLEDS[0]   ; 9.018  ; 9.137  ; 9.289  ; 9.394  ;
+; B[0]          ; SWLEDS[1]   ; 9.257  ; 9.374  ; 9.505  ; 9.657  ;
+; B[0]          ; SWLEDS[2]   ; 10.382 ; 10.816 ; 10.703 ; 11.123 ;
+; B[0]          ; SWLEDS[3]   ; 8.735  ; 8.935  ; 9.058  ; 9.244  ;
+; B[0]          ; SWLEDS[4]   ; 9.966  ;        ;        ; 10.443 ;
+; B[1]          ; SWLEDS[1]   ; 9.395  ; 9.449  ; 9.591  ; 9.651  ;
+; B[1]          ; SWLEDS[2]   ; 10.406 ; 10.840 ; 10.680 ; 11.100 ;
+; B[1]          ; SWLEDS[3]   ; 8.759  ; 8.959  ; 9.035  ; 9.221  ;
+; B[1]          ; SWLEDS[4]   ; 9.990  ;        ;        ; 10.420 ;
+; B[2]          ; SWLEDS[2]   ; 10.325 ; 10.794 ; 10.661 ; 11.080 ;
+; B[2]          ; SWLEDS[3]   ; 8.682  ; 8.917  ; 9.018  ; 9.203  ;
+; B[2]          ; SWLEDS[4]   ; 9.778  ;        ;        ; 10.298 ;
+; B[3]          ; SWLEDS[3]   ; 9.120  ; 9.305  ; 9.545  ; 9.736  ;
+; B[3]          ; SWLEDS[4]   ; 9.661  ;        ;        ; 10.203 ;
+; Cin           ; SWLEDS[0]   ; 9.622  ; 9.776  ; 10.004 ; 10.108 ;
+; Cin           ; SWLEDS[1]   ; 9.541  ; 9.645  ; 9.924  ; 9.978  ;
+; Cin           ; SWLEDS[2]   ; 10.615 ; 11.049 ; 11.092 ; 11.512 ;
+; Cin           ; SWLEDS[3]   ; 8.968  ; 9.168  ; 9.447  ; 9.633  ;
+; Cin           ; SWLEDS[4]   ; 10.199 ;        ;        ; 10.832 ;
+; Cin           ; SWLEDS[8]   ; 8.851  ;        ;        ; 9.541  ;
+; triggerSwitch ; SWLEDS[0]   ; 9.915  ; 10.026 ; 10.329 ; 10.432 ;
+; triggerSwitch ; SWLEDS[1]   ; 9.856  ; 9.917  ; 10.270 ; 10.323 ;
+; triggerSwitch ; SWLEDS[2]   ; 10.664 ; 11.090 ; 11.078 ; 11.496 ;
+; triggerSwitch ; SWLEDS[3]   ; 9.039  ; 9.231  ; 9.455  ; 9.639  ;
+; triggerSwitch ; SWLEDS[4]   ; 9.884  ; 10.018 ; 10.335 ; 10.419 ;
+; triggerSwitch ; SWLEDS[5]   ;        ; 8.966  ; 9.188  ;        ;
+; triggerSwitch ; SWLEDS[6]   ;        ; 11.344 ; 11.208 ;        ;
+; triggerSwitch ; SWLEDS[7]   ;        ; 9.567  ; 9.716  ;        ;
+; triggerSwitch ; SWLEDS[8]   ;        ; 9.025  ; 9.249  ;        ;
++---------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; A[0]          ; SWLEDS[0]   ; 7.971 ; 8.138 ; 8.272 ; 8.360 ;
+; A[0]          ; SWLEDS[1]   ; 7.904 ; 8.026 ; 8.204 ; 8.247 ;
+; A[0]          ; SWLEDS[2]   ; 8.968 ; 9.229 ; 9.198 ; 9.449 ;
+; A[0]          ; SWLEDS[3]   ; 8.481 ; 8.640 ; 8.713 ; 8.862 ;
+; A[0]          ; SWLEDS[4]   ; 8.102 ;       ;       ; 8.593 ;
+; A[1]          ; SWLEDS[1]   ; 7.152 ; 7.205 ; 7.337 ; 7.380 ;
+; A[1]          ; SWLEDS[2]   ; 8.086 ; 8.347 ; 8.256 ; 8.507 ;
+; A[1]          ; SWLEDS[3]   ; 7.599 ; 7.758 ; 7.771 ; 7.920 ;
+; A[1]          ; SWLEDS[4]   ; 7.762 ;       ;       ; 8.005 ;
+; A[1]          ; SWLEDS[5]   ; 7.092 ;       ;       ; 7.435 ;
+; A[2]          ; SWLEDS[2]   ; 8.437 ; 8.763 ; 8.780 ; 9.026 ;
+; A[2]          ; SWLEDS[3]   ; 7.962 ; 8.186 ; 8.308 ; 8.452 ;
+; A[2]          ; SWLEDS[4]   ; 8.006 ;       ;       ; 8.364 ;
+; A[2]          ; SWLEDS[6]   ; 8.869 ;       ;       ; 9.530 ;
+; A[3]          ; SWLEDS[3]   ; 8.228 ; 8.456 ; 8.581 ; 8.730 ;
+; A[3]          ; SWLEDS[4]   ; 8.259 ;       ;       ; 8.620 ;
+; A[3]          ; SWLEDS[7]   ; 8.378 ;       ;       ; 8.884 ;
+; B[0]          ; SWLEDS[0]   ; 7.306 ; 7.404 ; 7.525 ; 7.613 ;
+; B[0]          ; SWLEDS[1]   ; 7.422 ; 7.540 ; 7.702 ; 7.740 ;
+; B[0]          ; SWLEDS[2]   ; 8.345 ; 8.606 ; 8.599 ; 8.850 ;
+; B[0]          ; SWLEDS[3]   ; 7.858 ; 8.017 ; 8.114 ; 8.263 ;
+; B[0]          ; SWLEDS[4]   ; 8.021 ;       ;       ; 8.348 ;
+; B[1]          ; SWLEDS[1]   ; 7.615 ; 7.682 ; 7.788 ; 7.845 ;
+; B[1]          ; SWLEDS[2]   ; 8.394 ; 8.655 ; 8.611 ; 8.862 ;
+; B[1]          ; SWLEDS[3]   ; 7.907 ; 8.066 ; 8.126 ; 8.275 ;
+; B[1]          ; SWLEDS[4]   ; 8.070 ;       ;       ; 8.360 ;
+; B[2]          ; SWLEDS[2]   ; 8.379 ; 8.712 ; 8.642 ; 8.923 ;
+; B[2]          ; SWLEDS[3]   ; 7.897 ; 8.128 ; 8.160 ; 8.339 ;
+; B[2]          ; SWLEDS[4]   ; 7.864 ;       ;       ; 8.251 ;
+; B[3]          ; SWLEDS[3]   ; 8.242 ; 8.415 ; 8.547 ; 8.710 ;
+; B[3]          ; SWLEDS[4]   ; 7.847 ;       ;       ; 8.230 ;
+; Cin           ; SWLEDS[0]   ; 7.793 ; 7.963 ; 8.070 ; 8.188 ;
+; Cin           ; SWLEDS[1]   ; 7.717 ; 7.842 ; 7.994 ; 8.067 ;
+; Cin           ; SWLEDS[2]   ; 8.599 ; 8.860 ; 8.990 ; 9.241 ;
+; Cin           ; SWLEDS[3]   ; 8.112 ; 8.271 ; 8.505 ; 8.654 ;
+; Cin           ; SWLEDS[4]   ; 8.275 ;       ;       ; 8.739 ;
+; Cin           ; SWLEDS[8]   ; 8.054 ;       ;       ; 8.630 ;
+; triggerSwitch ; SWLEDS[0]   ; 8.047 ; 8.158 ; 8.342 ; 8.448 ;
+; triggerSwitch ; SWLEDS[1]   ; 7.989 ; 8.055 ; 8.285 ; 8.346 ;
+; triggerSwitch ; SWLEDS[2]   ; 8.651 ; 8.925 ; 8.945 ; 9.214 ;
+; triggerSwitch ; SWLEDS[3]   ; 8.183 ; 8.355 ; 8.480 ; 8.647 ;
+; triggerSwitch ; SWLEDS[4]   ; 8.013 ; 8.157 ; 8.333 ; 8.425 ;
+; triggerSwitch ; SWLEDS[5]   ;       ; 8.110 ; 8.226 ;       ;
+; triggerSwitch ; SWLEDS[6]   ;       ; 9.113 ; 9.082 ;       ;
+; triggerSwitch ; SWLEDS[7]   ;       ; 8.614 ; 8.702 ;       ;
+; triggerSwitch ; SWLEDS[8]   ;       ; 8.228 ; 8.354 ;       ;
++---------------+-------------+-------+-------+-------+-------+
+
+
+-----------------------------------------------
+; Slow 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1100mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1100mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1100mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------------+
+; Propagation Delay                                               ;
++---------------+-------------+--------+--------+--------+--------+
+; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++---------------+-------------+--------+--------+--------+--------+
+; A[0]          ; SWLEDS[0]   ; 9.508  ; 9.721  ; 9.822  ; 10.088 ;
+; A[0]          ; SWLEDS[1]   ; 9.419  ; 9.602  ; 9.734  ; 9.970  ;
+; A[0]          ; SWLEDS[2]   ; 10.649 ; 11.099 ; 10.926 ; 11.358 ;
+; A[0]          ; SWLEDS[3]   ; 9.005  ; 9.282  ; 9.281  ; 9.540  ;
+; A[0]          ; SWLEDS[4]   ; 10.280 ;        ;        ; 10.763 ;
+; A[1]          ; SWLEDS[1]   ; 8.467  ; 8.596  ; 8.689  ; 8.800  ;
+; A[1]          ; SWLEDS[2]   ; 9.573  ; 10.023 ; 9.755  ; 10.187 ;
+; A[1]          ; SWLEDS[3]   ; 7.929  ; 8.206  ; 8.110  ; 8.369  ;
+; A[1]          ; SWLEDS[4]   ; 9.204  ;        ;        ; 9.592  ;
+; A[1]          ; SWLEDS[5]   ; 7.384  ;        ;        ; 7.853  ;
+; A[2]          ; SWLEDS[2]   ; 10.079 ; 10.581 ; 10.424 ; 10.973 ;
+; A[2]          ; SWLEDS[3]   ; 8.444  ; 8.773  ; 8.789  ; 9.165  ;
+; A[2]          ; SWLEDS[4]   ; 9.518  ;        ;        ; 10.010 ;
+; A[2]          ; SWLEDS[6]   ; 10.551 ;        ;        ; 11.580 ;
+; A[3]          ; SWLEDS[3]   ; 8.737  ; 9.068  ; 9.125  ; 9.509  ;
+; A[3]          ; SWLEDS[4]   ; 9.818  ;        ;        ; 10.341 ;
+; A[3]          ; SWLEDS[7]   ; 8.808  ;        ;        ; 9.527  ;
+; B[0]          ; SWLEDS[0]   ; 8.651  ; 8.810  ; 8.918  ; 9.059  ;
+; B[0]          ; SWLEDS[1]   ; 8.899  ; 9.080  ; 9.132  ; 9.360  ;
+; B[0]          ; SWLEDS[2]   ; 9.993  ; 10.443 ; 10.299 ; 10.731 ;
+; B[0]          ; SWLEDS[3]   ; 8.349  ; 8.626  ; 8.654  ; 8.913  ;
+; B[0]          ; SWLEDS[4]   ; 9.624  ;        ;        ; 10.136 ;
+; B[1]          ; SWLEDS[1]   ; 9.095  ; 9.203  ; 9.281  ; 9.397  ;
+; B[1]          ; SWLEDS[2]   ; 10.053 ; 10.503 ; 10.318 ; 10.750 ;
+; B[1]          ; SWLEDS[3]   ; 8.409  ; 8.686  ; 8.673  ; 8.932  ;
+; B[1]          ; SWLEDS[4]   ; 9.684  ;        ;        ; 10.155 ;
+; B[2]          ; SWLEDS[2]   ; 9.903  ; 10.394 ; 10.223 ; 10.662 ;
+; B[2]          ; SWLEDS[3]   ; 8.260  ; 8.578  ; 8.580  ; 8.846  ;
+; B[2]          ; SWLEDS[4]   ; 9.404  ;        ;        ; 9.968  ;
+; B[3]          ; SWLEDS[3]   ; 8.729  ; 8.985  ; 9.133  ; 9.397  ;
+; B[3]          ; SWLEDS[4]   ; 9.246  ;        ;        ; 9.818  ;
+; Cin           ; SWLEDS[0]   ; 9.228  ; 9.428  ; 9.595  ; 9.743  ;
+; Cin           ; SWLEDS[1]   ; 9.134  ; 9.304  ; 9.497  ; 9.615  ;
+; Cin           ; SWLEDS[2]   ; 10.175 ; 10.625 ; 10.624 ; 11.056 ;
+; Cin           ; SWLEDS[3]   ; 8.531  ; 8.808  ; 8.979  ; 9.238  ;
+; Cin           ; SWLEDS[4]   ; 9.806  ;        ;        ; 10.461 ;
+; Cin           ; SWLEDS[8]   ; 8.411  ;        ;        ; 9.164  ;
+; triggerSwitch ; SWLEDS[0]   ; 9.562  ; 9.710  ; 9.962  ; 10.100 ;
+; triggerSwitch ; SWLEDS[1]   ; 9.485  ; 9.603  ; 9.885  ; 9.993  ;
+; triggerSwitch ; SWLEDS[2]   ; 10.271 ; 10.710 ; 10.669 ; 11.098 ;
+; triggerSwitch ; SWLEDS[3]   ; 8.643  ; 8.909  ; 9.043  ; 9.299  ;
+; triggerSwitch ; SWLEDS[4]   ; 9.460  ; 9.648  ; 9.890  ; 10.026 ;
+; triggerSwitch ; SWLEDS[5]   ;        ; 8.656  ; 8.803  ;        ;
+; triggerSwitch ; SWLEDS[6]   ;        ; 10.900 ; 10.734 ;        ;
+; triggerSwitch ; SWLEDS[7]   ;        ; 9.217  ; 9.286  ;        ;
+; triggerSwitch ; SWLEDS[8]   ;        ; 8.654  ; 8.796  ;        ;
++---------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; A[0]          ; SWLEDS[0]   ; 7.644 ; 7.873 ; 7.962 ; 8.071 ;
+; A[0]          ; SWLEDS[1]   ; 7.559 ; 7.757 ; 7.879 ; 7.957 ;
+; A[0]          ; SWLEDS[2]   ; 8.627 ; 8.923 ; 8.843 ; 9.127 ;
+; A[0]          ; SWLEDS[3]   ; 8.116 ; 8.360 ; 8.331 ; 8.563 ;
+; A[0]          ; SWLEDS[4]   ; 7.751 ;       ;       ; 8.282 ;
+; A[1]          ; SWLEDS[1]   ; 6.823 ; 6.933 ; 7.009 ; 7.107 ;
+; A[1]          ; SWLEDS[2]   ; 7.727 ; 8.023 ; 7.879 ; 8.163 ;
+; A[1]          ; SWLEDS[3]   ; 7.216 ; 7.460 ; 7.367 ; 7.599 ;
+; A[1]          ; SWLEDS[4]   ; 7.440 ;       ;       ; 7.718 ;
+; A[1]          ; SWLEDS[5]   ; 6.741 ;       ;       ; 7.144 ;
+; A[2]          ; SWLEDS[2]   ; 8.081 ; 8.455 ; 8.413 ; 8.688 ;
+; A[2]          ; SWLEDS[3]   ; 7.578 ; 7.900 ; 7.910 ; 8.133 ;
+; A[2]          ; SWLEDS[4]   ; 7.692 ;       ;       ; 8.090 ;
+; A[2]          ; SWLEDS[6]   ; 8.488 ;       ;       ; 9.183 ;
+; A[3]          ; SWLEDS[3]   ; 7.847 ; 8.179 ; 8.210 ; 8.422 ;
+; A[3]          ; SWLEDS[4]   ; 7.952 ;       ;       ; 8.359 ;
+; A[3]          ; SWLEDS[7]   ; 7.978 ;       ;       ; 8.551 ;
+; B[0]          ; SWLEDS[0]   ; 6.988 ; 7.129 ; 7.203 ; 7.332 ;
+; B[0]          ; SWLEDS[1]   ; 7.094 ; 7.282 ; 7.363 ; 7.452 ;
+; B[0]          ; SWLEDS[2]   ; 7.990 ; 8.286 ; 8.211 ; 8.495 ;
+; B[0]          ; SWLEDS[3]   ; 7.479 ; 7.723 ; 7.699 ; 7.931 ;
+; B[0]          ; SWLEDS[4]   ; 7.703 ;       ;       ; 8.050 ;
+; B[1]          ; SWLEDS[1]   ; 7.351 ; 7.473 ; 7.513 ; 7.626 ;
+; B[1]          ; SWLEDS[2]   ; 8.072 ; 8.368 ; 8.255 ; 8.539 ;
+; B[1]          ; SWLEDS[3]   ; 7.561 ; 7.805 ; 7.743 ; 7.975 ;
+; B[1]          ; SWLEDS[4]   ; 7.785 ;       ;       ; 8.094 ;
+; B[2]          ; SWLEDS[2]   ; 8.012 ; 8.386 ; 8.267 ; 8.586 ;
+; B[2]          ; SWLEDS[3]   ; 7.501 ; 7.823 ; 7.757 ; 8.024 ;
+; B[2]          ; SWLEDS[4]   ; 7.518 ;       ;       ; 7.938 ;
+; B[3]          ; SWLEDS[3]   ; 7.871 ; 8.127 ; 8.168 ; 8.415 ;
+; B[3]          ; SWLEDS[4]   ; 7.484 ;       ;       ; 7.912 ;
+; Cin           ; SWLEDS[0]   ; 7.450 ; 7.669 ; 7.730 ; 7.894 ;
+; Cin           ; SWLEDS[1]   ; 7.361 ; 7.549 ; 7.638 ; 7.771 ;
+; Cin           ; SWLEDS[2]   ; 8.215 ; 8.511 ; 8.595 ; 8.879 ;
+; Cin           ; SWLEDS[3]   ; 7.704 ; 7.948 ; 8.083 ; 8.315 ;
+; Cin           ; SWLEDS[4]   ; 7.928 ;       ;       ; 8.434 ;
+; Cin           ; SWLEDS[8]   ; 7.642 ;       ;       ; 8.292 ;
+; triggerSwitch ; SWLEDS[0]   ; 7.738 ; 7.891 ; 8.033 ; 8.180 ;
+; triggerSwitch ; SWLEDS[1]   ; 7.664 ; 7.786 ; 7.959 ; 8.075 ;
+; triggerSwitch ; SWLEDS[2]   ; 8.306 ; 8.614 ; 8.600 ; 8.902 ;
+; triggerSwitch ; SWLEDS[3]   ; 7.810 ; 8.066 ; 8.105 ; 8.355 ;
+; triggerSwitch ; SWLEDS[4]   ; 7.641 ; 7.842 ; 7.968 ; 8.114 ;
+; triggerSwitch ; SWLEDS[5]   ;       ; 7.823 ; 7.878 ;       ;
+; triggerSwitch ; SWLEDS[6]   ;       ; 8.756 ; 8.682 ;       ;
+; triggerSwitch ; SWLEDS[7]   ;       ; 8.292 ; 8.312 ;       ;
+; triggerSwitch ; SWLEDS[8]   ;       ; 7.877 ; 7.944 ;       ;
++---------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Slow 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+---------------------------------------
+; Fast 1100mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Fast 1100mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; A[0]          ; SWLEDS[0]   ; 5.807 ; 6.089 ; 6.420 ; 6.709 ;
+; A[0]          ; SWLEDS[1]   ; 5.763 ; 5.982 ; 6.376 ; 6.602 ;
+; A[0]          ; SWLEDS[2]   ; 6.607 ; 7.107 ; 7.233 ; 7.732 ;
+; A[0]          ; SWLEDS[3]   ; 5.557 ; 5.898 ; 6.183 ; 6.523 ;
+; A[0]          ; SWLEDS[4]   ; 6.205 ;       ;       ; 7.067 ;
+; A[1]          ; SWLEDS[1]   ; 5.167 ; 5.349 ; 5.653 ; 5.834 ;
+; A[1]          ; SWLEDS[2]   ; 5.984 ; 6.484 ; 6.477 ; 6.976 ;
+; A[1]          ; SWLEDS[3]   ; 4.934 ; 5.275 ; 5.427 ; 5.767 ;
+; A[1]          ; SWLEDS[4]   ; 5.582 ;       ;       ; 6.311 ;
+; A[1]          ; SWLEDS[5]   ; 4.660 ;       ;       ; 5.426 ;
+; A[2]          ; SWLEDS[2]   ; 6.310 ; 6.853 ; 6.932 ; 7.474 ;
+; A[2]          ; SWLEDS[3]   ; 5.272 ; 5.656 ; 5.895 ; 6.278 ;
+; A[2]          ; SWLEDS[4]   ; 5.814 ;       ;       ; 6.653 ;
+; A[2]          ; SWLEDS[6]   ; 6.580 ;       ;       ; 7.884 ;
+; A[3]          ; SWLEDS[3]   ; 5.460 ; 5.838 ; 6.119 ; 6.504 ;
+; A[3]          ; SWLEDS[4]   ; 5.992 ;       ;       ; 6.862 ;
+; A[3]          ; SWLEDS[7]   ; 5.619 ;       ;       ; 6.696 ;
+; B[0]          ; SWLEDS[0]   ; 5.312 ; 5.557 ; 5.841 ; 6.085 ;
+; B[0]          ; SWLEDS[1]   ; 5.411 ; 5.636 ; 5.932 ; 6.156 ;
+; B[0]          ; SWLEDS[2]   ; 6.219 ; 6.719 ; 6.787 ; 7.286 ;
+; B[0]          ; SWLEDS[3]   ; 5.169 ; 5.510 ; 5.737 ; 6.077 ;
+; B[0]          ; SWLEDS[4]   ; 5.817 ;       ;       ; 6.621 ;
+; B[1]          ; SWLEDS[1]   ; 5.407 ; 5.592 ; 5.889 ; 6.076 ;
+; B[1]          ; SWLEDS[2]   ; 6.176 ; 6.676 ; 6.703 ; 7.202 ;
+; B[1]          ; SWLEDS[3]   ; 5.126 ; 5.467 ; 5.653 ; 5.993 ;
+; B[1]          ; SWLEDS[4]   ; 5.774 ;       ;       ; 6.537 ;
+; B[2]          ; SWLEDS[2]   ; 6.262 ; 6.778 ; 6.863 ; 7.356 ;
+; B[2]          ; SWLEDS[3]   ; 5.214 ; 5.571 ; 5.815 ; 6.149 ;
+; B[2]          ; SWLEDS[4]   ; 5.790 ;       ;       ; 6.643 ;
+; B[3]          ; SWLEDS[3]   ; 5.418 ; 5.762 ; 6.106 ; 6.452 ;
+; B[3]          ; SWLEDS[4]   ; 5.771 ;       ;       ; 6.676 ;
+; Cin           ; SWLEDS[0]   ; 5.699 ; 5.960 ; 6.343 ; 6.581 ;
+; Cin           ; SWLEDS[1]   ; 5.646 ; 5.844 ; 6.290 ; 6.465 ;
+; Cin           ; SWLEDS[2]   ; 6.432 ; 6.932 ; 7.125 ; 7.624 ;
+; Cin           ; SWLEDS[3]   ; 5.382 ; 5.723 ; 6.075 ; 6.415 ;
+; Cin           ; SWLEDS[4]   ; 6.030 ;       ;       ; 6.959 ;
+; Cin           ; SWLEDS[8]   ; 5.327 ;       ;       ; 6.377 ;
+; triggerSwitch ; SWLEDS[0]   ; 5.820 ; 6.071 ; 6.489 ; 6.737 ;
+; triggerSwitch ; SWLEDS[1]   ; 5.787 ; 5.975 ; 6.457 ; 6.642 ;
+; triggerSwitch ; SWLEDS[2]   ; 6.418 ; 6.924 ; 7.086 ; 7.589 ;
+; triggerSwitch ; SWLEDS[3]   ; 5.388 ; 5.735 ; 6.057 ; 6.401 ;
+; triggerSwitch ; SWLEDS[4]   ; 5.903 ; 6.125 ; 6.610 ; 6.809 ;
+; triggerSwitch ; SWLEDS[5]   ;       ; 5.569 ; 5.951 ;       ;
+; triggerSwitch ; SWLEDS[6]   ;       ; 7.171 ; 7.203 ;       ;
+; triggerSwitch ; SWLEDS[7]   ;       ; 6.042 ; 6.275 ;       ;
+; triggerSwitch ; SWLEDS[8]   ;       ; 5.681 ; 5.996 ;       ;
++---------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; A[0]          ; SWLEDS[0]   ; 4.820 ; 5.059 ; 5.366 ; 5.583 ;
+; A[0]          ; SWLEDS[1]   ; 4.778 ; 4.961 ; 5.324 ; 5.485 ;
+; A[0]          ; SWLEDS[2]   ; 5.489 ; 5.847 ; 6.030 ; 6.387 ;
+; A[0]          ; SWLEDS[3]   ; 5.097 ; 5.400 ; 5.638 ; 5.940 ;
+; A[0]          ; SWLEDS[4]   ; 4.934 ;       ;       ; 5.742 ;
+; A[1]          ; SWLEDS[1]   ; 4.278 ; 4.444 ; 4.734 ; 4.899 ;
+; A[1]          ; SWLEDS[2]   ; 4.954 ; 5.312 ; 5.416 ; 5.773 ;
+; A[1]          ; SWLEDS[3]   ; 4.562 ; 4.865 ; 5.024 ; 5.326 ;
+; A[1]          ; SWLEDS[4]   ; 4.632 ;       ;       ; 5.277 ;
+; A[1]          ; SWLEDS[5]   ; 4.315 ;       ;       ; 5.018 ;
+; A[2]          ; SWLEDS[2]   ; 5.221 ; 5.596 ; 5.780 ; 6.130 ;
+; A[2]          ; SWLEDS[3]   ; 4.839 ; 5.159 ; 5.399 ; 5.694 ;
+; A[2]          ; SWLEDS[4]   ; 4.826 ;       ;       ; 5.560 ;
+; A[2]          ; SWLEDS[6]   ; 5.457 ;       ;       ; 6.465 ;
+; A[3]          ; SWLEDS[3]   ; 5.011 ; 5.331 ; 5.587 ; 5.885 ;
+; A[3]          ; SWLEDS[4]   ; 4.986 ;       ;       ; 5.732 ;
+; A[3]          ; SWLEDS[7]   ; 5.158 ;       ;       ; 6.081 ;
+; B[0]          ; SWLEDS[0]   ; 4.405 ; 4.627 ; 4.889 ; 5.110 ;
+; B[0]          ; SWLEDS[1]   ; 4.467 ; 4.650 ; 4.968 ; 5.126 ;
+; B[0]          ; SWLEDS[2]   ; 5.134 ; 5.492 ; 5.631 ; 5.988 ;
+; B[0]          ; SWLEDS[3]   ; 4.742 ; 5.045 ; 5.239 ; 5.541 ;
+; B[0]          ; SWLEDS[4]   ; 4.812 ;       ;       ; 5.492 ;
+; B[1]          ; SWLEDS[1]   ; 4.489 ; 4.666 ; 4.944 ; 5.118 ;
+; B[1]          ; SWLEDS[2]   ; 5.113 ; 5.471 ; 5.585 ; 5.942 ;
+; B[1]          ; SWLEDS[3]   ; 4.721 ; 5.024 ; 5.193 ; 5.495 ;
+; B[1]          ; SWLEDS[4]   ; 4.791 ;       ;       ; 5.446 ;
+; B[2]          ; SWLEDS[2]   ; 5.197 ; 5.590 ; 5.729 ; 6.098 ;
+; B[2]          ; SWLEDS[3]   ; 4.807 ; 5.145 ; 5.339 ; 5.653 ;
+; B[2]          ; SWLEDS[4]   ; 4.793 ;       ;       ; 5.519 ;
+; B[3]          ; SWLEDS[3]   ; 4.968 ; 5.282 ; 5.548 ; 5.859 ;
+; B[3]          ; SWLEDS[4]   ; 4.794 ;       ;       ; 5.561 ;
+; Cin           ; SWLEDS[0]   ; 4.725 ; 4.982 ; 5.276 ; 5.509 ;
+; Cin           ; SWLEDS[1]   ; 4.676 ; 4.877 ; 5.226 ; 5.403 ;
+; Cin           ; SWLEDS[2]   ; 5.326 ; 5.684 ; 5.937 ; 6.294 ;
+; Cin           ; SWLEDS[3]   ; 4.934 ; 5.237 ; 5.545 ; 5.847 ;
+; Cin           ; SWLEDS[4]   ; 5.004 ;       ;       ; 5.798 ;
+; Cin           ; SWLEDS[8]   ; 4.908 ;       ;       ; 5.848 ;
+; triggerSwitch ; SWLEDS[0]   ; 4.834 ; 5.068 ; 5.404 ; 5.635 ;
+; triggerSwitch ; SWLEDS[1]   ; 4.803 ; 4.981 ; 5.373 ; 5.548 ;
+; triggerSwitch ; SWLEDS[2]   ; 5.323 ; 5.693 ; 5.892 ; 6.259 ;
+; triggerSwitch ; SWLEDS[3]   ; 4.948 ; 5.263 ; 5.518 ; 5.830 ;
+; triggerSwitch ; SWLEDS[4]   ; 4.900 ; 5.115 ; 5.492 ; 5.683 ;
+; triggerSwitch ; SWLEDS[5]   ;       ; 5.101 ; 5.411 ;       ;
+; triggerSwitch ; SWLEDS[6]   ;       ; 5.888 ; 6.002 ;       ;
+; triggerSwitch ; SWLEDS[7]   ;       ; 5.503 ; 5.704 ;       ;
+; triggerSwitch ; SWLEDS[8]   ;       ; 5.245 ; 5.486 ;       ;
++---------------+-------------+-------+-------+-------+-------+
+
+
+-----------------------------------------------
+; Fast 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1100mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1100mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; A[0]          ; SWLEDS[0]   ; 5.459 ; 5.713 ; 6.033 ; 6.304 ;
+; A[0]          ; SWLEDS[1]   ; 5.417 ; 5.620 ; 5.990 ; 6.210 ;
+; A[0]          ; SWLEDS[2]   ; 6.187 ; 6.601 ; 6.765 ; 7.176 ;
+; A[0]          ; SWLEDS[3]   ; 5.136 ; 5.470 ; 5.714 ; 6.045 ;
+; A[0]          ; SWLEDS[4]   ; 5.837 ;       ;       ; 6.630 ;
+; A[1]          ; SWLEDS[1]   ; 4.855 ; 5.029 ; 5.339 ; 5.510 ;
+; A[1]          ; SWLEDS[2]   ; 5.594 ; 6.008 ; 6.078 ; 6.489 ;
+; A[1]          ; SWLEDS[3]   ; 4.543 ; 4.877 ; 5.027 ; 5.358 ;
+; A[1]          ; SWLEDS[4]   ; 5.244 ;       ;       ; 5.943 ;
+; A[1]          ; SWLEDS[5]   ; 4.303 ;       ;       ; 5.051 ;
+; A[2]          ; SWLEDS[2]   ; 5.926 ; 6.376 ; 6.496 ; 6.963 ;
+; A[2]          ; SWLEDS[3]   ; 4.884 ; 5.254 ; 5.455 ; 5.842 ;
+; A[2]          ; SWLEDS[4]   ; 5.481 ;       ;       ; 6.258 ;
+; A[2]          ; SWLEDS[6]   ; 6.160 ;       ;       ; 7.320 ;
+; A[3]          ; SWLEDS[3]   ; 5.045 ; 5.408 ; 5.657 ; 6.037 ;
+; A[3]          ; SWLEDS[4]   ; 5.634 ;       ;       ; 6.438 ;
+; A[3]          ; SWLEDS[7]   ; 5.158 ;       ;       ; 6.157 ;
+; B[0]          ; SWLEDS[0]   ; 4.989 ; 5.214 ; 5.505 ; 5.727 ;
+; B[0]          ; SWLEDS[1]   ; 5.090 ; 5.300 ; 5.583 ; 5.810 ;
+; B[0]          ; SWLEDS[2]   ; 5.821 ; 6.235 ; 6.367 ; 6.778 ;
+; B[0]          ; SWLEDS[3]   ; 4.770 ; 5.104 ; 5.316 ; 5.647 ;
+; B[0]          ; SWLEDS[4]   ; 5.471 ;       ;       ; 6.232 ;
+; B[1]          ; SWLEDS[1]   ; 5.108 ; 5.283 ; 5.582 ; 5.760 ;
+; B[1]          ; SWLEDS[2]   ; 5.800 ; 6.214 ; 6.314 ; 6.725 ;
+; B[1]          ; SWLEDS[3]   ; 4.749 ; 5.083 ; 5.263 ; 5.594 ;
+; B[1]          ; SWLEDS[4]   ; 5.450 ;       ;       ; 6.179 ;
+; B[2]          ; SWLEDS[2]   ; 5.871 ; 6.302 ; 6.439 ; 6.845 ;
+; B[2]          ; SWLEDS[3]   ; 4.822 ; 5.173 ; 5.390 ; 5.716 ;
+; B[2]          ; SWLEDS[4]   ; 5.461 ;       ;       ; 6.256 ;
+; B[3]          ; SWLEDS[3]   ; 5.014 ; 5.349 ; 5.646 ; 5.984 ;
+; B[3]          ; SWLEDS[4]   ; 5.418 ;       ;       ; 6.247 ;
+; Cin           ; SWLEDS[0]   ; 5.335 ; 5.577 ; 5.938 ; 6.155 ;
+; Cin           ; SWLEDS[1]   ; 5.284 ; 5.475 ; 5.888 ; 6.054 ;
+; Cin           ; SWLEDS[2]   ; 5.996 ; 6.410 ; 6.640 ; 7.051 ;
+; Cin           ; SWLEDS[3]   ; 4.945 ; 5.279 ; 5.589 ; 5.920 ;
+; Cin           ; SWLEDS[4]   ; 5.646 ;       ;       ; 6.505 ;
+; Cin           ; SWLEDS[8]   ; 4.871 ;       ;       ; 5.861 ;
+; triggerSwitch ; SWLEDS[0]   ; 5.465 ; 5.694 ; 6.086 ; 6.311 ;
+; triggerSwitch ; SWLEDS[1]   ; 5.432 ; 5.610 ; 6.053 ; 6.227 ;
+; triggerSwitch ; SWLEDS[2]   ; 6.000 ; 6.418 ; 6.621 ; 7.035 ;
+; triggerSwitch ; SWLEDS[3]   ; 4.966 ; 5.304 ; 5.588 ; 5.922 ;
+; triggerSwitch ; SWLEDS[4]   ; 5.514 ; 5.717 ; 6.167 ; 6.345 ;
+; triggerSwitch ; SWLEDS[5]   ;       ; 5.153 ; 5.503 ;       ;
+; triggerSwitch ; SWLEDS[6]   ;       ; 6.611 ; 6.702 ;       ;
+; triggerSwitch ; SWLEDS[7]   ;       ; 5.545 ; 5.769 ;       ;
+; triggerSwitch ; SWLEDS[8]   ;       ; 5.212 ; 5.495 ;       ;
++---------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; A[0]          ; SWLEDS[0]   ; 4.487 ; 4.717 ; 5.026 ; 5.219 ;
+; A[0]          ; SWLEDS[1]   ; 4.447 ; 4.627 ; 4.987 ; 5.130 ;
+; A[0]          ; SWLEDS[2]   ; 5.102 ; 5.404 ; 5.619 ; 5.919 ;
+; A[0]          ; SWLEDS[3]   ; 4.701 ; 5.006 ; 5.218 ; 5.521 ;
+; A[0]          ; SWLEDS[4]   ; 4.586 ;       ;       ; 5.343 ;
+; A[1]          ; SWLEDS[1]   ; 3.981 ; 4.139 ; 4.439 ; 4.595 ;
+; A[1]          ; SWLEDS[2]   ; 4.591 ; 4.893 ; 5.050 ; 5.350 ;
+; A[1]          ; SWLEDS[3]   ; 4.190 ; 4.495 ; 4.649 ; 4.952 ;
+; A[1]          ; SWLEDS[4]   ; 4.312 ;       ;       ; 4.937 ;
+; A[1]          ; SWLEDS[5]   ; 3.978 ;       ;       ; 4.669 ;
+; A[2]          ; SWLEDS[2]   ; 4.861 ; 5.183 ; 5.411 ; 5.691 ;
+; A[2]          ; SWLEDS[3]   ; 4.469 ; 4.794 ; 5.020 ; 5.303 ;
+; A[2]          ; SWLEDS[4]   ; 4.517 ;       ;       ; 5.209 ;
+; A[2]          ; SWLEDS[6]   ; 5.068 ;       ;       ; 5.991 ;
+; A[3]          ; SWLEDS[3]   ; 4.616 ; 4.943 ; 5.176 ; 5.466 ;
+; A[3]          ; SWLEDS[4]   ; 4.654 ;       ;       ; 5.357 ;
+; A[3]          ; SWLEDS[7]   ; 4.731 ;       ;       ; 5.607 ;
+; B[0]          ; SWLEDS[0]   ; 4.098 ; 4.306 ; 4.576 ; 4.782 ;
+; B[0]          ; SWLEDS[1]   ; 4.157 ; 4.335 ; 4.662 ; 4.798 ;
+; B[0]          ; SWLEDS[2]   ; 4.760 ; 5.062 ; 5.243 ; 5.543 ;
+; B[0]          ; SWLEDS[3]   ; 4.359 ; 4.664 ; 4.842 ; 5.145 ;
+; B[0]          ; SWLEDS[4]   ; 4.481 ;       ;       ; 5.130 ;
+; B[1]          ; SWLEDS[1]   ; 4.205 ; 4.373 ; 4.657 ; 4.821 ;
+; B[1]          ; SWLEDS[2]   ; 4.757 ; 5.059 ; 5.217 ; 5.517 ;
+; B[1]          ; SWLEDS[3]   ; 4.356 ; 4.661 ; 4.816 ; 5.119 ;
+; B[1]          ; SWLEDS[4]   ; 4.478 ;       ;       ; 5.104 ;
+; B[2]          ; SWLEDS[2]   ; 4.839 ; 5.176 ; 5.354 ; 5.664 ;
+; B[2]          ; SWLEDS[3]   ; 4.440 ; 4.780 ; 4.954 ; 5.267 ;
+; B[2]          ; SWLEDS[4]   ; 4.479 ;       ;       ; 5.166 ;
+; B[3]          ; SWLEDS[3]   ; 4.592 ; 4.907 ; 5.140 ; 5.451 ;
+; B[3]          ; SWLEDS[4]   ; 4.465 ;       ;       ; 5.184 ;
+; Cin           ; SWLEDS[0]   ; 4.384 ; 4.627 ; 4.919 ; 5.135 ;
+; Cin           ; SWLEDS[1]   ; 4.338 ; 4.531 ; 4.872 ; 5.038 ;
+; Cin           ; SWLEDS[2]   ; 4.925 ; 5.227 ; 5.512 ; 5.812 ;
+; Cin           ; SWLEDS[3]   ; 4.524 ; 4.829 ; 5.111 ; 5.414 ;
+; Cin           ; SWLEDS[4]   ; 4.646 ;       ;       ; 5.399 ;
+; Cin           ; SWLEDS[8]   ; 4.481 ;       ;       ; 5.383 ;
+; triggerSwitch ; SWLEDS[0]   ; 4.501 ; 4.719 ; 5.047 ; 5.262 ;
+; triggerSwitch ; SWLEDS[1]   ; 4.471 ; 4.639 ; 5.017 ; 5.182 ;
+; triggerSwitch ; SWLEDS[2]   ; 4.939 ; 5.251 ; 5.484 ; 5.793 ;
+; triggerSwitch ; SWLEDS[3]   ; 4.553 ; 4.868 ; 5.100 ; 5.412 ;
+; triggerSwitch ; SWLEDS[4]   ; 4.538 ; 4.736 ; 5.110 ; 5.282 ;
+; triggerSwitch ; SWLEDS[5]   ;       ; 4.714 ; 5.015 ;       ;
+; triggerSwitch ; SWLEDS[6]   ;       ; 5.407 ; 5.563 ;       ;
+; triggerSwitch ; SWLEDS[7]   ;       ; 5.050 ; 5.255 ;       ;
+; triggerSwitch ; SWLEDS[8]   ;       ; 4.802 ; 5.038 ;       ;
++---------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Fast 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------+
+; Propagation Delay                                               ;
++---------------+-------------+--------+--------+--------+--------+
+; Input Port    ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++---------------+-------------+--------+--------+--------+--------+
+; A[0]          ; SWLEDS[0]   ; 9.870  ; 10.038 ; 10.206 ; 10.407 ;
+; A[0]          ; SWLEDS[1]   ; 9.799  ; 9.917  ; 10.134 ; 10.285 ;
+; A[0]          ; SWLEDS[2]   ; 11.036 ; 11.470 ; 11.348 ; 11.768 ;
+; A[0]          ; SWLEDS[3]   ; 9.389  ; 9.589  ; 9.703  ; 9.889  ;
+; A[0]          ; SWLEDS[4]   ; 10.620 ;        ;        ; 11.088 ;
+; A[1]          ; SWLEDS[1]   ; 8.843  ; 8.912  ; 9.063  ; 9.118  ;
+; A[1]          ; SWLEDS[2]   ; 9.982  ; 10.416 ; 10.183 ; 10.603 ;
+; A[1]          ; SWLEDS[3]   ; 8.335  ; 8.535  ; 8.538  ; 8.724  ;
+; A[1]          ; SWLEDS[4]   ; 9.566  ;        ;        ; 9.923  ;
+; A[1]          ; SWLEDS[5]   ; 7.759  ;        ;        ; 8.168  ;
+; A[2]          ; SWLEDS[2]   ; 10.471 ; 10.953 ; 10.837 ; 11.354 ;
+; A[2]          ; SWLEDS[3]   ; 8.837  ; 9.085  ; 9.206  ; 9.489  ;
+; A[2]          ; SWLEDS[4]   ; 9.872  ;        ;        ; 10.337 ;
+; A[2]          ; SWLEDS[6]   ; 10.971 ;        ;        ; 11.980 ;
+; A[3]          ; SWLEDS[3]   ; 9.129  ; 9.378  ; 9.540  ; 9.822  ;
+; A[3]          ; SWLEDS[4]   ; 10.163 ;        ;        ; 10.657 ;
+; A[3]          ; SWLEDS[7]   ; 9.240  ;        ;        ; 9.902  ;
+; B[0]          ; SWLEDS[0]   ; 9.018  ; 9.137  ; 9.289  ; 9.394  ;
+; B[0]          ; SWLEDS[1]   ; 9.257  ; 9.374  ; 9.505  ; 9.657  ;
+; B[0]          ; SWLEDS[2]   ; 10.382 ; 10.816 ; 10.703 ; 11.123 ;
+; B[0]          ; SWLEDS[3]   ; 8.735  ; 8.935  ; 9.058  ; 9.244  ;
+; B[0]          ; SWLEDS[4]   ; 9.966  ;        ;        ; 10.443 ;
+; B[1]          ; SWLEDS[1]   ; 9.395  ; 9.449  ; 9.591  ; 9.651  ;
+; B[1]          ; SWLEDS[2]   ; 10.406 ; 10.840 ; 10.680 ; 11.100 ;
+; B[1]          ; SWLEDS[3]   ; 8.759  ; 8.959  ; 9.035  ; 9.221  ;
+; B[1]          ; SWLEDS[4]   ; 9.990  ;        ;        ; 10.420 ;
+; B[2]          ; SWLEDS[2]   ; 10.325 ; 10.794 ; 10.661 ; 11.080 ;
+; B[2]          ; SWLEDS[3]   ; 8.682  ; 8.917  ; 9.018  ; 9.203  ;
+; B[2]          ; SWLEDS[4]   ; 9.778  ;        ;        ; 10.298 ;
+; B[3]          ; SWLEDS[3]   ; 9.120  ; 9.305  ; 9.545  ; 9.736  ;
+; B[3]          ; SWLEDS[4]   ; 9.661  ;        ;        ; 10.203 ;
+; Cin           ; SWLEDS[0]   ; 9.622  ; 9.776  ; 10.004 ; 10.108 ;
+; Cin           ; SWLEDS[1]   ; 9.541  ; 9.645  ; 9.924  ; 9.978  ;
+; Cin           ; SWLEDS[2]   ; 10.615 ; 11.049 ; 11.092 ; 11.512 ;
+; Cin           ; SWLEDS[3]   ; 8.968  ; 9.168  ; 9.447  ; 9.633  ;
+; Cin           ; SWLEDS[4]   ; 10.199 ;        ;        ; 10.832 ;
+; Cin           ; SWLEDS[8]   ; 8.851  ;        ;        ; 9.541  ;
+; triggerSwitch ; SWLEDS[0]   ; 9.915  ; 10.026 ; 10.329 ; 10.432 ;
+; triggerSwitch ; SWLEDS[1]   ; 9.856  ; 9.917  ; 10.270 ; 10.323 ;
+; triggerSwitch ; SWLEDS[2]   ; 10.664 ; 11.090 ; 11.078 ; 11.496 ;
+; triggerSwitch ; SWLEDS[3]   ; 9.039  ; 9.231  ; 9.455  ; 9.639  ;
+; triggerSwitch ; SWLEDS[4]   ; 9.884  ; 10.018 ; 10.335 ; 10.419 ;
+; triggerSwitch ; SWLEDS[5]   ;        ; 8.966  ; 9.188  ;        ;
+; triggerSwitch ; SWLEDS[6]   ;        ; 11.344 ; 11.208 ;        ;
+; triggerSwitch ; SWLEDS[7]   ;        ; 9.567  ; 9.716  ;        ;
+; triggerSwitch ; SWLEDS[8]   ;        ; 9.025  ; 9.249  ;        ;
++---------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++---------------+-------------+-------+-------+-------+-------+
+; Input Port    ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++---------------+-------------+-------+-------+-------+-------+
+; A[0]          ; SWLEDS[0]   ; 4.487 ; 4.717 ; 5.026 ; 5.219 ;
+; A[0]          ; SWLEDS[1]   ; 4.447 ; 4.627 ; 4.987 ; 5.130 ;
+; A[0]          ; SWLEDS[2]   ; 5.102 ; 5.404 ; 5.619 ; 5.919 ;
+; A[0]          ; SWLEDS[3]   ; 4.701 ; 5.006 ; 5.218 ; 5.521 ;
+; A[0]          ; SWLEDS[4]   ; 4.586 ;       ;       ; 5.343 ;
+; A[1]          ; SWLEDS[1]   ; 3.981 ; 4.139 ; 4.439 ; 4.595 ;
+; A[1]          ; SWLEDS[2]   ; 4.591 ; 4.893 ; 5.050 ; 5.350 ;
+; A[1]          ; SWLEDS[3]   ; 4.190 ; 4.495 ; 4.649 ; 4.952 ;
+; A[1]          ; SWLEDS[4]   ; 4.312 ;       ;       ; 4.937 ;
+; A[1]          ; SWLEDS[5]   ; 3.978 ;       ;       ; 4.669 ;
+; A[2]          ; SWLEDS[2]   ; 4.861 ; 5.183 ; 5.411 ; 5.691 ;
+; A[2]          ; SWLEDS[3]   ; 4.469 ; 4.794 ; 5.020 ; 5.303 ;
+; A[2]          ; SWLEDS[4]   ; 4.517 ;       ;       ; 5.209 ;
+; A[2]          ; SWLEDS[6]   ; 5.068 ;       ;       ; 5.991 ;
+; A[3]          ; SWLEDS[3]   ; 4.616 ; 4.943 ; 5.176 ; 5.466 ;
+; A[3]          ; SWLEDS[4]   ; 4.654 ;       ;       ; 5.357 ;
+; A[3]          ; SWLEDS[7]   ; 4.731 ;       ;       ; 5.607 ;
+; B[0]          ; SWLEDS[0]   ; 4.098 ; 4.306 ; 4.576 ; 4.782 ;
+; B[0]          ; SWLEDS[1]   ; 4.157 ; 4.335 ; 4.662 ; 4.798 ;
+; B[0]          ; SWLEDS[2]   ; 4.760 ; 5.062 ; 5.243 ; 5.543 ;
+; B[0]          ; SWLEDS[3]   ; 4.359 ; 4.664 ; 4.842 ; 5.145 ;
+; B[0]          ; SWLEDS[4]   ; 4.481 ;       ;       ; 5.130 ;
+; B[1]          ; SWLEDS[1]   ; 4.205 ; 4.373 ; 4.657 ; 4.821 ;
+; B[1]          ; SWLEDS[2]   ; 4.757 ; 5.059 ; 5.217 ; 5.517 ;
+; B[1]          ; SWLEDS[3]   ; 4.356 ; 4.661 ; 4.816 ; 5.119 ;
+; B[1]          ; SWLEDS[4]   ; 4.478 ;       ;       ; 5.104 ;
+; B[2]          ; SWLEDS[2]   ; 4.839 ; 5.176 ; 5.354 ; 5.664 ;
+; B[2]          ; SWLEDS[3]   ; 4.440 ; 4.780 ; 4.954 ; 5.267 ;
+; B[2]          ; SWLEDS[4]   ; 4.479 ;       ;       ; 5.166 ;
+; B[3]          ; SWLEDS[3]   ; 4.592 ; 4.907 ; 5.140 ; 5.451 ;
+; B[3]          ; SWLEDS[4]   ; 4.465 ;       ;       ; 5.184 ;
+; Cin           ; SWLEDS[0]   ; 4.384 ; 4.627 ; 4.919 ; 5.135 ;
+; Cin           ; SWLEDS[1]   ; 4.338 ; 4.531 ; 4.872 ; 5.038 ;
+; Cin           ; SWLEDS[2]   ; 4.925 ; 5.227 ; 5.512 ; 5.812 ;
+; Cin           ; SWLEDS[3]   ; 4.524 ; 4.829 ; 5.111 ; 5.414 ;
+; Cin           ; SWLEDS[4]   ; 4.646 ;       ;       ; 5.399 ;
+; Cin           ; SWLEDS[8]   ; 4.481 ;       ;       ; 5.383 ;
+; triggerSwitch ; SWLEDS[0]   ; 4.501 ; 4.719 ; 5.047 ; 5.262 ;
+; triggerSwitch ; SWLEDS[1]   ; 4.471 ; 4.639 ; 5.017 ; 5.182 ;
+; triggerSwitch ; SWLEDS[2]   ; 4.939 ; 5.251 ; 5.484 ; 5.793 ;
+; triggerSwitch ; SWLEDS[3]   ; 4.553 ; 4.868 ; 5.100 ; 5.412 ;
+; triggerSwitch ; SWLEDS[4]   ; 4.538 ; 4.736 ; 5.110 ; 5.282 ;
+; triggerSwitch ; SWLEDS[5]   ;       ; 4.714 ; 5.015 ;       ;
+; triggerSwitch ; SWLEDS[6]   ;       ; 5.407 ; 5.563 ;       ;
+; triggerSwitch ; SWLEDS[7]   ;       ; 5.050 ; 5.255 ;       ;
+; triggerSwitch ; SWLEDS[8]   ;       ; 4.802 ; 5.038 ;       ;
++---------------+-------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                ;
++-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin       ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; SWLEDS[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[4] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[5] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[6] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[7] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[8] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SWLEDS[9] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++------------------------------------------------------------------+
+; Input Transition Times                                           ;
++---------------+--------------+-----------------+-----------------+
+; Pin           ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++---------------+--------------+-----------------+-----------------+
+; B[0]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; triggerSwitch ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; A[0]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Cin           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; B[1]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; A[1]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; B[2]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; A[2]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; B[3]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; A[3]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++---------------+--------------+-----------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; SWLEDS[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[8] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[9] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; SWLEDS[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; SWLEDS[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; SWLEDS[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; SWLEDS[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[8] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[9] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; SWLEDS[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; SWLEDS[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; SWLEDS[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; SWLEDS[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; SWLEDS[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; SWLEDS[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; SWLEDS[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; SWLEDS[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; SWLEDS[8] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; SWLEDS[9] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; SWLEDS[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; SWLEDS[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; SWLEDS[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; SWLEDS[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; SWLEDS[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; SWLEDS[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; SWLEDS[8] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; SWLEDS[9] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 46    ; 46   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 46    ; 46   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+    Info: Processing started: Fri Sep 29 01:03:51 2017
+Info: Command: quartus_sta Lab1b -c Lab1b
+Info: qsta_default_script.tcl version: #11
+Warning (20013): Ignored assignments for entity "FourBitFullAdder" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity FourBitFullAdder -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity FourBitFullAdder -section_id Top was ignored
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Lab1b.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1100mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1100mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 1174 megabytes
+    Info: Processing ended: Fri Sep 29 01:03:55 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

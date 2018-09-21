@@ -1,0 +1,42 @@
+set_location_assignment PIN_W16 -to SWLEDS[1]
+set_location_assignment PIN_V17 -to SWLEDS[2]
+set_location_assignment PIN_V18 -to SWLEDS[3]
+set_location_assignment PIN_W17 -to SWLEDS[4]
+set_location_assignment PIN_W19 -to SWLEDS[5]
+set_location_assignment PIN_Y19 -to SWLEDS[6]
+set_location_assignment PIN_W20 -to SWLEDS[7]
+set_location_assignment PIN_W21 -to SWLEDS[8]
+set_location_assignment PIN_Y21 -to SWLEDS[9]
+set_location_assignment PIN_V16 -to SWLEDS[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity FourBitFullAdder -section_id Top
+set_location_assignment PIN_AB12 -to B[0]
+set_location_assignment PIN_AC12 -to B[1]
+set_location_assignment PIN_AF9 -to B[2]
+set_location_assignment PIN_AF10 -to B[3]
+set_location_assignment PIN_AD11 -to A[0]
+set_location_assignment PIN_AD12 -to A[1]
+set_location_assignment PIN_AE11 -to A[2]
+set_location_assignment PIN_AC9 -to A[3]
+set_location_assignment PIN_AD10 -to Cin
+set_location_assignment PIN_AE12 -to triggerSwitch
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY Lab1b
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.2
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:11:14  SEPTEMBER 19, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.2
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE Lab1b.vhd
+set_global_assignment -name VHDL_FILE FullAdder.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity FourBitFullAdder -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity FourBitFullAdder -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity FourBitFullAdder -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

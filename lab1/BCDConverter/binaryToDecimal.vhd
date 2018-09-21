@@ -1,0 +1,51 @@
+-- Author: Rodrigo Ignacio Rojas Garcia
+-- Contact: rrojas@clemson.edu
+-- Purpose: Perform Binary-to-Decimal number conversion and display it in a 7-Segment Display
+-- Board: DE1_SoC 5CSEMA5F31C6
+
+-- Standard libary ieee is used along with its sub-library std_logic_1664
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+-- Entity of a Binary to Decimal is declared with one input of four bits which
+-- will be connected to pins SW3-SW0 on the board and two outputs of five bits
+-- which will be connected to two 7-Segment Displays of the board, HEX1, and HEX0 
+ENTITY binaryToDecimal IS PORT
+(
+	V:	IN std_logic_vector(3 DOWNTO 0);
+	HEX1, HEX0: OUT std_logic_vector(6 DOWNTO 0)
+);
+END binaryToDecimal;
+
+
+-- Architecture of a Binary-To-Decimal converter which is composed of component 
+-- "sevenSegmentDisplay" which is responsible to display the conversion from 
+-- binary to decimal based on Truth Table. The purpose of the architecture is 
+-- to calculate the Boolean Logic of the conversion by using Truth Table and 
+-- creating Kornough Maps based on them. Then, the result will be stored on a SIGNAL
+-- called "BCDConversion". Finally, the SIGNAL "BCDConversion" will be mapped to the 
+-- COMPONENT "DISPLAY" which corresponds to the "sevenSegmentDisplay" component and will
+-- PORT MAP it will map the corresponding input and output which then will be displayed on
+-- 7-Segment Display Hex1 and Hex0 of the board. 
+ARCHITECTURE behavior_binaryToDecimal OF binaryToDecimal IS
+	
+	COMPONENT sevenSegmentDisplay
+		PORT (M: IN std_logic_vector(4 DOWNTO 0); -- M is an input of five bits which will store the Binary-To-Decimal conversion
+				HEX1, HEX0:	OUT std_logic_vector(6 DOWNTO 0)	-- HEX1 and HEX0 are outputs which correspond the 7-Segment Displays 
+				);
+	END COMPONENT;	
+	
+	SIGNAL BCDConversion: std_logic_vector(4 DOWNTO 0);	-- SIGNAL VECTOR of five bits which will store the Binary-To-Decimal Conversion
+
+BEGIN 
+		
+		BCDConversion(4) <= (V(3) AND V(2)) OR (V(3) AND V(1)); 	-- Boolean Logic based on Kornough Map for output M(4)
+		BCDConversion(3) <= V(3) AND (NOT V(2)) AND (NOT V(1));	-- Boolean Logic based on Kornough Map for output M(3)
+		BCDConversion(2) <= ((NOT V(3)) AND V(2)) OR (V(2) AND V(1));	-- Boolean Logic based on Kornough Map for output M(2)
+		BCDConversion(1) <= (V(3) AND V(2) AND (NOT V(1))) OR ((NOT V(3)) AND V(1));	-- Boolean Logic based on Kornough Map for output M(1)
+		BCDConversion(0) <= V(0);	-- Boolean Logic based on Kornough Map for output M(0)
+		
+		-- Top level I/O are mapped to "DISPLAY" component to their corresponding I/O
+		DISPLAY: COMPONENT sevenSegmentDisplay PORT MAP (M => BCDConversion, HEX1 => HEX1, HEX0 => HEX0); 
+		
+END behavior_binaryToDecimal;

@@ -1,0 +1,197 @@
+|adder
+Cin => FullAdder:Generate_label:0:stage.Cin
+registerC[0] => FullAdder:Generate_label:0:stage.A
+registerC[1] => FullAdder:Generate_label:1:stage.A
+registerC[2] => FullAdder:Generate_label:2:stage.A
+registerC[3] => FullAdder:Generate_label:3:stage.A
+registerC[4] => FullAdder:Generate_label:4:stage.A
+registerC[5] => FullAdder:Generate_label:5:stage.A
+registerC[6] => FullAdder:Generate_label:6:stage.A
+registerC[7] => FullAdder:Generate_label:7:stage.A
+bitPair[0] => FullAdder:Generate_label:0:stage.B
+bitPair[1] => FullAdder:Generate_label:1:stage.B
+bitPair[2] => FullAdder:Generate_label:2:stage.B
+bitPair[3] => FullAdder:Generate_label:3:stage.B
+bitPair[4] => FullAdder:Generate_label:4:stage.B
+bitPair[5] => FullAdder:Generate_label:5:stage.B
+bitPair[6] => FullAdder:Generate_label:6:stage.B
+bitPair[7] => FullAdder:Generate_label:7:stage.B
+sum[0] << FullAdder:Generate_label:0:stage.Sum
+sum[1] << FullAdder:Generate_label:1:stage.Sum
+sum[2] << FullAdder:Generate_label:2:stage.Sum
+sum[3] << FullAdder:Generate_label:3:stage.Sum
+sum[4] << FullAdder:Generate_label:4:stage.Sum
+sum[5] << FullAdder:Generate_label:5:stage.Sum
+sum[6] << FullAdder:Generate_label:6:stage.Sum
+sum[7] << FullAdder:Generate_label:7:stage.Sum
+Cout << FullAdder:Generate_label:7:stage.Cout
+
+
+|adder|FullAdder:\Generate_label:0:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|FullAdder:\Generate_label:1:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|FullAdder:\Generate_label:2:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|FullAdder:\Generate_label:3:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|FullAdder:\Generate_label:4:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|FullAdder:\Generate_label:5:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|FullAdder:\Generate_label:6:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|FullAdder:\Generate_label:7:stage
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+

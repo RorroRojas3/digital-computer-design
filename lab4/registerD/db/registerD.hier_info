@@ -1,0 +1,27 @@
+|registerD
+input[0] => ~NO_FANOUT~
+input[1] => shiftBits.DATAB
+input[2] => shiftBits.DATAB
+input[3] => shiftBits.DATAB
+loadEnable => shiftBits.OUTPUTSELECT
+loadEnable => shiftBits.OUTPUTSELECT
+loadEnable => shiftBits.OUTPUTSELECT
+loadEnable => shiftBits.OUTPUTSELECT
+countEnable => shiftBits.OUTPUTSELECT
+countEnable => shiftBits.OUTPUTSELECT
+countEnable => shiftBits.OUTPUTSELECT
+countEnable => shiftBits.OUTPUTSELECT
+reset => shiftBits[0].PRESET
+reset => shiftBits[1].PRESET
+reset => shiftBits[2].PRESET
+reset => shiftBits[3].PRESET
+clock => shiftBits[0].CLK
+clock => shiftBits[1].CLK
+clock => shiftBits[2].CLK
+clock => shiftBits[3].CLK
+output[0] <= shiftBits[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= shiftBits[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= shiftBits[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= shiftBits[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

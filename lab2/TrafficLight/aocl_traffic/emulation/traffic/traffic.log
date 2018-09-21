@@ -1,0 +1,2 @@
+aocl-opt: Too many positional arguments specified!
+Can specify at most 1 positional arguments: See: /usr/commercial_amd64/altera/15.1/hld/linux64/bin/aocl-opt -help

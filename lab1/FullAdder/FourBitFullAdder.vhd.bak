@@ -1,0 +1,10 @@
+-- Four Bit Full Adder 
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY FourBitFullAdder IS
+	PORT (A, B, Cin: std_logic;
+			S, C1:	std_logic;
+	)
+END FourBitFullAdder;

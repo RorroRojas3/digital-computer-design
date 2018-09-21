@@ -1,0 +1,15 @@
+-- Binary to Decimal Converter and Displayer of Decimal in 7-Segment LED Display
+
+LIBRARY ieee;
+USE iee.std_logic_1664.ALL;
+ENTITY binaryToDecimal IS PORT
+(
+	v3, v2, v1, v0:	IN std_logic;
+	d1, d0:				OUT std_logic_vector(3 DOWNTO 0)
+);
+END binaryToDecimal;
+
+ARCHITECTURE behavior_binaryToDecimal OF binaryToDecimal IS
+BEGIN
+	d1 <= v3;
+END behavior_binaryToDecimal;

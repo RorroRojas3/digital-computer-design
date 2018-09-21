@@ -1,0 +1,25 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/registerB.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/registerA.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/bitpair.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/multiplexer.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/registerC.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/adder.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/FullAdder.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/control.vhd}
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/registerD.vhd}
+
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/control.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  control
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,15 @@
+-- Name: Rodrigo Rojas
+-- Contact: rrojas@clemson.edu
+-- Purpose: Shifting Register
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY registerC IS
+	GENERIC(n: INTEGER := 8);
+	PORT (nBits: IN std_logic_vector((n-1) DOWNTO 0);
+			frontBits: IN std_logic_vector(1 DOWNTO 0);
+			clock: IN std_logic;
+			addNumber: IN std_logic_vector((n-1) DOWNTO 0);
+			input: IN std_logic_vector((n-1) DOWNTO 0);
+			output: IN std_logic_vector((n-1) DOWNTO 0);

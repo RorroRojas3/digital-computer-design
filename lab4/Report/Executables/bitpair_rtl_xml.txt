@@ -1,0 +1,37 @@
+<EFI_SPEC>
+	<FUNCTION name="bitpair"
+		  module="bitpair">
+		<ATTRIBUTES>
+			<IS_STALL_FREE value="no"/>
+			<IS_FIXED_LATENCY value="no"/>
+			<EXPECTED_LATENCY value="12"/>
+			<CAPACITY value="1"/>
+			<HAS_SIDE_EFFECTS value="yes"/>
+			<ALLOW_MERGING value="no"/>
+		</ATTRIBUTES>
+		<INTERFACE>
+			<AVALON port="clock" type="clock"/>
+			<AVALON port="resetn" type="resetn"/>
+			<AVALON port="ivalid" type="ivalid"/>
+			<AVALON port="iready" type="iready"/>
+			<AVALON port="ovalid" type="ovalid"/>
+			<AVALON port="oready" type="oready"/>
+			<INPUT port="datain" width="32"/>
+			<OUTPUT port="dataout" width="32"/>
+		</INTERFACE>
+	<C_MODEL>
+		<FILE name="bitpair_c.cl" />
+	</C_MODEL>
+	<REQUIREMENTS>
+		<FILE name="bitpair.vhd" />
+		<FILE name="adder.vhd" />
+		<FILE name="control.vhd" />
+		<FILE name="FullAdder.vhd" />
+		<FILE name="multiplexer.vhd" />
+		<FILE name="registerA.vhd" />
+		<FILE name="registerB.vhd" />
+		<FILE name="registerC.vhd" />
+		<FILE name="registerD.vhd" />
+	</REQUIREMENTS>
+	</FUNCTION>
+</EFI_SPEC>

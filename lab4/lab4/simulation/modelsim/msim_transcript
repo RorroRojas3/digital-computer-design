@@ -1,0 +1,64 @@
+# ERROR: No extended dataflow license exists
+# do bitpair_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim LE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:17:35 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture behavior_control of control
+# End time: 16:17:35 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:17:35 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/lab4/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture behavior_control of control
+# End time: 16:17:35 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  control
+# vsim -i -l msim_transcript -do "bitpair_run_msim_rtl_vhdl.do" 
+# Start time: 16:17:35 on Nov 15,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.control(behavior_control)
+# 
+# add wave *
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: unknown  Hostname: rorro-pc  ProcessID: 19018
+#           Attempting to use alternate WLF file "./wlftdTlXbT".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdTlXbT
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 16:20:04 on Nov 15,2017, Elapsed time: 0:02:29
+# Errors: 4, Warnings: 2

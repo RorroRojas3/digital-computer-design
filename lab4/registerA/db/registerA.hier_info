@@ -1,0 +1,43 @@
+|registerA
+input[0] => multiplicand[0]~reg0.DATAIN
+input[1] => multiplicand[1]~reg0.DATAIN
+input[2] => multiplicand[2]~reg0.DATAIN
+input[3] => multiplicand[3]~reg0.DATAIN
+input[4] => multiplicand[4]~reg0.DATAIN
+input[5] => multiplicand[5]~reg0.DATAIN
+input[6] => multiplicand[6]~reg0.DATAIN
+input[7] => multiplicand[7]~reg0.DATAIN
+reset => multiplicand[0]~reg0.ACLR
+reset => multiplicand[1]~reg0.ACLR
+reset => multiplicand[2]~reg0.ACLR
+reset => multiplicand[3]~reg0.ACLR
+reset => multiplicand[4]~reg0.ACLR
+reset => multiplicand[5]~reg0.ACLR
+reset => multiplicand[6]~reg0.ACLR
+reset => multiplicand[7]~reg0.ACLR
+clock => multiplicand[0]~reg0.CLK
+clock => multiplicand[1]~reg0.CLK
+clock => multiplicand[2]~reg0.CLK
+clock => multiplicand[3]~reg0.CLK
+clock => multiplicand[4]~reg0.CLK
+clock => multiplicand[5]~reg0.CLK
+clock => multiplicand[6]~reg0.CLK
+clock => multiplicand[7]~reg0.CLK
+loadEnable => multiplicand[7]~reg0.ENA
+loadEnable => multiplicand[6]~reg0.ENA
+loadEnable => multiplicand[5]~reg0.ENA
+loadEnable => multiplicand[4]~reg0.ENA
+loadEnable => multiplicand[3]~reg0.ENA
+loadEnable => multiplicand[2]~reg0.ENA
+loadEnable => multiplicand[1]~reg0.ENA
+loadEnable => multiplicand[0]~reg0.ENA
+multiplicand[0] <= multiplicand[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+multiplicand[1] <= multiplicand[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+multiplicand[2] <= multiplicand[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+multiplicand[3] <= multiplicand[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+multiplicand[4] <= multiplicand[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+multiplicand[5] <= multiplicand[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+multiplicand[6] <= multiplicand[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+multiplicand[7] <= multiplicand[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

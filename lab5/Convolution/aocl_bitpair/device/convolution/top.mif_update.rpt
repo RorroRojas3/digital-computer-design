@@ -1,0 +1,80 @@
+MIF/HEX Update report for top
+Tue Dec  5 12:08:26 2017
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Tue Dec  5 12:08:26 2017 ;
+; Revision Name         ; top                                   ;
+; Top-level Entity Name ; top                                   ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CSEMA5F31C6                          ;
++-----------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                                                        ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/pll_rom.hex                                  ;
+; /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/sys_description.hex                          ;
+; /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/system/synthesis/submodules/hps_AC_ROM.hex   ;
+; /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/system/synthesis/submodules/hps_inst_ROM.hex ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime MIF/HEX Update
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+    Info: Processing started: Tue Dec  5 12:08:03 2017
+Info: Command: quartus_cdb top -c top --update_mif
+Info: Using INI file /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/quartus.ini
+Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (16) in the Memory Initialization File "/users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/sys_description.hex" -- setting initial value for remaining addresses to 0
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/pll_rom.hex File: /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/pll_rom.hex Line: 0
+    Info (39025): Processed Memory Initialization File /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/sys_description.hex File: /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/sys_description.hex Line: 0
+    Info (39025): Processed Memory Initialization File /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/system/synthesis/submodules/hps_AC_ROM.hex File: /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/system/synthesis/submodules/hps_AC_ROM.hex Line: 0
+    Info (39025): Processed Memory Initialization File /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/system/synthesis/submodules/hps_inst_ROM.hex File: /users/rrojas/Dropbox/Fall 2017/ece3270/lab5/Convolution/aocl_bitpair/device/convolution/system/synthesis/submodules/hps_inst_ROM.hex Line: 0
+Info: Quartus Prime MIF/HEX Update was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1650 megabytes
+    Info: Processing ended: Tue Dec  5 12:08:26 2017
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:21
+
+

@@ -1,0 +1,76 @@
+\subsection{Simulation of 3-bit to 8-bit Decoder}
+After the design of the 3-bit to 8-bit decoder was complete, simulation was done through software ModelSim to test and verify that the output obtained from the decoder was correct. The simulation of the decoder consisted on six different cases which tested the output of the decoder based on values of the three-bit binary number and enable inputs.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{dec1.png}
+\caption{First Case}
+\label{First Case}
+\end{figure}
+First case consisted of three-bit binary number being of value 0 and the enable bit being a value of 0 as well. The expected output was for all 8 bits to be of value 1 because the enable pin is of value 0, therefore value "11111111" is obtained.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{dec2.png}
+\caption{Second Case}
+\label{Second Case}
+\end{figure}
+Second case consisted of three-bit binary number being of value of 2 and the enable bit being of value of 1. The expected output was for bit 3 to be of value of 0. The expected output was for the 8-bit output to be "11111011" because the enable pin is of value of 1, and the third bit corresponds to the the number 2.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{dec3.png}
+\caption{Third Case}
+\label{third Case}
+\end{figure}
+Third case consisted of three-bit binary number being of value 5 and the enable bit being of value 1. The expected output was for bit 6 to be of value 0. The expected output was for the 8-bit output to be "11011111" because the enable pin is of value 1, and the sixth bit corresponds to number 5.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{dec4.png}
+\caption{Fourth Case}
+\label{Fourth Case}
+\end{figure}
+Fourth case consisted of three-bit binary number being of value 6 and the enable bit being of value 0. The expected output for all 8 bits to be of value 1 because the enable pin was of value of 0, therefore value "1111111" was to be obtained.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{dec5.png}
+\caption{Fifth Case}
+\label{Fifth Case}
+\end{figure}
+Fifth case consisted on three-bit binary number being of value 6 and the enable bit being of value 1. The expected output was for bit 7 to be of value 0. The expected output was for the 8-bit output to to be "10111111" because the enable pin was of value 1 and seventh bit corresponds to number 6.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{dec6.png}
+\caption{Sixth Case}
+\label{Sixth Case}
+\end{figure}
+Sixth case consisted on three-bit binary number being of value 7 and the enable bit being of value 1. The expected output was for bit 8 to be value of 0. The expected output was for the 8-bit output to be "0111111" because the enable pin was of value of 1 and eight bit corresponds to number 7.
+
+\section{Part Two}\label{partTwo}
+\subsection{3-bit to 8-bit Decoder and OpenCL}
+Part two of the homework consisted of using the 3-bit to 8-bit decoder designed on part one as a component with the purpose of combining it with OpenCL software. The OpenCL software will be used to send data to the decoder with the purpose of entering different test cases, save the results, and given the corresponding output of each test case in human readable form. The combination of the OpenCL software and decoder was approached in different steps. First, the main entity called "traffic.vhd" file located in the "TrafficLight.zip" was obtained. The main entity was called "traffic" which was composed of five inputs and three outputs. The inputs used in this homework were "datain", and "ivalid". The output used in this homework was "dataout". Second, the main entity was modified so the decoder component could be used. The decoder was composed of two inputs and one output. One of the inputs corresponded to the three-bit binary number called "input" and the other input corresponded to the enable bit which was named "enable". The output corresponded to the 8 bit binary value which was named "output". The decoder's inputs and outputs were mapped to the main entity's inputs and outputs. Inputs "ivalid" and "datain" from the main entity were mapped to inputs "enable" and "input" from the decoder correspondingly. The output "dataout" from the main entity was mapped to output "output" from the decoder. Third, the OpenCL software was tested. The OpenCL software was tested by running script "run.sh" located in "TrafficLight/aocl\_.traffic/emulation" folder with the purpose of testing that the correct output was being obtained from the test inputs entered by the OpenCL software to the decoder without compiling the program. Fourth, compile the program. After the emulation was completed and the correct output was checked, the compilation of the program was performed so it could be loaded to the DE1\_.SoC board. The compilation of the program was done by first runnign the "make" command in the folder "TrafficLight/aocl\_.traffic", and after completion the same command was ran in folder "TrafficLight/aocl\_.traffic/device". Fifth, transfer compiled files to SD card. After compilation was done, executable file "traffic" located in "TrafficLight/aocl\_.traffic" and file "traffic.acox" located in "TrafficLight/aocl\_.traffic/device" were transferred to an SD card. Inside the SD card, a folder named "traffic" was created in folder "home/root/". Sixth, execute compiled files in DE1\_.SoC board. After files were transferred to the SD card, the card was plugged into the board. The board was accessed through a terminal and the command "minicom" was entered to access the board and user "root" was chosen. After accesign the board, the directory "traffic" was accessed and command "chmod +x traffic" was entered so executable file "traffic could be executed", then command "./traffic" was entered to execute traffic executable and obtain the decoder output in a human readable form which can be seen on Figure 7.
+\subsection{OpenCL and Decoder Results}\label{Results}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{emulation.png}
+\caption{Emulation Output}
+\label{Emulation Output}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{output.png}
+\caption{DE1\_.SoC Decoder Output}
+\label{DE1_SoC Decoder Output}
+\end{figure}
+\section{Conclusion}\label{conclusion}
+
+\section{Conclusion}\label{conclusion}
+
+
+
+\bibliographystyle{abbrv}
+\bibliography{myreference}
+
+\section{Appendix}\label{appendix}
+
+\end{document}
+This is never printed

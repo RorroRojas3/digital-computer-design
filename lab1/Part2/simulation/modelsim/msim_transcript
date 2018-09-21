@@ -1,0 +1,81 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab1_2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/lab1_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 00:06:39 on Sep 19,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/lab1_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lab1_2
+# -- Compiling architecture behavior_FourBitFullAdder of lab1_2
+# End time: 00:06:39 on Sep 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/FullAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 00:06:40 on Sep 19,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture behavior_FullAdder of FullAdder
+# End time: 00:06:40 on Sep 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 00:06:40 on Sep 19,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lab1_2_vhd_tst
+# -- Compiling architecture lab1_2_arch of lab1_2_vhd_tst
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht(76): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/lab1_2.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 00:06:41 on Sep 19,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 7
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  PartTwoTestbench
+# vsim -gui "+altera" -l msim_transcript -do "lab1_2_run_msim_rtl_vhdl.do" 
+# Start time: 00:06:41 on Sep 19,2017
+# ** Error: (vsim-3170) Could not find 'C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/Part2/simulation/modelsim/rtl_work.PartTwoTestbench'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./lab1_2_run_msim_rtl_vhdl.do PAUSED at line 13
+vsim work.lab1_2_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab1_2_vhd_tst(lab1_2_arch)
+# Loading work.lab1_2(behavior_fourbitfulladder)
+# Loading work.fulladder(behavior_fulladder)
+add wave -position insertpoint  \
+sim:/lab1_2_vhd_tst/A \
+sim:/lab1_2_vhd_tst/B \
+sim:/lab1_2_vhd_tst/Cin \
+sim:/lab1_2_vhd_tst/SWLEDS \
+sim:/lab1_2_vhd_tst/triggerSwitch
+run 600 ns
+# End time: 00:08:12 on Sep 19,2017, Elapsed time: 0:01:31
+# Errors: 1, Warnings: 0

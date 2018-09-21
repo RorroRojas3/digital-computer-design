@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part2/lab1_2.vhd}
+vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part2/FullAdder.vhd}
+

@@ -1,0 +1,10 @@
+/*
+	Name: Rodrigo Rojas
+	Contact: rrojas@clemson.edu
+	Purpose: Shifting Register
+*/
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL
+
+ENTITY registerB IS 

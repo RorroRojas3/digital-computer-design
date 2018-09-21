@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim
+Eadder
+Z1 w1510685351
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/Dropbox/Fall 2017/ece3270/lab4/adder/adder.vhd
+Z5 FD:/Dropbox/Fall 2017/ece3270/lab4/adder/adder.vhd
+l0
+L8
+VB[`lg1B8iAf@_L0`AZUPL3
+!s100 [YZHVdThkWCDh<G:L5LS[1
+Z6 OV;C;10.3d;59
+31
+Z7 !s110 1510738386
+!i10b 1
+Z8 !s108 1510738386.116000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/lab4/adder/adder.vhd|
+Z10 !s107 D:/Dropbox/Fall 2017/ece3270/lab4/adder/adder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Astructure_adder
+R2
+R3
+DEx4 work 5 adder 0 22 B[`lg1B8iAf@_L0`AZUPL3
+l25
+L19
+VFV@mhK1d119bjA5z`Mcn03
+!s100 CX3N5A3A4hS0QT>ceLe8Y1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_vhd_tst
+Z13 w1510738347
+R2
+R3
+R0
+Z14 8D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht
+Z15 FD:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht
+l0
+L31
+VgWRVRU^U:Oo:fAZDk42[=1
+!s100 JTKT0^?cM;lRZ>d8I6dHY0
+R6
+31
+Z16 !s110 1510738387
+!i10b 1
+Z17 !s108 1510738387.208000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht|
+Z19 !s107 D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht|
+!i113 1
+R11
+R12
+Aadder_arch
+R2
+R3
+DEx4 work 13 adder_vhd_tst 0 22 gWRVRU^U:Oo:fAZDk42[=1
+l50
+L33
+VP5L14351@MBH;c0PCH<iJ1
+!s100 YXGd:l3kQ;^II?mId3A@Z0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Efulladder
+Z20 w1509982325
+R2
+R3
+R0
+Z21 8D:/Dropbox/Fall 2017/ece3270/lab4/adder/fullAdder.vhd
+Z22 FD:/Dropbox/Fall 2017/ece3270/lab4/adder/fullAdder.vhd
+l0
+L13
+V_7lind^;:S0<`dG:QVR4F3
+!s100 [K[ekQ?OLdPn29m>;mhj61
+R6
+31
+R7
+!i10b 1
+Z23 !s108 1510738386.649000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/lab4/adder/fullAdder.vhd|
+Z25 !s107 D:/Dropbox/Fall 2017/ece3270/lab4/adder/fullAdder.vhd|
+!i113 1
+R11
+R12
+Abehavior_fulladder
+R2
+R3
+DEx4 work 9 fulladder 0 22 _7lind^;:S0<`dG:QVR4F3
+l22
+L21
+VUU;b0gJRbkj>deT3nK9ka3
+!s100 OIN<e245z`MS0iAfeC:O^0
+R6
+31
+R7
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12

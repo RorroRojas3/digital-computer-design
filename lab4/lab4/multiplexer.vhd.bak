@@ -1,0 +1,51 @@
+--	Name: Rodrigo Rojas
+--	Contact: rrojas@clemson.edu
+--	Purpose: Shifting Register
+
+-- Library Declaration Section 
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+USE ieee.numeric_std.ALL;
+
+ENTITY multiplexer IS
+	GENERIC (n: INTEGER := 8);
+	PORT (registerA : IN std_logic_vector((n-1) DOWNTO 0);
+			selectPin : IN std_logic_vector(2 DOWNTO 0);
+			signBit: OUT std_logic; 
+			output: OUT std_logic_vector((n-1) DOWNTO 0)
+			);
+END multiplexer;
+
+ARCHITECTURE behavior_multiplexer OF multiplexer IS
+	SIGNAL bitPairValue: std_logic_vector(2 DOWNTO 0);
+BEGIN
+	bitPairValue <= selectPin; -- Defines bitPair value of 0, 1, 2, -1, or -2
+	PROCESS (bitPairValue)
+		VARIABLE multiplicandValue: std_logic_vector((n-1) DOWNTO 0);
+		BEGIN
+			IF bitPairValue = "000" THEN -- If bitPair is 0
+				multiplicandValue := (OTHERS => '0');
+				signBit <= '0';
+			ELSIF bitPairValue = "001" THEN -- If bitPair is 1 
+				multiplicandValue := registerA;
+				signBit <= registerA(n-1);
+			ELSIF bitPairValue = "010" THEN -- If bitPair is 2
+				signBit <= registerA(n-1);
+				multiplicandValue := registerA((n-2) DOWNTO 0) & '0';
+			ELSIF bitPairValue = "011" THEN -- If bitPair is -1
+				multiplicandValue := NOT registerA;
+				multiplicandValue := std_logic_vector(unsigned(multiplicandValue + 1));
+				signBit <= multiplicandValue(n-1);
+			ELSIF bitPairValue = "100" THEN -- If bitPair is -2
+				multiplicandValue := NOT registerA;
+				multiplicandValue := std_logic_vector(unsigned(multiplicandValue + 1));
+				signBit <= multiplicandValue(n-1);
+				multiplicandValue := multiplicandValue((n-2) DOWNTO 0) & '0';
+			END IF;
+			output <= multiplicandValue;
+	END PROCESS;
+
+END behavior_multiplexer;
+		
+		

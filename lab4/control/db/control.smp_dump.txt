@@ -1,0 +1,9 @@
+
+State Machine - |control|controlState
+Name controlState.startS controlState.loadReg controlState.done controlState.addReg controlState.shiftReg controlState.resetS 
+controlState.resetS 0 0 0 0 0 0 
+controlState.shiftReg 0 0 0 0 1 1 
+controlState.addReg 0 0 0 1 0 1 
+controlState.done 0 0 1 0 0 1 
+controlState.loadReg 0 1 0 0 0 1 
+controlState.startS 1 0 0 0 0 1 

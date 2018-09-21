@@ -1,0 +1,38 @@
+--	Name: Rodrigo Rojas
+--	Contact: rrojas@clemson.edu
+--	Purpose: Shifting Register
+
+-- Library Declaration Section 
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
+USE ieee.numeric_std.ALL;
+
+ENTITY bitpairMutiplexer IS
+	GENERIC (n: INTEGER := 8);
+	PORT (registerA : IN std_logic_vector((n-1) DOWNTO 0);
+			status : IN std_logic_vector(2 DOWNTO 0);
+			output: OUT std_logic_vector((n-1) DOWNTO 0)
+			);
+END bitpairMutiplexer;
+
+ARCHITECTURE behavior_bitpairMultiplexer OF bitpairMutiplexer IS
+	SIGNAL multiplicandValue: std_logic_vector((n-1) DOWNTO 0);
+	SIGNAL bitPairValue: std_logic_vector(2 DOWNTO 0);
+BEGIN
+	bitPairValue <= status;
+	PROCESS (bitPairValue)
+		BEGIN
+			IF bitPairValue = "000" THEN -- If bitPair is 0
+				output <= (OTHERS => '0');
+			ELSIF bitPairValue = "001" OR bitPairValue = "010" THEN -- If bitPair is 1 or 2
+				output <= multiplicandValue;
+			ELSIF bitPairValue = "011" OR bitPairValue = "100" THEN -- If bitPair is -1 or -2
+				multiplicandValue <= NOT multiplicandValue;
+				multiplicandValue <= std_logic_vector(unsigned(multiplicandValue + 1));
+			END IF;
+	END PROCESS;
+		output <= multiplicandValue;
+END behavior_bitpairMultiplexer;
+		
+		

@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/multiplexer/multiplexer.vhd}
+

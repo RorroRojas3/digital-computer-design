@@ -1,0 +1,38 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+
+ENTITY traffic is
+	PORT(clock, resetn, ivalid, iready: IN std_logic;
+		  datain: IN std_logic_vector(7 downto 0);
+		  oready, ovalid: OUT std_logic;
+		  dataout: OUT std_logic_vector(7 downto 0));
+END traffic;
+
+ARCHITECTURE structure of traffic is
+	--Write the component instantiation here
+	
+	BEGIN
+	--Map your component here
+	
+END structure;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	

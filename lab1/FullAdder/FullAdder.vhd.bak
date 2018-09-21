@@ -1,0 +1,9 @@
+-- Full Adder
+
+LIBRARY ieee;
+USE ieee.std_logic_1664.ALL;
+ENTITY FullAdder IS
+	PORT (A, B, Cin: std_logic;
+			Sum, Cout: std_logic;
+	);
+END FULlAdder;

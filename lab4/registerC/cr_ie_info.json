@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Ubuntu 16.04.3",
+		"os_version" : "16"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "none",
+		"error_message" : "Segment Violation at 0x1cd0000",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7fe0d5a4d304: QtGui.so.4 + 0x789304 (_ZNK28QSortFilterProxyModelPrivate15proxy_to_sourceERK11QModelIndex + 0x1b4)\n\t0x7fe0d5a4d41d: QtGui.so.4 + 0x78941d (_ZNK21QSortFilterProxyModel11mapToSourceERK11QModelIndex + 0xd)\n\t0x7fe0d5a45978: QtGui.so.4 + 0x781978 (_ZNK21QSortFilterProxyModel4dataERK11QModelIndexi + 0x28)\n\t0x7fe0d5a66ea0: QtGui.so.4 + 0x7a2ea0 (_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex + 0x40)\n\t0x7fe0d5a6641c: QtGui.so.4 + 0x7a241c (_ZNK19QStyledItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex + 0x3c)\n\t0x7fe0b99c1553: prj_pjnq + 0x44553 (_ZNK33PJNQ_HIERARCHY_TREE_ITEM_DELEGATE5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex + 0x33)\n\t0x7fe0dee6eaeb: gcl_afcq + 0x17baeb (_ZN13AFCQ_TREE_TIP10paintEventEP11QPaintEvent + 0x133)\n\t0x7fe0d552cb94: QtGui.so.4 + 0x268b94 (_ZN7QWidget5eventEP6QEvent + 0x8b4)\n\t0x7fe0dee6f26b: gcl_afcq + 0x17c26b (_ZN13AFCQ_TREE_TIP5eventEP6QEvent + 0x53)\n\t0x7fe0d54dd93c: QtGui.so.4 + 0x21993c (_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent + 0x8c)\n\t0x7fe0d54e3dad: QtGui.so.4 + 0x21fdad (_ZN12QApplication6notifyEP7QObjectP6QEvent + 0x22d)\n\t0x7fe0d61533cd: QtCore.so.4 + 0x1933cd (_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent + 0x6d)\n\t0x7fe0d55272a1: QtGui.so.4 + 0x2632a1 (_ZN14QWidgetPrivate10drawWidgetEP12QPaintDeviceRK7QRegionRK6QPointiP8QPainterP19QWidgetBackingStore + 0x571)\n\t0x7fe0d56e1ef9: QtGui.so.4 + 0x41def9 (_ZN19QWidgetBackingStore4syncEv + 0xfb9)\n\t0x7fe0d56e2275: QtGui.so.4 + 0x41e275 (_ZN19QWidgetBackingStore4syncEP7QWidgetRK7QRegion + 0x105)\n\t0x7fe0d5547538: QtGui.so.4 + 0x283538 (_ZN9QETWidget19translatePaintEventEPK7_XEvent + 0x238)\n\t0x7fe0d55545eb: QtGui.so.4 + 0x2905eb (_ZN12QApplication15x11ProcessEventEP7_XEvent + 0xf0b)\n\t0x7fe0d557a042: QtGui.so.4 + 0x2b6042 (_ZL22x11EventSourceDispatchP8_GSourcePFiPvES1_ + 0x1d2)\n\t0x7fe0ce6dd197: glib-2.0.so.0 + 0x4a197 (g_main_context_dispatch + 0x2a7)\n\t0x7fe0ce6dd3f0: glib-2.0.so.0 + 0x4a3f0\n\t0x7fe0ce6dd49c: glib-2.0.so.0 + 0x4a49c (g_main_context_iteration + 0x2c)\n\t0x7fe0d617ffd5: QtCore.so.4 + 0x1bffd5 (_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x65)\n\t0x7fe0d557a0d6: QtGui.so.4 + 0x2b60d6 (_ZN23QGuiEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x26)\n\t0x7fe0d6151f9f: QtCore.so.4 + 0x191f9f (_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE + 0x2f)\n\t0x7fe0d6152295: QtCore.so.4 + 0x192295 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x175)\n\t0x7fe0d615753b: QtCore.so.4 + 0x19753b (_ZN16QCoreApplication4execEv + 0x8b)\n\t   0x40b5f8: quartus + 0xb5f8 (_Z8qgq_mainiPPKc + 0x68)\n\t0x7fe0da5e0ef0: ccl_msg + 0x49ef0 (_Z15msg_main_threadPv + 0x10)\n\t0x7fe0d7728d4c: ccl_thr + 0x5d4c (thr_final_wrapper + 0xc)\n\t0x7fe0da5e0fa5: ccl_msg + 0x49fa5 (_Z18msg_thread_wrapperPFPvS_ES_ + 0x5b)\n\t   0x41f05b: quartus + 0x1f05b (_Z18mem_thread_wrapperPFPvS_ES_ + 0x9b)\n\t0x7fe0d7d65def: ccl_err + 0x8def (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7fe0d7729112: ccl_thr + 0x6112 (thr_thread_wrapper + 0x15)\n\t0x7fe0da5e2ee2: ccl_msg + 0x4bee2 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)\n\t   0x40b6ca: quartus + 0xb6ca (main + 0x26)\n\t0x7fe0cf8cc830: c.so.6 + 0x20830 (__libc_start_main + 0xf0)\n\t   0x40b4b1: quartus + 0xb4b1\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "15.0.2",
+		"build" : "153",
+		"edition" : "Web Edition"
+	}
+}

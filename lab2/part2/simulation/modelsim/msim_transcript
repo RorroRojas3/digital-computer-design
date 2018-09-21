@@ -1,0 +1,85 @@
+# do traffic_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim LE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:03:03 on Sep 29,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity traffic
+# -- Compiling architecture structure of traffic
+# End time: 14:03:03 on Sep 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic_decoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:03:03 on Sep 29,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity traffic_decoder
+# -- Compiling architecture behavior of traffic_decoder
+# End time: 14:03:03 on Sep 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:03:03 on Sep 29,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity traffic_vhd_tst
+# -- Compiling architecture traffic_arch of traffic_vhd_tst
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht(87): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht(91): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht(95): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht(99): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht(103): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 14:03:03 on Sep 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  TB
+# vsim -i -l msim_transcript -do "traffic_run_msim_rtl_vhdl.do" 
+# Start time: 14:03:03 on Sep 29,2017
+# ** Error: (vsim-3170) Could not find '/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/rtl_work.TB'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./traffic_run_msim_rtl_vhdl.do PAUSED at line 13
+vsim work.traffic_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.traffic_vhd_tst(traffic_arch)
+# Loading work.traffic(structure)
+# Loading work.traffic_decoder(behavior)
+# ** Warning: (vsim-8683) Uninitialized out port /traffic_vhd_tst/i1/oready has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /traffic_vhd_tst/i1/ovalid has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint  \
+sim:/traffic_vhd_tst/clock \
+sim:/traffic_vhd_tst/datain \
+sim:/traffic_vhd_tst/dataout \
+sim:/traffic_vhd_tst/iready \
+sim:/traffic_vhd_tst/ivalid \
+sim:/traffic_vhd_tst/oready \
+sim:/traffic_vhd_tst/ovalid \
+sim:/traffic_vhd_tst/resetn
+run 100 ns
+# End time: 14:03:43 on Sep 29,2017, Elapsed time: 0:00:40
+# Errors: 1, Warnings: 2

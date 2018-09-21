@@ -1,0 +1,142 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do PartThree_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/PartThree.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:55:54 on Sep 16,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/PartThree.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PartThree
+# -- Compiling architecture behavior_PartThree of PartThree
+# End time: 13:55:55 on Sep 16,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitBinary.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:55:55 on Sep 16,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitBinary.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FourBitBinary
+# -- Compiling architecture behavior_binaryToDecimal of FourBitBinary
+# End time: 13:55:55 on Sep 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitDisplay.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:55:56 on Sep 16,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitDisplay.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FourBitDisplay
+# -- Compiling architecture behavior_sevenSegmentDisplay of FourBitDisplay
+# End time: 13:55:56 on Sep 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitFullAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:55:56 on Sep 16,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitFullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FourBitFullAdder
+# -- Compiling architecture behavior_FourBitFullAdder of FourBitFullAdder
+# End time: 13:55:56 on Sep 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FullAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:55:57 on Sep 16,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture behavior_FullAdder of FullAdder
+# End time: 13:55:57 on Sep 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitBinary.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:55:57 on Sep 16,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitBinary.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FiveBitBinary
+# -- Compiling architecture behavior_binaryToDecimal of FiveBitBinary
+# End time: 13:55:58 on Sep 16,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitDisplay.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:55:58 on Sep 16,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitDisplay.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FiveBitDisplay
+# -- Compiling architecture behavior_sevenSegmentDisplay of FiveBitDisplay
+# End time: 13:55:58 on Sep 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.partthree
+# vsim -gui "+altera" -l msim_transcript -do "PartThree_run_msim_rtl_vhdl.do" 
+# Start time: 13:56:01 on Sep 16,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.partthree(behavior_partthree)
+# Loading work.fourbitbinary(behavior_binarytodecimal)
+# Loading work.fourbitdisplay(behavior_sevensegmentdisplay)
+# Loading work.fourbitfulladder(behavior_fourbitfulladder)
+# Loading work.fulladder(behavior_fulladder)
+# Loading work.fivebitbinary(behavior_binarytodecimal)
+# Loading work.fivebitdisplay(behavior_sevensegmentdisplay)
+add wave -position insertpoint  \
+sim:/partthree/SW \
+sim:/partthree/HEX5 \
+sim:/partthree/HEX4 \
+sim:/partthree/HEX3 \
+sim:/partthree/HEX2 \
+sim:/partthree/HEX1 \
+sim:/partthree/HEX0 \
+sim:/partthree/SWLEDS \
+sim:/partthree/tempInputA \
+sim:/partthree/tempInputB \
+sim:/partthree/tempSum \
+sim:/partthree/tempCin
+force -freeze sim:/partthree/SW 0010000110 0
+run
+force -freeze sim:/partthree/SW 0110000110 0
+run
+force -freeze sim:/partthree/SW 1110000110 0
+run
+force -freeze sim:/partthree/SW 0010001111 0
+run
+force -freeze sim:/partthree/SW 1010001111 0
+run
+force -freeze sim:/partthree/SW 0110001111 0
+run
+force -freeze sim:/partthree/SW 1110001111 0
+run
+force -freeze sim:/partthree/SW 0100000000 0
+run
+force -freeze sim:/partthree/SW 1100000000 0
+run
+force -freeze sim:/partthree/SW 0000000010 0
+run
+force -freeze sim:/partthree/SW 1100000010 0
+run
+# End time: 14:03:06 on Sep 16,2017, Elapsed time: 0:07:05
+# Errors: 0, Warnings: 0

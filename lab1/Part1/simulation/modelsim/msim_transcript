@@ -1,0 +1,69 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab1a_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/Lab1a.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:27:27 on Sep 19,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/Lab1a.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Lab1a
+# -- Compiling architecture behavior_binaryToDecimal of Lab1a
+# -- Compiling entity sevenSegmentDisplay
+# -- Compiling architecture behavior_sevenSegmentDisplay of sevenSegmentDisplay
+# End time: 22:27:27 on Sep 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:27:27 on Sep 19,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Lab1a_vhd_tst
+# -- Compiling architecture Lab1a_arch of Lab1a_vhd_tst
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht(67): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht(70): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht(76): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/Lab1a.vht(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 22:27:28 on Sep 19,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  TB1a
+# vsim -gui "+altera" -l msim_transcript -do "Lab1a_run_msim_rtl_vhdl.do" 
+# Start time: 22:27:29 on Sep 19,2017
+# ** Error: (vsim-3170) Could not find 'D:/Dropbox/Fall 2017/ece3270/Lab 1/Part1/simulation/modelsim/rtl_work.TB1a'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Lab1a_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.lab1a_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab1a_vhd_tst(lab1a_arch)
+# Loading work.lab1a(behavior_binarytodecimal)
+# Loading work.sevensegmentdisplay(behavior_sevensegmentdisplay)
+add wave -position insertpoint  \
+sim:/lab1a_vhd_tst/HEX0 \
+sim:/lab1a_vhd_tst/HEX1 \
+sim:/lab1a_vhd_tst/V
+run 100 ns
+# End time: 22:27:54 on Sep 19,2017, Elapsed time: 0:00:25
+# Errors: 1, Warnings: 0

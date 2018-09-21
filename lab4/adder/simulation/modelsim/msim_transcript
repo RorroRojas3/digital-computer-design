@@ -1,0 +1,90 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do adder_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/lab4/adder/adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 04:33:06 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/lab4/adder/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder
+# -- Compiling architecture structure_adder of adder
+# End time: 04:33:06 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/lab4/adder/fullAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 04:33:06 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/lab4/adder/fullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture behavior_FullAdder of FullAdder
+# End time: 04:33:07 on Nov 15,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 04:33:07 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_vhd_tst
+# -- Compiling architecture adder_arch of adder_vhd_tst
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/adder.vht(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 04:33:07 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  TBadder
+# vsim -gui "+altera" -l msim_transcript -do "adder_run_msim_rtl_vhdl.do" 
+# Start time: 04:33:07 on Nov 15,2017
+# ** Error: (vsim-3170) Could not find 'D:/Dropbox/Fall 2017/ece3270/lab4/adder/simulation/modelsim/rtl_work.TBadder'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./adder_run_msim_rtl_vhdl.do PAUSED at line 13
+vsim work.adder_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_vhd_tst(adder_arch)
+# Loading work.adder(structure_adder)
+# Loading work.fulladder(behavior_fulladder)
+add wave -position insertpoint  \
+sim:/adder_vhd_tst/bitPair
+add wave -position insertpoint  \
+sim:/adder_vhd_tst/Cin
+add wave -position insertpoint  \
+sim:/adder_vhd_tst/registerC
+add wave -position insertpoint  \
+sim:/adder_vhd_tst/sum
+add wave -position insertpoint  \
+sim:/adder_vhd_tst/Cout
+run 300 ns
+restart
+run 150 ns
+restart
+run 50 ns
+restart
+run 80 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 04:56:48 on Nov 15,2017, Elapsed time: 0:23:41
+# Errors: 1, Warnings: 0

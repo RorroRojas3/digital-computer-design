@@ -1,0 +1,80 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do binaryToDecimal_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/binaryToDecimal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:05:17 on Sep 18,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/binaryToDecimal.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity binaryToDecimal
+# -- Compiling architecture behavior_binaryToDecimal of binaryToDecimal
+# End time: 16:05:17 on Sep 18,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/sevenSegmentDisplay.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:05:17 on Sep 18,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/sevenSegmentDisplay.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sevenSegmentDisplay
+# -- Compiling architecture behavior_sevenSegmentDisplay of sevenSegmentDisplay
+# End time: 16:05:18 on Sep 18,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:05:18 on Sep 18,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity binaryToDecimal_vhd_tst
+# -- Compiling architecture binaryToDecimal_arch of binaryToDecimal_vhd_tst
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht(67): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht(70): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht(76): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/binaryToDecimal.vht(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:05:18 on Sep 18,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  BCDTestbench
+# vsim -gui "+altera" -l msim_transcript -do "binaryToDecimal_run_msim_rtl_vhdl.do" 
+# Start time: 16:05:19 on Sep 18,2017
+# ** Error: (vsim-3170) Could not find 'C:/Users/User/Dropbox/Fall 2017/ece3270/Lab 1/BCDConverter/simulation/modelsim/rtl_work.BCDTestbench'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./binaryToDecimal_run_msim_rtl_vhdl.do PAUSED at line 13
+vsim work.binarytodecimal_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.binarytodecimal_vhd_tst(binarytodecimal_arch)
+# Loading work.binarytodecimal(behavior_binarytodecimal)
+# Loading work.sevensegmentdisplay(behavior_sevensegmentdisplay)
+add wave -position insertpoint  \
+sim:/binarytodecimal_vhd_tst/V
+add wave -position insertpoint  \
+sim:/binarytodecimal_vhd_tst/HEX1
+add wave -position insertpoint  \
+sim:/binarytodecimal_vhd_tst/HEX0
+run 100 ns
+# End time: 16:07:27 on Sep 18,2017, Elapsed time: 0:02:08
+# Errors: 1, Warnings: 0

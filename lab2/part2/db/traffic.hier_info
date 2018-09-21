@@ -1,0 +1,68 @@
+|traffic
+clock => ~NO_FANOUT~
+resetn => ~NO_FANOUT~
+ivalid => traffic_decoder:TrafficDecoder.enable
+iready => ~NO_FANOUT~
+datain[0] => traffic_decoder:TrafficDecoder.input[0]
+datain[1] => traffic_decoder:TrafficDecoder.input[1]
+datain[2] => traffic_decoder:TrafficDecoder.input[2]
+datain[3] => ~NO_FANOUT~
+datain[4] => ~NO_FANOUT~
+datain[5] => ~NO_FANOUT~
+datain[6] => ~NO_FANOUT~
+datain[7] => ~NO_FANOUT~
+oready <= oready.DB_MAX_OUTPUT_PORT_TYPE
+ovalid <= comb.DB_MAX_OUTPUT_PORT_TYPE
+dataout[0] <= traffic_decoder:TrafficDecoder.output[0]
+dataout[1] <= traffic_decoder:TrafficDecoder.output[1]
+dataout[2] <= traffic_decoder:TrafficDecoder.output[2]
+dataout[3] <= traffic_decoder:TrafficDecoder.output[3]
+dataout[4] <= traffic_decoder:TrafficDecoder.output[4]
+dataout[5] <= traffic_decoder:TrafficDecoder.output[5]
+dataout[6] <= traffic_decoder:TrafficDecoder.output[6]
+dataout[7] <= traffic_decoder:TrafficDecoder.output[7]
+
+
+|traffic|traffic_decoder:TrafficDecoder
+input[0] => Mux0.IN10
+input[0] => Mux1.IN10
+input[0] => Mux2.IN10
+input[0] => Mux3.IN10
+input[0] => Mux4.IN10
+input[0] => Mux5.IN10
+input[0] => Mux6.IN10
+input[0] => Mux7.IN10
+input[1] => Mux0.IN9
+input[1] => Mux1.IN9
+input[1] => Mux2.IN9
+input[1] => Mux3.IN9
+input[1] => Mux4.IN9
+input[1] => Mux5.IN9
+input[1] => Mux6.IN9
+input[1] => Mux7.IN9
+input[2] => Mux0.IN8
+input[2] => Mux1.IN8
+input[2] => Mux2.IN8
+input[2] => Mux3.IN8
+input[2] => Mux4.IN8
+input[2] => Mux5.IN8
+input[2] => Mux6.IN8
+input[2] => Mux7.IN8
+enable => output.OUTPUTSELECT
+enable => output.OUTPUTSELECT
+enable => output.OUTPUTSELECT
+enable => output.OUTPUTSELECT
+enable => output.OUTPUTSELECT
+enable => output.OUTPUTSELECT
+enable => output.OUTPUTSELECT
+enable => output.OUTPUTSELECT
+output[0] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+

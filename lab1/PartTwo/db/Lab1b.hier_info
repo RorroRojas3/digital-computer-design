@@ -1,0 +1,124 @@
+|Lab1b
+A[0] => finalResult.DATAA
+A[0] => FullAdder:FullAdder0.A
+A[1] => finalResult.DATAA
+A[1] => FullAdder:FullAdder1.A
+A[2] => finalResult.DATAA
+A[2] => FullAdder:FullAdder2.A
+A[3] => finalResult.DATAA
+A[3] => FullAdder:FULLAdder3.A
+B[0] => finalResult.DATAA
+B[0] => FullAdder:FullAdder0.B
+B[1] => finalResult.DATAA
+B[1] => FullAdder:FullAdder1.B
+B[2] => finalResult.DATAA
+B[2] => FullAdder:FullAdder2.B
+B[3] => finalResult.DATAA
+B[3] => FullAdder:FULLAdder3.B
+Cin => finalResult.DATAA
+Cin => FullAdder:FullAdder0.Cin
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+triggerSwitch => finalResult.OUTPUTSELECT
+SWLEDS[0] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[1] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[2] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[3] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[4] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[5] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[6] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[7] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[8] <= finalResult.DB_MAX_OUTPUT_PORT_TYPE
+SWLEDS[9] <= <GND>
+
+
+|Lab1b|FullAdder:FullAdder0
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1b|FullAdder:FullAdder1
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1b|FullAdder:FullAdder2
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab1b|FullAdder:FULLAdder3
+B => Cout.IN0
+B => Cout.IN0
+B => Sum.IN0
+B => Sum.IN0
+B => Sum.IN0
+A => Cout.IN1
+A => Cout.IN0
+A => Sum.IN1
+A => Sum.IN1
+A => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+

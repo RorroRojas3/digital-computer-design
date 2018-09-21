@@ -1,0 +1,76 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do registerA_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/lab4/registerA/registerA.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 05:10:33 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/lab4/registerA/registerA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registerA
+# -- Compiling architecture behavior_registerA of registerA
+# End time: 05:10:33 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 05:10:34 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registerA_vhd_tst
+# -- Compiling architecture registerA_arch of registerA_vhd_tst
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(74): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(76): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(92): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/registerA.vht(96): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 05:10:34 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  TBRegisterA
+# vsim -gui "+altera" -l msim_transcript -do "registerA_run_msim_rtl_vhdl.do" 
+# Start time: 05:10:34 on Nov 15,2017
+# ** Error: (vsim-3170) Could not find 'D:/Dropbox/Fall 2017/ece3270/lab4/registerA/simulation/modelsim/rtl_work.TBRegisterA'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./registerA_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.registera_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registera_vhd_tst(registera_arch)
+# Loading work.registera(behavior_registera)
+add wave -position insertpoint  \
+sim:/registera_vhd_tst/clock
+add wave -position insertpoint  \
+sim:/registera_vhd_tst/loadEnable
+add wave -position insertpoint  \
+sim:/registera_vhd_tst/input
+add wave -position insertpoint  \
+sim:/registera_vhd_tst/reset
+add wave -position insertpoint  \
+sim:/registera_vhd_tst/multiplicand
+run 80 ns
+restart
+run 250 ns
+# End time: 05:12:37 on Nov 15,2017, Elapsed time: 0:02:03
+# Errors: 1, Warnings: 0

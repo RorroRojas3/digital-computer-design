@@ -1,0 +1,5 @@
+-- Binary to Decimal Converter and Displayer of Decimal in 7-Segment LED Display
+
+-- Standard libary ieee is used along with its sub-library std_logic_1664
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;

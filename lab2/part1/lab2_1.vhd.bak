@@ -1,0 +1,39 @@
+-- Author: Rodrigo Ignacio Rojas Garcia
+-- Contact: rrojas@clemson.edu
+-- Purpose: Create a Decoder
+-- Board: DE1_SoC 5CSEMA5F31C6
+
+-- Standard Library iee is used along with its sub-library std_logic_1644
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY lab2_1 IS PORT
+(
+	decInputs: IN std_logic_vector(2 DOWNTO 0);
+	decEnable: IN std_logic;
+	decOutput: OUT std_logic_vector(7 DOWNTO 0)
+);
+END lab2_1;
+
+ARCHITECTURE behavior_lab2_1 OF lab2_1 IS
+
+BEGIN
+	PROCESS(decInputs, decEnable)
+		BEGIN
+			CASE decEnable IS
+				WHEN '1' =>
+					CASE decInputs IS
+						WHEN "000" => decOutput <= "11111110";
+						WHEN "001" => decOutput <= "11111101";
+						WHEN "010" => decOutput <= "11111011";
+						WHEN "011" => decOutput <= "11110111";
+						WHEN "100" => decOutput <= "11101111";
+						WHEN "101" => decOutput <= "11011111";
+						WHEN "110" => decOutput <= "10111111";
+						WHEN "111" => decOutput <= "01111111";
+						WHEN OTHERS => decOutput <= "11111111";
+					END CASE;
+				WHEN OTHERS => decOutput <= "11111111";
+			END CASE;
+		END PROCESS;	
+END behavior_lab2_1;

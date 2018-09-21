@@ -1,0 +1,283 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/simulation/modelsim
+Efivebitbinary
+Z1 w1505520687
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitBinary.vhd
+Z5 FD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitBinary.vhd
+l0
+L9
+V4A8_JBh^b:o>zTZ5Q4>IZ1
+!s100 ;^nR>3J0cEnL:Q[bFJAXk3
+Z6 OV;C;10.3d;59
+31
+Z7 !s110 1505584557
+!i10b 1
+Z8 !s108 1505584557.717000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitBinary.vhd|
+Z10 !s107 D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitBinary.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Abehavior_binarytodecimal
+R2
+R3
+DEx4 work 13 fivebitbinary 0 22 4A8_JBh^b:o>zTZ5Q4>IZ1
+l28
+L20
+Vl5X`:Z<IYiY6I:4me5kQO2
+!s100 1RED1^H110h1a[EDRZBO32
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efivebitdisplay
+Z13 w1505520704
+R2
+R3
+R0
+Z14 8D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitDisplay.vhd
+Z15 FD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitDisplay.vhd
+l0
+L9
+VdJoX[]0fZzii9kXJoFY:]0
+!s100 A8AU1ZBU]hj?lWGXFg4ec3
+R6
+31
+Z16 !s110 1505584558
+!i10b 1
+Z17 !s108 1505584558.282000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitDisplay.vhd|
+Z19 !s107 D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FiveBitDisplay.vhd|
+!i113 1
+R11
+R12
+Abehavior_sevensegmentdisplay
+R2
+R3
+DEx4 work 14 fivebitdisplay 0 22 dJoX[]0fZzii9kXJoFY:]0
+l17
+L16
+Vm:RD3=;JVT2gz=<h7zZ`92
+!s100 jlc]=H1EHL9lJWmR?a<Rj3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Efourbitbinary
+Z20 w1505516444
+R2
+R3
+R0
+Z21 8D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitBinary.vhd
+Z22 FD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitBinary.vhd
+l0
+L9
+VTDgmS>_g5gfb]MR1>iAa:3
+!s100 kkTe7gnO?6BWM0foANMSl1
+R6
+31
+Z23 !s110 1505584555
+!i10b 1
+Z24 !s108 1505584555.505000
+Z25 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitBinary.vhd|
+Z26 !s107 D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitBinary.vhd|
+!i113 1
+R11
+R12
+Abehavior_binarytodecimal
+R2
+R3
+DEx4 work 13 fourbitbinary 0 22 TDgmS>_g5gfb]MR1>iAa:3
+l27
+L19
+VTcCekEcB5T9<bjid<YbkO0
+!s100 ?KAzG`2_VX<?Q:gcId`Gi3
+R6
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Efourbitdisplay
+Z27 w1505516660
+R2
+R3
+R0
+Z28 8D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitDisplay.vhd
+Z29 FD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitDisplay.vhd
+l0
+L9
+VA581LT?5^NCMAM1MfLU4>2
+!s100 deTaj=@:lg>Ichg41cJEZ0
+R6
+31
+Z30 !s110 1505584556
+!i10b 1
+Z31 !s108 1505584556.047000
+Z32 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitDisplay.vhd|
+Z33 !s107 D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitDisplay.vhd|
+!i113 1
+R11
+R12
+Abehavior_sevensegmentdisplay
+R2
+R3
+DEx4 work 14 fourbitdisplay 0 22 A581LT?5^NCMAM1MfLU4>2
+l17
+L16
+V<TCPINUm>RIT`AXJOUYh_3
+!s100 6YzY^I`UcS3[[a]gA:IZE2
+R6
+31
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Efourbitfulladder
+Z34 w1505518017
+R2
+R3
+R0
+Z35 8D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitFullAdder.vhd
+Z36 FD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitFullAdder.vhd
+l0
+L14
+VJRgd@oBChPn@FIIdKmG_S1
+!s100 i`7fmobYSZRoTjCjPAWLL0
+R6
+31
+R30
+!i10b 1
+Z37 !s108 1505584556.621000
+Z38 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitFullAdder.vhd|
+Z39 !s107 D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FourBitFullAdder.vhd|
+!i113 1
+R11
+R12
+Abehavior_fourbitfulladder
+R2
+R3
+DEx4 work 16 fourbitfulladder 0 22 JRgd@oBChPn@FIIdKmG_S1
+l28
+L22
+VOK@N5XiFXLM1cb`fKHSjA0
+!s100 ;eXB;;HOm=;>bQ:VoMgEo1
+R6
+31
+R30
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R11
+R12
+Efulladder
+Z40 w1505518049
+R2
+R3
+R0
+Z41 8D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FullAdder.vhd
+Z42 FD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FullAdder.vhd
+l0
+L13
+Vmg_OPH>nE=D?LONzW3b]61
+!s100 a3IXLQ:YHV>4gioiaXh<`3
+R6
+31
+R7
+!i10b 1
+Z43 !s108 1505584557.169000
+Z44 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FullAdder.vhd|
+Z45 !s107 D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/FullAdder.vhd|
+!i113 1
+R11
+R12
+Abehavior_fulladder
+R2
+R3
+DEx4 work 9 fulladder 0 22 mg_OPH>nE=D?LONzW3b]61
+l22
+L21
+VUU;b0gJRbkj>deT3nK9ka3
+!s100 OIN<e245z`MS0iAfeC:O^0
+R6
+31
+R7
+!i10b 1
+R43
+R44
+R45
+!i113 1
+R11
+R12
+Epartthree
+Z46 w1505584359
+R2
+R3
+R0
+Z47 8D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/PartThree.vhd
+Z48 FD:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/PartThree.vhd
+l0
+L9
+VRRc9H@oei4OD=3M1_ljL20
+!s100 `8=CZLQc@H93YGT=HaSdA2
+R6
+31
+Z49 !s110 1505584554
+!i10b 1
+Z50 !s108 1505584554.944000
+Z51 !s90 -reportprogress|300|-93|-work|work|D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/PartThree.vhd|
+Z52 !s107 D:/Dropbox/Fall 2017/ece3270/Lab 1/Part3/PartThree.vhd|
+!i113 1
+R11
+R12
+Abehavior_partthree
+R2
+R3
+DEx4 work 9 partthree 0 22 RRc9H@oei4OD=3M1_ljL20
+l42
+L16
+VcLc7?lzdSJhHKaG[V4?3?1
+!s100 :e1ik<k]lj]Y<?`V36iDY1
+R6
+31
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 1
+R11
+R12

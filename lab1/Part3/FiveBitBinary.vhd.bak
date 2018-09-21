@@ -1,0 +1,35 @@
+-- Binary to Decimal Converter and Displayer of Decimal in 7-Segment LED Display
+
+-- Standard libary ieee is used along with its sub-library std_logic_1664
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+-- Entity of a Binary to Decimal is declared with one input of four bits
+-- and an output of five bits 
+ENTITY binaryToDecimal IS PORT
+(
+	V:	IN std_logic_vector(3 DOWNTO 0);
+	HEX1, HEX0: OUT std_logic_vector(6 DOWNTO 0)
+);
+END binaryToDecimal;
+
+
+-- Architecture of a Binary to Decimal converter is declared and
+-- describes the funcitonality of it 
+ARCHITECTURE behavior_binaryToDecimal OF binaryToDecimal IS
+	-- Creates variables HEX1 and HEX2 which will contain 1/o for 7-Segment Display based on V input
+	COMPONENT sevenSegmentDisplay
+		PORT (M: IN std_logic_vector(4 DOWNTO 0);
+				HEX1, HEX0:	OUT std_logic_vector(6 DOWNTO 0)
+				);
+	END COMPONENT;	
+	SIGNAL BCDConversion: std_logic_vector(4 DOWNTO 0);
+BEGIN 
+		BCDConversion(4) <= (V(3) AND V(2)) OR (V(3) AND V(1)); 	-- Boolean Logic based on Kornough Map for output M(4)
+		BCDConversion(3) <= V(3) AND (NOT V(2)) AND (NOT V(1));	-- Boolean Logic based on Kornough Map for output M(3)
+		BCDConversion(2) <= ((NOT V(3)) AND V(2)) OR (V(2) AND V(1));	-- Boolean Logic based on Kornough Map for output M(2)
+		BCDConversion(1) <= (V(3) AND V(2) AND (NOT V(1))) OR ((NOT V(3)) AND V(1));	-- Boolean Logic based on Kornough Map for output M(1)
+		BCDConversion(0) <= V(0);	-- Boolean Logic based on Kornough Map for output M(0)
+		
+		DISPLAY: COMPONENT sevenSegmentDisplay PORT MAP (M => BCDConversion, HEX1 => HEX1, HEX0 => HEX0);
+END behavior_binaryToDecimal;

@@ -1,0 +1,81 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do registerC_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/lab4/registerC/registerC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 05:34:05 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/lab4/registerC/registerC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registerC
+# -- Compiling architecture behavior_registerC of registerC
+# End time: 05:34:06 on Nov 15,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 05:34:06 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registerC_vhd_tst
+# -- Compiling architecture registerC_arch of registerC_vhd_tst
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht(87): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht(90): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht(97): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/registerC.vht(103): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 05:34:06 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  t
+# vsim -gui "+altera" -l msim_transcript -do "registerC_run_msim_rtl_vhdl.do" 
+# Start time: 05:34:06 on Nov 15,2017
+# ** Error: (vsim-3170) Could not find 'D:/Dropbox/Fall 2017/ece3270/lab4/registerC/simulation/modelsim/rtl_work.t'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./registerC_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.registerc_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.registerc_vhd_tst(registerc_arch)
+# Loading work.registerc(behavior_registerc)
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/clock
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/reset
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/loadEnable
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/addEnable
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/signBit
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/output
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/bitsToB
+run 200 ns
+add wave -position insertpoint  \
+sim:/registerc_vhd_tst/input
+restart
+run 200 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 

@@ -1,0 +1,98 @@
+# ERROR: No extended dataflow license exists
+# do control_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim LE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:23:10 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture behavior_control of control
+# End time: 16:23:10 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:23:10 on Nov 15,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_vhd_tst
+# -- Compiling architecture control_arch of control_vhd_tst
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(95): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(98): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(109): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(119): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(123): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(126): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(130): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(133): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(137): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(140): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(144): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(147): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/control.vht(151): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 16:23:10 on Nov 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 18
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  TBControl
+# vsim -i -l msim_transcript -do "control_run_msim_rtl_vhdl.do" 
+# Start time: 16:23:10 on Nov 15,2017
+# ** Error: (vsim-3170) Could not find '/home/rodrigo/Dropbox/Fall 2017/ece3270/lab4/control/simulation/modelsim/rtl_work.TBControl'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./control_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.control_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.control_vhd_tst(control_arch)
+# Loading work.control(behavior_control)
+add wave -position insertpoint  \
+sim:/control_vhd_tst/add \
+sim:/control_vhd_tst/busy \
+sim:/control_vhd_tst/clock \
+sim:/control_vhd_tst/countO \
+sim:/control_vhd_tst/load \
+sim:/control_vhd_tst/ovalid \
+sim:/control_vhd_tst/reset \
+sim:/control_vhd_tst/resetO \
+sim:/control_vhd_tst/shift \
+sim:/control_vhd_tst/start \
+sim:/control_vhd_tst/timeCount
+add wave -position insertpoint  \
+sim:/control_vhd_tst/i1/clock \
+sim:/control_vhd_tst/i1/reset \
+sim:/control_vhd_tst/i1/start \
+sim:/control_vhd_tst/i1/timeCount \
+sim:/control_vhd_tst/i1/busy \
+sim:/control_vhd_tst/i1/load \
+sim:/control_vhd_tst/i1/shift \
+sim:/control_vhd_tst/i1/add \
+sim:/control_vhd_tst/i1/resetO \
+sim:/control_vhd_tst/i1/countO \
+sim:/control_vhd_tst/i1/ovalid \
+sim:/control_vhd_tst/i1/controlState
+run 280 ns
+# End time: 16:37:10 on Nov 15,2017, Elapsed time: 0:14:00
+# Errors: 1, Warnings: 0

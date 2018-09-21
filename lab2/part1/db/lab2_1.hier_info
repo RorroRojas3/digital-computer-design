@@ -1,0 +1,43 @@
+|lab2_1
+decInputs[0] => Mux0.IN10
+decInputs[0] => Mux1.IN10
+decInputs[0] => Mux2.IN10
+decInputs[0] => Mux3.IN10
+decInputs[0] => Mux4.IN10
+decInputs[0] => Mux5.IN10
+decInputs[0] => Mux6.IN10
+decInputs[0] => Mux7.IN10
+decInputs[1] => Mux0.IN9
+decInputs[1] => Mux1.IN9
+decInputs[1] => Mux2.IN9
+decInputs[1] => Mux3.IN9
+decInputs[1] => Mux4.IN9
+decInputs[1] => Mux5.IN9
+decInputs[1] => Mux6.IN9
+decInputs[1] => Mux7.IN9
+decInputs[2] => Mux0.IN8
+decInputs[2] => Mux1.IN8
+decInputs[2] => Mux2.IN8
+decInputs[2] => Mux3.IN8
+decInputs[2] => Mux4.IN8
+decInputs[2] => Mux5.IN8
+decInputs[2] => Mux6.IN8
+decInputs[2] => Mux7.IN8
+decEnable => decOutput.OUTPUTSELECT
+decEnable => decOutput.OUTPUTSELECT
+decEnable => decOutput.OUTPUTSELECT
+decEnable => decOutput.OUTPUTSELECT
+decEnable => decOutput.OUTPUTSELECT
+decEnable => decOutput.OUTPUTSELECT
+decEnable => decOutput.OUTPUTSELECT
+decEnable => decOutput.OUTPUTSELECT
+decOutput[0] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+decOutput[1] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+decOutput[2] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+decOutput[3] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+decOutput[4] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+decOutput[5] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+decOutput[6] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+decOutput[7] <= decOutput.DB_MAX_OUTPUT_PORT_TYPE
+
+

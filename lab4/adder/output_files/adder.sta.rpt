@@ -1,0 +1,1555 @@
+TimeQuest Timing Analyzer report for adder
+Wed Nov 15 04:31:51 2017
+Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1100mV 85C Model Metastability Summary
+ 15. Slow 1100mV 0C Model Fmax Summary
+ 16. Slow 1100mV 0C Model Setup Summary
+ 17. Slow 1100mV 0C Model Hold Summary
+ 18. Slow 1100mV 0C Model Recovery Summary
+ 19. Slow 1100mV 0C Model Removal Summary
+ 20. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1100mV 0C Model Metastability Summary
+ 24. Fast 1100mV 85C Model Setup Summary
+ 25. Fast 1100mV 85C Model Hold Summary
+ 26. Fast 1100mV 85C Model Recovery Summary
+ 27. Fast 1100mV 85C Model Removal Summary
+ 28. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1100mV 85C Model Metastability Summary
+ 32. Fast 1100mV 0C Model Setup Summary
+ 33. Fast 1100mV 0C Model Hold Summary
+ 34. Fast 1100mV 0C Model Recovery Summary
+ 35. Fast 1100mV 0C Model Removal Summary
+ 36. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 37. Propagation Delay
+ 38. Minimum Propagation Delay
+ 39. Fast 1100mV 0C Model Metastability Summary
+ 40. Multicorner Timing Analysis Summary
+ 41. Propagation Delay
+ 42. Minimum Propagation Delay
+ 43. Board Trace Model Assignments
+ 44. Input Transition Times
+ 45. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 46. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 47. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 48. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 49. Clock Transfers
+ 50. Report TCCS
+ 51. Report RSKM
+ 52. Unconstrained Paths
+ 53. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
+; Revision Name      ; adder                                              ;
+; Device Family      ; Cyclone V                                          ;
+; Device Name        ; 5CSEMA5F31C6                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 3.20        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;  20.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1100mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1100mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1100mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 9.284 ;       ;       ; 9.929 ;
+; Cin          ; sum[0]      ; 6.733 ; 6.926 ; 6.945 ; 7.171 ;
+; Cin          ; sum[1]      ; 6.840 ; 6.956 ; 7.046 ; 7.167 ;
+; Cin          ; sum[2]      ; 7.297 ; 7.392 ; 7.641 ; 7.769 ;
+; Cin          ; sum[3]      ; 7.080 ; 7.117 ; 7.360 ; 7.389 ;
+; Cin          ; sum[4]      ; 7.242 ; 7.329 ; 7.584 ; 7.704 ;
+; Cin          ; sum[5]      ; 7.667 ; 7.707 ; 7.974 ; 7.964 ;
+; Cin          ; sum[6]      ; 8.667 ; 8.963 ; 9.147 ; 9.478 ;
+; Cin          ; sum[7]      ; 9.183 ; 9.318 ; 9.645 ; 9.772 ;
+; bitPair[0]   ; Cout        ; 9.140 ;       ;       ; 9.737 ;
+; bitPair[0]   ; sum[0]      ; 6.598 ; 6.742 ; 6.860 ; 6.990 ;
+; bitPair[0]   ; sum[1]      ; 6.597 ; 6.729 ; 6.865 ; 6.979 ;
+; bitPair[0]   ; sum[2]      ; 7.153 ; 7.248 ; 7.449 ; 7.577 ;
+; bitPair[0]   ; sum[3]      ; 6.936 ; 6.973 ; 7.168 ; 7.197 ;
+; bitPair[0]   ; sum[4]      ; 7.098 ; 7.185 ; 7.392 ; 7.512 ;
+; bitPair[0]   ; sum[5]      ; 7.523 ; 7.563 ; 7.782 ; 7.772 ;
+; bitPair[0]   ; sum[6]      ; 8.523 ; 8.819 ; 8.955 ; 9.286 ;
+; bitPair[0]   ; sum[7]      ; 9.039 ; 9.174 ; 9.453 ; 9.580 ;
+; bitPair[1]   ; Cout        ; 8.627 ;       ;       ; 9.042 ;
+; bitPair[1]   ; sum[1]      ; 6.023 ; 6.197 ; 6.239 ; 6.337 ;
+; bitPair[1]   ; sum[2]      ; 6.640 ; 6.735 ; 6.754 ; 6.882 ;
+; bitPair[1]   ; sum[3]      ; 6.423 ; 6.460 ; 6.473 ; 6.502 ;
+; bitPair[1]   ; sum[4]      ; 6.585 ; 6.672 ; 6.697 ; 6.817 ;
+; bitPair[1]   ; sum[5]      ; 7.010 ; 7.050 ; 7.087 ; 7.077 ;
+; bitPair[1]   ; sum[6]      ; 8.010 ; 8.306 ; 8.260 ; 8.591 ;
+; bitPair[1]   ; sum[7]      ; 8.526 ; 8.661 ; 8.758 ; 8.885 ;
+; bitPair[2]   ; Cout        ; 8.679 ;       ;       ; 9.351 ;
+; bitPair[2]   ; sum[2]      ; 6.049 ; 6.095 ; 6.256 ; 6.288 ;
+; bitPair[2]   ; sum[3]      ; 6.423 ; 6.503 ; 6.694 ; 6.724 ;
+; bitPair[2]   ; sum[4]      ; 6.306 ; 6.392 ; 6.490 ; 6.611 ;
+; bitPair[2]   ; sum[5]      ; 7.062 ; 7.102 ; 7.396 ; 7.386 ;
+; bitPair[2]   ; sum[6]      ; 8.062 ; 8.358 ; 8.569 ; 8.900 ;
+; bitPair[2]   ; sum[7]      ; 8.578 ; 8.713 ; 9.067 ; 9.194 ;
+; bitPair[3]   ; Cout        ; 8.854 ;       ;       ; 9.511 ;
+; bitPair[3]   ; sum[3]      ; 6.661 ; 6.691 ; 6.932 ; 6.968 ;
+; bitPair[3]   ; sum[4]      ; 6.278 ; 6.316 ; 6.576 ; 6.600 ;
+; bitPair[3]   ; sum[5]      ; 7.237 ; 7.277 ; 7.556 ; 7.546 ;
+; bitPair[3]   ; sum[6]      ; 8.237 ; 8.533 ; 8.729 ; 9.060 ;
+; bitPair[3]   ; sum[7]      ; 8.753 ; 8.888 ; 9.227 ; 9.354 ;
+; bitPair[4]   ; Cout        ; 7.287 ;       ;       ; 7.686 ;
+; bitPair[4]   ; sum[4]      ; 6.409 ; 6.439 ; 6.541 ; 6.571 ;
+; bitPair[4]   ; sum[5]      ; 6.320 ; 6.325 ; 6.565 ; 6.556 ;
+; bitPair[4]   ; sum[6]      ; 6.773 ; 7.021 ; 7.020 ; 7.254 ;
+; bitPair[4]   ; sum[7]      ; 7.186 ; 7.321 ; 7.402 ; 7.529 ;
+; bitPair[5]   ; Cout        ; 7.585 ;       ;       ; 8.069 ;
+; bitPair[5]   ; sum[5]      ; 6.795 ; 6.849 ; 7.083 ; 7.170 ;
+; bitPair[5]   ; sum[6]      ; 7.066 ; 7.363 ; 7.302 ; 7.632 ;
+; bitPair[5]   ; sum[7]      ; 7.484 ; 7.619 ; 7.785 ; 7.912 ;
+; bitPair[6]   ; Cout        ; 6.703 ;       ;       ; 7.070 ;
+; bitPair[6]   ; sum[6]      ; 7.501 ; 7.741 ; 7.683 ; 7.923 ;
+; bitPair[6]   ; sum[7]      ; 6.606 ; 6.754 ; 6.793 ; 6.923 ;
+; bitPair[7]   ; Cout        ; 6.731 ;       ;       ; 7.198 ;
+; bitPair[7]   ; sum[7]      ; 6.753 ; 6.936 ; 6.933 ; 7.162 ;
+; registerC[0] ; Cout        ; 8.968 ;       ;       ; 9.387 ;
+; registerC[0] ; sum[0]      ; 6.426 ; 6.555 ; 6.502 ; 6.637 ;
+; registerC[0] ; sum[1]      ; 6.304 ; 6.483 ; 6.388 ; 6.601 ;
+; registerC[0] ; sum[2]      ; 6.981 ; 7.076 ; 7.099 ; 7.227 ;
+; registerC[0] ; sum[3]      ; 6.764 ; 6.801 ; 6.818 ; 6.847 ;
+; registerC[0] ; sum[4]      ; 6.926 ; 7.013 ; 7.042 ; 7.162 ;
+; registerC[0] ; sum[5]      ; 7.351 ; 7.391 ; 7.432 ; 7.422 ;
+; registerC[0] ; sum[6]      ; 8.351 ; 8.647 ; 8.605 ; 8.936 ;
+; registerC[0] ; sum[7]      ; 8.867 ; 9.002 ; 9.103 ; 9.230 ;
+; registerC[1] ; Cout        ; 9.461 ;       ;       ; 9.983 ;
+; registerC[1] ; sum[1]      ; 6.807 ; 6.984 ; 6.981 ; 7.193 ;
+; registerC[1] ; sum[2]      ; 7.474 ; 7.569 ; 7.695 ; 7.823 ;
+; registerC[1] ; sum[3]      ; 7.257 ; 7.294 ; 7.414 ; 7.443 ;
+; registerC[1] ; sum[4]      ; 7.419 ; 7.506 ; 7.638 ; 7.758 ;
+; registerC[1] ; sum[5]      ; 7.844 ; 7.884 ; 8.028 ; 8.018 ;
+; registerC[1] ; sum[6]      ; 8.844 ; 9.140 ; 9.201 ; 9.532 ;
+; registerC[1] ; sum[7]      ; 9.360 ; 9.495 ; 9.699 ; 9.826 ;
+; registerC[2] ; Cout        ; 8.902 ;       ;       ; 9.443 ;
+; registerC[2] ; sum[2]      ; 6.572 ; 6.603 ; 6.783 ; 6.820 ;
+; registerC[2] ; sum[3]      ; 6.470 ; 6.564 ; 6.728 ; 6.855 ;
+; registerC[2] ; sum[4]      ; 6.550 ; 6.573 ; 6.763 ; 6.792 ;
+; registerC[2] ; sum[5]      ; 7.285 ; 7.325 ; 7.488 ; 7.478 ;
+; registerC[2] ; sum[6]      ; 8.285 ; 8.581 ; 8.661 ; 8.992 ;
+; registerC[2] ; sum[7]      ; 8.801 ; 8.936 ; 9.159 ; 9.286 ;
+; registerC[3] ; Cout        ; 8.606 ;       ;       ; 9.245 ;
+; registerC[3] ; sum[3]      ; 6.277 ; 6.322 ; 6.634 ; 6.665 ;
+; registerC[3] ; sum[4]      ; 6.189 ; 6.262 ; 6.407 ; 6.430 ;
+; registerC[3] ; sum[5]      ; 6.989 ; 7.029 ; 7.290 ; 7.280 ;
+; registerC[3] ; sum[6]      ; 7.989 ; 8.285 ; 8.463 ; 8.794 ;
+; registerC[3] ; sum[7]      ; 8.505 ; 8.640 ; 8.961 ; 9.088 ;
+; registerC[4] ; Cout        ; 7.740 ;       ;       ; 8.128 ;
+; registerC[4] ; sum[4]      ; 6.493 ; 6.515 ; 6.675 ; 6.705 ;
+; registerC[4] ; sum[5]      ; 6.616 ; 6.606 ; 6.775 ; 6.771 ;
+; registerC[4] ; sum[6]      ; 7.226 ; 7.459 ; 7.455 ; 7.694 ;
+; registerC[4] ; sum[7]      ; 7.639 ; 7.774 ; 7.844 ; 7.971 ;
+; registerC[5] ; Cout        ; 7.568 ;       ;       ; 7.992 ;
+; registerC[5] ; sum[5]      ; 6.883 ; 6.880 ; 7.149 ; 7.138 ;
+; registerC[5] ; sum[6]      ; 7.054 ; 7.337 ; 7.326 ; 7.559 ;
+; registerC[5] ; sum[7]      ; 7.467 ; 7.602 ; 7.708 ; 7.835 ;
+; registerC[6] ; Cout        ; 7.184 ;       ;       ; 7.788 ;
+; registerC[6] ; sum[6]      ; 8.037 ; 8.269 ; 8.398 ; 8.630 ;
+; registerC[6] ; sum[7]      ; 6.945 ; 7.172 ; 7.415 ; 7.517 ;
+; registerC[7] ; Cout        ; 7.160 ;       ;       ; 7.499 ;
+; registerC[7] ; sum[7]      ; 7.059 ; 7.187 ; 7.208 ; 7.342 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 8.161 ;       ;       ; 8.738 ;
+; Cin          ; sum[0]      ; 6.114 ; 6.318 ; 6.379 ; 6.504 ;
+; Cin          ; sum[1]      ; 6.251 ; 6.387 ; 6.452 ; 6.578 ;
+; Cin          ; sum[2]      ; 6.502 ; 6.617 ; 6.872 ; 6.908 ;
+; Cin          ; sum[3]      ; 6.355 ; 6.412 ; 6.599 ; 6.651 ;
+; Cin          ; sum[4]      ; 6.450 ; 6.556 ; 6.818 ; 6.845 ;
+; Cin          ; sum[5]      ; 6.785 ; 6.861 ; 7.055 ; 7.079 ;
+; Cin          ; sum[6]      ; 7.590 ; 7.876 ; 8.054 ; 8.260 ;
+; Cin          ; sum[7]      ; 8.083 ; 8.228 ; 8.472 ; 8.612 ;
+; bitPair[0]   ; Cout        ; 8.116 ;       ;       ; 8.633 ;
+; bitPair[0]   ; sum[0]      ; 6.076 ; 6.211 ; 6.284 ; 6.409 ;
+; bitPair[0]   ; sum[1]      ; 6.074 ; 6.198 ; 6.287 ; 6.399 ;
+; bitPair[0]   ; sum[2]      ; 6.457 ; 6.572 ; 6.767 ; 6.803 ;
+; bitPair[0]   ; sum[3]      ; 6.310 ; 6.367 ; 6.494 ; 6.546 ;
+; bitPair[0]   ; sum[4]      ; 6.405 ; 6.511 ; 6.713 ; 6.740 ;
+; bitPair[0]   ; sum[5]      ; 6.740 ; 6.816 ; 6.950 ; 6.974 ;
+; bitPair[0]   ; sum[6]      ; 7.545 ; 7.831 ; 7.949 ; 8.155 ;
+; bitPair[0]   ; sum[7]      ; 8.038 ; 8.183 ; 8.367 ; 8.507 ;
+; bitPair[1]   ; Cout        ; 7.645 ;       ;       ; 8.082 ;
+; bitPair[1]   ; sum[1]      ; 5.555 ; 5.738 ; 5.756 ; 5.896 ;
+; bitPair[1]   ; sum[2]      ; 5.986 ; 6.101 ; 6.216 ; 6.252 ;
+; bitPair[1]   ; sum[3]      ; 5.839 ; 5.896 ; 5.943 ; 5.995 ;
+; bitPair[1]   ; sum[4]      ; 5.934 ; 6.040 ; 6.162 ; 6.189 ;
+; bitPair[1]   ; sum[5]      ; 6.269 ; 6.345 ; 6.399 ; 6.423 ;
+; bitPair[1]   ; sum[6]      ; 7.074 ; 7.360 ; 7.398 ; 7.604 ;
+; bitPair[1]   ; sum[7]      ; 7.567 ; 7.712 ; 7.816 ; 7.956 ;
+; bitPair[2]   ; Cout        ; 7.804 ;       ;       ; 8.453 ;
+; bitPair[2]   ; sum[2]      ; 5.598 ; 5.644 ; 5.783 ; 5.819 ;
+; bitPair[2]   ; sum[3]      ; 5.892 ; 6.008 ; 6.133 ; 6.197 ;
+; bitPair[2]   ; sum[4]      ; 5.732 ; 5.834 ; 5.977 ; 5.999 ;
+; bitPair[2]   ; sum[5]      ; 6.428 ; 6.504 ; 6.770 ; 6.794 ;
+; bitPair[2]   ; sum[6]      ; 7.233 ; 7.519 ; 7.769 ; 7.975 ;
+; bitPair[2]   ; sum[7]      ; 7.726 ; 7.871 ; 8.187 ; 8.327 ;
+; bitPair[3]   ; Cout        ; 7.892 ;       ;       ; 8.475 ;
+; bitPair[3]   ; sum[3]      ; 6.083 ; 6.141 ; 6.328 ; 6.376 ;
+; bitPair[3]   ; sum[4]      ; 5.797 ; 5.834 ; 6.054 ; 6.081 ;
+; bitPair[3]   ; sum[5]      ; 6.516 ; 6.592 ; 6.792 ; 6.816 ;
+; bitPair[3]   ; sum[6]      ; 7.321 ; 7.607 ; 7.791 ; 7.997 ;
+; bitPair[3]   ; sum[7]      ; 7.814 ; 7.959 ; 8.209 ; 8.349 ;
+; bitPair[4]   ; Cout        ; 6.644 ;       ;       ; 7.004 ;
+; bitPair[4]   ; sum[4]      ; 5.836 ; 5.881 ; 5.941 ; 5.986 ;
+; bitPair[4]   ; sum[5]      ; 5.834 ; 5.838 ; 6.034 ; 6.028 ;
+; bitPair[4]   ; sum[6]      ; 6.221 ; 6.442 ; 6.419 ; 6.630 ;
+; bitPair[4]   ; sum[7]      ; 6.566 ; 6.711 ; 6.738 ; 6.878 ;
+; bitPair[5]   ; Cout        ; 6.816 ;       ;       ; 7.253 ;
+; bitPair[5]   ; sum[5]      ; 6.154 ; 6.227 ; 6.458 ; 6.452 ;
+; bitPair[5]   ; sum[6]      ; 6.390 ; 6.680 ; 6.663 ; 6.874 ;
+; bitPair[5]   ; sum[7]      ; 6.738 ; 6.883 ; 6.987 ; 7.127 ;
+; bitPair[6]   ; Cout        ; 6.167 ;       ;       ; 6.492 ;
+; bitPair[6]   ; sum[6]      ; 6.798 ; 7.027 ; 6.943 ; 7.172 ;
+; bitPair[6]   ; sum[7]      ; 6.092 ; 6.232 ; 6.251 ; 6.379 ;
+; bitPair[7]   ; Cout        ; 6.166 ;       ;       ; 6.601 ;
+; bitPair[7]   ; sum[7]      ; 6.221 ; 6.337 ; 6.369 ; 6.527 ;
+; registerC[0] ; Cout        ; 7.913 ;       ;       ; 8.317 ;
+; registerC[0] ; sum[0]      ; 5.873 ; 6.022 ; 5.953 ; 6.092 ;
+; registerC[0] ; sum[1]      ; 5.720 ; 5.911 ; 5.867 ; 5.981 ;
+; registerC[0] ; sum[2]      ; 6.254 ; 6.369 ; 6.451 ; 6.487 ;
+; registerC[0] ; sum[3]      ; 6.107 ; 6.164 ; 6.178 ; 6.230 ;
+; registerC[0] ; sum[4]      ; 6.202 ; 6.308 ; 6.397 ; 6.424 ;
+; registerC[0] ; sum[5]      ; 6.537 ; 6.613 ; 6.634 ; 6.658 ;
+; registerC[0] ; sum[6]      ; 7.342 ; 7.628 ; 7.633 ; 7.839 ;
+; registerC[0] ; sum[7]      ; 7.835 ; 7.980 ; 8.051 ; 8.191 ;
+; registerC[1] ; Cout        ; 8.366 ;       ;       ; 8.857 ;
+; registerC[1] ; sum[1]      ; 6.170 ; 6.360 ; 6.398 ; 6.506 ;
+; registerC[1] ; sum[2]      ; 6.707 ; 6.822 ; 6.991 ; 7.027 ;
+; registerC[1] ; sum[3]      ; 6.560 ; 6.617 ; 6.718 ; 6.770 ;
+; registerC[1] ; sum[4]      ; 6.655 ; 6.761 ; 6.937 ; 6.964 ;
+; registerC[1] ; sum[5]      ; 6.990 ; 7.066 ; 7.174 ; 7.198 ;
+; registerC[1] ; sum[6]      ; 7.795 ; 8.081 ; 8.173 ; 8.379 ;
+; registerC[1] ; sum[7]      ; 8.288 ; 8.433 ; 8.591 ; 8.731 ;
+; registerC[2] ; Cout        ; 8.004 ;       ;       ; 8.542 ;
+; registerC[2] ; sum[2]      ; 6.024 ; 6.084 ; 6.209 ; 6.259 ;
+; registerC[2] ; sum[3]      ; 5.897 ; 6.010 ; 6.212 ; 6.246 ;
+; registerC[2] ; sum[4]      ; 6.001 ; 6.052 ; 6.188 ; 6.229 ;
+; registerC[2] ; sum[5]      ; 6.628 ; 6.704 ; 6.859 ; 6.883 ;
+; registerC[2] ; sum[6]      ; 7.433 ; 7.719 ; 7.858 ; 8.064 ;
+; registerC[2] ; sum[7]      ; 7.926 ; 8.071 ; 8.276 ; 8.416 ;
+; registerC[3] ; Cout        ; 7.743 ;       ;       ; 8.322 ;
+; registerC[3] ; sum[3]      ; 5.772 ; 5.816 ; 6.077 ; 6.111 ;
+; registerC[3] ; sum[4]      ; 5.684 ; 5.793 ; 5.903 ; 5.960 ;
+; registerC[3] ; sum[5]      ; 6.367 ; 6.443 ; 6.639 ; 6.663 ;
+; registerC[3] ; sum[6]      ; 7.172 ; 7.458 ; 7.638 ; 7.844 ;
+; registerC[3] ; sum[7]      ; 7.665 ; 7.810 ; 8.056 ; 8.196 ;
+; registerC[4] ; Cout        ; 7.017 ;       ;       ; 7.393 ;
+; registerC[4] ; sum[4]      ; 5.895 ; 5.945 ; 6.091 ; 6.139 ;
+; registerC[4] ; sum[5]      ; 6.078 ; 6.096 ; 6.245 ; 6.253 ;
+; registerC[4] ; sum[6]      ; 6.594 ; 6.829 ; 6.793 ; 7.018 ;
+; registerC[4] ; sum[7]      ; 6.939 ; 7.084 ; 7.127 ; 7.267 ;
+; registerC[5] ; Cout        ; 6.868 ;       ;       ; 7.304 ;
+; registerC[5] ; sum[5]      ; 6.302 ; 6.319 ; 6.531 ; 6.543 ;
+; registerC[5] ; sum[6]      ; 6.445 ; 6.738 ; 6.687 ; 6.928 ;
+; registerC[5] ; sum[7]      ; 6.790 ; 6.935 ; 7.038 ; 7.178 ;
+; registerC[6] ; Cout        ; 6.578 ;       ;       ; 7.052 ;
+; registerC[6] ; sum[6]      ; 7.156 ; 7.390 ; 7.482 ; 7.711 ;
+; registerC[6] ; sum[7]      ; 6.373 ; 6.611 ; 6.747 ; 6.912 ;
+; registerC[7] ; Cout        ; 6.559 ;       ;       ; 6.876 ;
+; registerC[7] ; sum[7]      ; 6.481 ; 6.626 ; 6.616 ; 6.751 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+-----------------------------------------------
+; Slow 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1100mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1100mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1100mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 9.053 ;       ;       ; 9.736 ;
+; Cin          ; sum[0]      ; 6.477 ; 6.672 ; 6.692 ; 6.940 ;
+; Cin          ; sum[1]      ; 6.596 ; 6.711 ; 6.811 ; 6.934 ;
+; Cin          ; sum[2]      ; 7.017 ; 7.155 ; 7.374 ; 7.565 ;
+; Cin          ; sum[3]      ; 6.872 ; 6.909 ; 7.167 ; 7.194 ;
+; Cin          ; sum[4]      ; 6.989 ; 7.092 ; 7.344 ; 7.500 ;
+; Cin          ; sum[5]      ; 7.384 ; 7.483 ; 7.704 ; 7.751 ;
+; Cin          ; sum[6]      ; 8.374 ; 8.711 ; 8.876 ; 9.260 ;
+; Cin          ; sum[7]      ; 8.957 ; 9.120 ; 9.431 ; 9.583 ;
+; bitPair[0]   ; Cout        ; 8.884 ;       ;       ; 9.493 ;
+; bitPair[0]   ; sum[0]      ; 6.316 ; 6.457 ; 6.583 ; 6.706 ;
+; bitPair[0]   ; sum[1]      ; 6.302 ; 6.440 ; 6.579 ; 6.694 ;
+; bitPair[0]   ; sum[2]      ; 6.848 ; 6.986 ; 7.131 ; 7.322 ;
+; bitPair[0]   ; sum[3]      ; 6.703 ; 6.740 ; 6.924 ; 6.951 ;
+; bitPair[0]   ; sum[4]      ; 6.820 ; 6.923 ; 7.101 ; 7.257 ;
+; bitPair[0]   ; sum[5]      ; 7.215 ; 7.314 ; 7.461 ; 7.508 ;
+; bitPair[0]   ; sum[6]      ; 8.205 ; 8.542 ; 8.633 ; 9.017 ;
+; bitPair[0]   ; sum[7]      ; 8.788 ; 8.951 ; 9.188 ; 9.340 ;
+; bitPair[1]   ; Cout        ; 8.414 ;       ;       ; 8.836 ;
+; bitPair[1]   ; sum[1]      ; 5.772 ; 5.958 ; 5.988 ; 6.091 ;
+; bitPair[1]   ; sum[2]      ; 6.378 ; 6.516 ; 6.474 ; 6.665 ;
+; bitPair[1]   ; sum[3]      ; 6.233 ; 6.270 ; 6.267 ; 6.294 ;
+; bitPair[1]   ; sum[4]      ; 6.350 ; 6.453 ; 6.444 ; 6.600 ;
+; bitPair[1]   ; sum[5]      ; 6.745 ; 6.844 ; 6.804 ; 6.851 ;
+; bitPair[1]   ; sum[6]      ; 7.735 ; 8.072 ; 7.976 ; 8.360 ;
+; bitPair[1]   ; sum[7]      ; 8.318 ; 8.481 ; 8.531 ; 8.683 ;
+; bitPair[2]   ; Cout        ; 8.393 ;       ;       ; 9.093 ;
+; bitPair[2]   ; sum[2]      ; 5.758 ; 5.842 ; 5.971 ; 6.037 ;
+; bitPair[2]   ; sum[3]      ; 6.149 ; 6.238 ; 6.427 ; 6.464 ;
+; bitPair[2]   ; sum[4]      ; 6.068 ; 6.169 ; 6.247 ; 6.395 ;
+; bitPair[2]   ; sum[5]      ; 6.724 ; 6.823 ; 7.061 ; 7.108 ;
+; bitPair[2]   ; sum[6]      ; 7.714 ; 8.051 ; 8.233 ; 8.617 ;
+; bitPair[2]   ; sum[7]      ; 8.297 ; 8.460 ; 8.788 ; 8.940 ;
+; bitPair[3]   ; Cout        ; 8.571 ;       ;       ; 9.284 ;
+; bitPair[3]   ; sum[3]      ; 6.410 ; 6.437 ; 6.708 ; 6.743 ;
+; bitPair[3]   ; sum[4]      ; 5.967 ; 6.016 ; 6.302 ; 6.333 ;
+; bitPair[3]   ; sum[5]      ; 6.902 ; 7.001 ; 7.252 ; 7.299 ;
+; bitPair[3]   ; sum[6]      ; 7.892 ; 8.229 ; 8.424 ; 8.808 ;
+; bitPair[3]   ; sum[7]      ; 8.475 ; 8.638 ; 8.979 ; 9.131 ;
+; bitPair[4]   ; Cout        ; 6.994 ;       ;       ; 7.413 ;
+; bitPair[4]   ; sum[4]      ; 6.191 ; 6.229 ; 6.336 ; 6.374 ;
+; bitPair[4]   ; sum[5]      ; 6.003 ; 6.061 ; 6.257 ; 6.297 ;
+; bitPair[4]   ; sum[6]      ; 6.434 ; 6.719 ; 6.688 ; 6.955 ;
+; bitPair[4]   ; sum[7]      ; 6.898 ; 7.061 ; 7.108 ; 7.260 ;
+; bitPair[5]   ; Cout        ; 7.324 ;       ;       ; 7.841 ;
+; bitPair[5]   ; sum[5]      ; 6.500 ; 6.612 ; 6.788 ; 6.953 ;
+; bitPair[5]   ; sum[6]      ; 6.759 ; 7.098 ; 6.989 ; 7.381 ;
+; bitPair[5]   ; sum[7]      ; 7.228 ; 7.391 ; 7.536 ; 7.688 ;
+; bitPair[6]   ; Cout        ; 6.359 ;       ;       ; 6.786 ;
+; bitPair[6]   ; sum[6]      ; 7.176 ; 7.450 ; 7.387 ; 7.661 ;
+; bitPair[6]   ; sum[7]      ; 6.263 ; 6.444 ; 6.482 ; 6.640 ;
+; bitPair[7]   ; Cout        ; 6.411 ;       ;       ; 6.913 ;
+; bitPair[7]   ; sum[7]      ; 6.461 ; 6.678 ; 6.659 ; 6.928 ;
+; registerC[0] ; Cout        ; 8.773 ;       ;       ; 9.201 ;
+; registerC[0] ; sum[0]      ; 6.204 ; 6.324 ; 6.286 ; 6.414 ;
+; registerC[0] ; sum[1]      ; 6.050 ; 6.239 ; 6.129 ; 6.372 ;
+; registerC[0] ; sum[2]      ; 6.737 ; 6.875 ; 6.839 ; 7.030 ;
+; registerC[0] ; sum[3]      ; 6.592 ; 6.629 ; 6.632 ; 6.659 ;
+; registerC[0] ; sum[4]      ; 6.709 ; 6.812 ; 6.809 ; 6.965 ;
+; registerC[0] ; sum[5]      ; 7.104 ; 7.203 ; 7.169 ; 7.216 ;
+; registerC[0] ; sum[6]      ; 8.094 ; 8.431 ; 8.341 ; 8.725 ;
+; registerC[0] ; sum[7]      ; 8.677 ; 8.840 ; 8.896 ; 9.048 ;
+; registerC[1] ; Cout        ; 9.231 ;       ;       ; 9.778 ;
+; registerC[1] ; sum[1]      ; 6.522 ; 6.709 ; 6.713 ; 6.948 ;
+; registerC[1] ; sum[2]      ; 7.195 ; 7.333 ; 7.416 ; 7.607 ;
+; registerC[1] ; sum[3]      ; 7.050 ; 7.087 ; 7.209 ; 7.236 ;
+; registerC[1] ; sum[4]      ; 7.167 ; 7.270 ; 7.386 ; 7.542 ;
+; registerC[1] ; sum[5]      ; 7.562 ; 7.661 ; 7.746 ; 7.793 ;
+; registerC[1] ; sum[6]      ; 8.552 ; 8.889 ; 8.918 ; 9.302 ;
+; registerC[1] ; sum[7]      ; 9.135 ; 9.298 ; 9.473 ; 9.625 ;
+; registerC[2] ; Cout        ; 8.723 ;       ;       ; 9.251 ;
+; registerC[2] ; sum[2]      ; 6.366 ; 6.429 ; 6.566 ; 6.637 ;
+; registerC[2] ; sum[3]      ; 6.280 ; 6.382 ; 6.507 ; 6.662 ;
+; registerC[2] ; sum[4]      ; 6.367 ; 6.395 ; 6.568 ; 6.604 ;
+; registerC[2] ; sum[5]      ; 7.054 ; 7.153 ; 7.219 ; 7.266 ;
+; registerC[2] ; sum[6]      ; 8.044 ; 8.381 ; 8.391 ; 8.775 ;
+; registerC[2] ; sum[7]      ; 8.627 ; 8.790 ; 8.946 ; 9.098 ;
+; registerC[3] ; Cout        ; 8.327 ;       ;       ; 8.986 ;
+; registerC[3] ; sum[3]      ; 6.013 ; 6.061 ; 6.375 ; 6.405 ;
+; registerC[3] ; sum[4]      ; 5.929 ; 6.019 ; 6.142 ; 6.180 ;
+; registerC[3] ; sum[5]      ; 6.658 ; 6.757 ; 6.954 ; 7.001 ;
+; registerC[3] ; sum[6]      ; 7.648 ; 7.985 ; 8.126 ; 8.510 ;
+; registerC[3] ; sum[7]      ; 8.231 ; 8.394 ; 8.681 ; 8.833 ;
+; registerC[4] ; Cout        ; 7.551 ;       ;       ; 7.936 ;
+; registerC[4] ; sum[4]      ; 6.322 ; 6.350 ; 6.506 ; 6.544 ;
+; registerC[4] ; sum[5]      ; 6.409 ; 6.446 ; 6.554 ; 6.599 ;
+; registerC[4] ; sum[6]      ; 6.990 ; 7.254 ; 7.206 ; 7.478 ;
+; registerC[4] ; sum[7]      ; 7.455 ; 7.618 ; 7.631 ; 7.783 ;
+; registerC[5] ; Cout        ; 7.325 ;       ;       ; 7.757 ;
+; registerC[5] ; sum[5]      ; 6.638 ; 6.685 ; 6.898 ; 6.935 ;
+; registerC[5] ; sum[6]      ; 6.763 ; 7.089 ; 7.025 ; 7.299 ;
+; registerC[5] ; sum[7]      ; 7.229 ; 7.392 ; 7.452 ; 7.604 ;
+; registerC[6] ; Cout        ; 6.913 ;       ;       ; 7.553 ;
+; registerC[6] ; sum[6]      ; 7.778 ; 8.042 ; 8.142 ; 8.406 ;
+; registerC[6] ; sum[7]      ; 6.655 ; 6.927 ; 7.087 ; 7.234 ;
+; registerC[7] ; Cout        ; 6.897 ;       ;       ; 7.269 ;
+; registerC[7] ; sum[7]      ; 6.802 ; 6.955 ; 6.955 ; 7.115 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 7.896 ;       ;       ; 8.470 ;
+; Cin          ; sum[0]      ; 5.856 ; 6.076 ; 6.141 ; 6.241 ;
+; Cin          ; sum[1]      ; 6.013 ; 6.153 ; 6.216 ; 6.346 ;
+; Cin          ; sum[2]      ; 6.201 ; 6.374 ; 6.576 ; 6.629 ;
+; Cin          ; sum[3]      ; 6.136 ; 6.196 ; 6.364 ; 6.418 ;
+; Cin          ; sum[4]      ; 6.175 ; 6.313 ; 6.548 ; 6.566 ;
+; Cin          ; sum[5]      ; 6.478 ; 6.616 ; 6.715 ; 6.798 ;
+; Cin          ; sum[6]      ; 7.264 ; 7.597 ; 7.701 ; 7.935 ;
+; Cin          ; sum[7]      ; 7.821 ; 7.992 ; 8.176 ; 8.342 ;
+; bitPair[0]   ; Cout        ; 7.844 ;       ;       ; 8.367 ;
+; bitPair[0]   ; sum[0]      ; 5.812 ; 5.944 ; 6.027 ; 6.147 ;
+; bitPair[0]   ; sum[1]      ; 5.797 ; 5.925 ; 6.020 ; 6.133 ;
+; bitPair[0]   ; sum[2]      ; 6.149 ; 6.322 ; 6.473 ; 6.526 ;
+; bitPair[0]   ; sum[3]      ; 6.084 ; 6.144 ; 6.261 ; 6.315 ;
+; bitPair[0]   ; sum[4]      ; 6.123 ; 6.261 ; 6.445 ; 6.463 ;
+; bitPair[0]   ; sum[5]      ; 6.426 ; 6.564 ; 6.612 ; 6.695 ;
+; bitPair[0]   ; sum[6]      ; 7.212 ; 7.545 ; 7.598 ; 7.832 ;
+; bitPair[0]   ; sum[7]      ; 7.769 ; 7.940 ; 8.073 ; 8.239 ;
+; bitPair[1]   ; Cout        ; 7.410 ;       ;       ; 7.843 ;
+; bitPair[1]   ; sum[1]      ; 5.316 ; 5.507 ; 5.516 ; 5.661 ;
+; bitPair[1]   ; sum[2]      ; 5.715 ; 5.888 ; 5.949 ; 6.002 ;
+; bitPair[1]   ; sum[3]      ; 5.650 ; 5.710 ; 5.737 ; 5.791 ;
+; bitPair[1]   ; sum[4]      ; 5.689 ; 5.827 ; 5.921 ; 5.939 ;
+; bitPair[1]   ; sum[5]      ; 5.992 ; 6.130 ; 6.088 ; 6.171 ;
+; bitPair[1]   ; sum[6]      ; 6.778 ; 7.111 ; 7.074 ; 7.308 ;
+; bitPair[1]   ; sum[7]      ; 7.335 ; 7.506 ; 7.549 ; 7.715 ;
+; bitPair[2]   ; Cout        ; 7.525 ;       ;       ; 8.207 ;
+; bitPair[2]   ; sum[2]      ; 5.322 ; 5.407 ; 5.511 ; 5.584 ;
+; bitPair[2]   ; sum[3]      ; 5.633 ; 5.759 ; 5.881 ; 5.952 ;
+; bitPair[2]   ; sum[4]      ; 5.488 ; 5.616 ; 5.729 ; 5.758 ;
+; bitPair[2]   ; sum[5]      ; 6.107 ; 6.245 ; 6.452 ; 6.535 ;
+; bitPair[2]   ; sum[6]      ; 6.893 ; 7.226 ; 7.438 ; 7.672 ;
+; bitPair[2]   ; sum[7]      ; 7.450 ; 7.621 ; 7.913 ; 8.079 ;
+; bitPair[3]   ; Cout        ; 7.598 ;       ;       ; 8.216 ;
+; bitPair[3]   ; sum[3]      ; 5.839 ; 5.899 ; 6.105 ; 6.156 ;
+; bitPair[3]   ; sum[4]      ; 5.503 ; 5.553 ; 5.787 ; 5.825 ;
+; bitPair[3]   ; sum[5]      ; 6.180 ; 6.318 ; 6.461 ; 6.544 ;
+; bitPair[3]   ; sum[6]      ; 6.966 ; 7.299 ; 7.447 ; 7.681 ;
+; bitPair[3]   ; sum[7]      ; 7.523 ; 7.694 ; 7.922 ; 8.088 ;
+; bitPair[4]   ; Cout        ; 6.366 ;       ;       ; 6.752 ;
+; bitPair[4]   ; sum[4]      ; 5.610 ; 5.666 ; 5.725 ; 5.781 ;
+; bitPair[4]   ; sum[5]      ; 5.536 ; 5.596 ; 5.751 ; 5.799 ;
+; bitPair[4]   ; sum[6]      ; 5.907 ; 6.162 ; 6.113 ; 6.356 ;
+; bitPair[4]   ; sum[7]      ; 6.291 ; 6.462 ; 6.458 ; 6.624 ;
+; bitPair[5]   ; Cout        ; 6.553 ;       ;       ; 7.006 ;
+; bitPair[5]   ; sum[5]      ; 5.861 ; 6.009 ; 6.189 ; 6.217 ;
+; bitPair[5]   ; sum[6]      ; 6.091 ; 6.434 ; 6.383 ; 6.606 ;
+; bitPair[5]   ; sum[7]      ; 6.478 ; 6.649 ; 6.712 ; 6.878 ;
+; bitPair[6]   ; Cout        ; 5.849 ;       ;       ; 6.228 ;
+; bitPair[6]   ; sum[6]      ; 6.481 ; 6.742 ; 6.645 ; 6.906 ;
+; bitPair[6]   ; sum[7]      ; 5.773 ; 5.943 ; 5.956 ; 6.111 ;
+; bitPair[7]   ; Cout        ; 5.864 ;       ;       ; 6.331 ;
+; bitPair[7]   ; sum[7]      ; 5.941 ; 6.084 ; 6.106 ; 6.294 ;
+; registerC[0] ; Cout        ; 7.690 ;       ;       ; 8.097 ;
+; registerC[0] ; sum[0]      ; 5.655 ; 5.799 ; 5.741 ; 5.876 ;
+; registerC[0] ; sum[1]      ; 5.462 ; 5.673 ; 5.629 ; 5.724 ;
+; registerC[0] ; sum[2]      ; 5.995 ; 6.168 ; 6.203 ; 6.256 ;
+; registerC[0] ; sum[3]      ; 5.930 ; 5.990 ; 5.991 ; 6.045 ;
+; registerC[0] ; sum[4]      ; 5.969 ; 6.107 ; 6.175 ; 6.193 ;
+; registerC[0] ; sum[5]      ; 6.272 ; 6.410 ; 6.342 ; 6.425 ;
+; registerC[0] ; sum[6]      ; 7.058 ; 7.391 ; 7.328 ; 7.562 ;
+; registerC[0] ; sum[7]      ; 7.615 ; 7.786 ; 7.803 ; 7.969 ;
+; registerC[1] ; Cout        ; 8.117 ;       ;       ; 8.619 ;
+; registerC[1] ; sum[1]      ; 5.889 ; 6.093 ; 6.129 ; 6.235 ;
+; registerC[1] ; sum[2]      ; 6.422 ; 6.595 ; 6.725 ; 6.778 ;
+; registerC[1] ; sum[3]      ; 6.357 ; 6.417 ; 6.513 ; 6.567 ;
+; registerC[1] ; sum[4]      ; 6.396 ; 6.534 ; 6.697 ; 6.715 ;
+; registerC[1] ; sum[5]      ; 6.699 ; 6.837 ; 6.864 ; 6.947 ;
+; registerC[1] ; sum[6]      ; 7.485 ; 7.818 ; 7.850 ; 8.084 ;
+; registerC[1] ; sum[7]      ; 8.042 ; 8.213 ; 8.325 ; 8.491 ;
+; registerC[2] ; Cout        ; 7.816 ;       ;       ; 8.347 ;
+; registerC[2] ; sum[2]      ; 5.819 ; 5.916 ; 5.992 ; 6.080 ;
+; registerC[2] ; sum[3]      ; 5.701 ; 5.837 ; 6.002 ; 6.018 ;
+; registerC[2] ; sum[4]      ; 5.819 ; 5.881 ; 5.992 ; 6.045 ;
+; registerC[2] ; sum[5]      ; 6.398 ; 6.536 ; 6.592 ; 6.675 ;
+; registerC[2] ; sum[6]      ; 7.184 ; 7.517 ; 7.578 ; 7.812 ;
+; registerC[2] ; sum[7]      ; 7.741 ; 7.912 ; 8.053 ; 8.219 ;
+; registerC[3] ; Cout        ; 7.475 ;       ;       ; 8.082 ;
+; registerC[3] ; sum[3]      ; 5.529 ; 5.577 ; 5.837 ; 5.873 ;
+; registerC[3] ; sum[4]      ; 5.440 ; 5.568 ; 5.650 ; 5.723 ;
+; registerC[3] ; sum[5]      ; 6.057 ; 6.195 ; 6.327 ; 6.410 ;
+; registerC[3] ; sum[6]      ; 6.843 ; 7.176 ; 7.313 ; 7.547 ;
+; registerC[3] ; sum[7]      ; 7.400 ; 7.571 ; 7.788 ; 7.954 ;
+; registerC[4] ; Cout        ; 6.827 ;       ;       ; 7.207 ;
+; registerC[4] ; sum[4]      ; 5.732 ; 5.794 ; 5.909 ; 5.965 ;
+; registerC[4] ; sum[5]      ; 5.875 ; 5.947 ; 6.024 ; 6.087 ;
+; registerC[4] ; sum[6]      ; 6.368 ; 6.635 ; 6.552 ; 6.810 ;
+; registerC[4] ; sum[7]      ; 6.752 ; 6.923 ; 6.913 ; 7.079 ;
+; registerC[5] ; Cout        ; 6.638 ;       ;       ; 7.085 ;
+; registerC[5] ; sum[5]      ; 6.070 ; 6.142 ; 6.292 ; 6.358 ;
+; registerC[5] ; sum[6]      ; 6.179 ; 6.512 ; 6.410 ; 6.688 ;
+; registerC[5] ; sum[7]      ; 6.563 ; 6.734 ; 6.791 ; 6.957 ;
+; registerC[6] ; Cout        ; 6.329 ;       ;       ; 6.832 ;
+; registerC[6] ; sum[6]      ; 6.908 ; 7.175 ; 7.199 ; 7.460 ;
+; registerC[6] ; sum[7]      ; 6.106 ; 6.384 ; 6.453 ; 6.645 ;
+; registerC[7] ; Cout        ; 6.310 ;       ;       ; 6.659 ;
+; registerC[7] ; sum[7]      ; 6.235 ; 6.407 ; 6.370 ; 6.531 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Slow 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+---------------------------------------
+; Fast 1100mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Fast 1100mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 5.356 ;       ;       ; 6.321 ;
+; Cin          ; sum[0]      ; 4.079 ; 4.308 ; 4.583 ; 4.819 ;
+; Cin          ; sum[1]      ; 4.120 ; 4.286 ; 4.628 ; 4.796 ;
+; Cin          ; sum[2]      ; 4.313 ; 4.432 ; 4.928 ; 5.054 ;
+; Cin          ; sum[3]      ; 4.167 ; 4.268 ; 4.720 ; 4.818 ;
+; Cin          ; sum[4]      ; 4.307 ; 4.415 ; 4.920 ; 5.035 ;
+; Cin          ; sum[5]      ; 4.497 ; 4.584 ; 5.069 ; 5.133 ;
+; Cin          ; sum[6]      ; 5.111 ; 5.426 ; 5.833 ; 6.147 ;
+; Cin          ; sum[7]      ; 5.306 ; 5.493 ; 6.039 ; 6.225 ;
+; bitPair[0]   ; Cout        ; 5.318 ;       ;       ; 6.271 ;
+; bitPair[0]   ; sum[0]      ; 4.050 ; 4.242 ; 4.588 ; 4.779 ;
+; bitPair[0]   ; sum[1]      ; 4.056 ; 4.218 ; 4.599 ; 4.758 ;
+; bitPair[0]   ; sum[2]      ; 4.275 ; 4.394 ; 4.878 ; 5.004 ;
+; bitPair[0]   ; sum[3]      ; 4.129 ; 4.230 ; 4.670 ; 4.768 ;
+; bitPair[0]   ; sum[4]      ; 4.269 ; 4.377 ; 4.870 ; 4.985 ;
+; bitPair[0]   ; sum[5]      ; 4.459 ; 4.546 ; 5.019 ; 5.083 ;
+; bitPair[0]   ; sum[6]      ; 5.073 ; 5.388 ; 5.783 ; 6.097 ;
+; bitPair[0]   ; sum[7]      ; 5.268 ; 5.455 ; 5.989 ; 6.175 ;
+; bitPair[1]   ; Cout        ; 4.944 ;       ;       ; 5.719 ;
+; bitPair[1]   ; sum[1]      ; 3.655 ; 3.837 ; 4.076 ; 4.228 ;
+; bitPair[1]   ; sum[2]      ; 3.901 ; 4.020 ; 4.326 ; 4.452 ;
+; bitPair[1]   ; sum[3]      ; 3.755 ; 3.856 ; 4.118 ; 4.216 ;
+; bitPair[1]   ; sum[4]      ; 3.895 ; 4.003 ; 4.318 ; 4.433 ;
+; bitPair[1]   ; sum[5]      ; 4.085 ; 4.172 ; 4.467 ; 4.531 ;
+; bitPair[1]   ; sum[6]      ; 4.699 ; 5.014 ; 5.231 ; 5.545 ;
+; bitPair[1]   ; sum[7]      ; 4.894 ; 5.081 ; 5.437 ; 5.623 ;
+; bitPair[2]   ; Cout        ; 5.063 ;       ;       ; 6.040 ;
+; bitPair[2]   ; sum[2]      ; 3.647 ; 3.729 ; 4.132 ; 4.213 ;
+; bitPair[2]   ; sum[3]      ; 3.859 ; 3.970 ; 4.413 ; 4.501 ;
+; bitPair[2]   ; sum[4]      ; 3.787 ; 3.901 ; 4.262 ; 4.375 ;
+; bitPair[2]   ; sum[5]      ; 4.204 ; 4.291 ; 4.788 ; 4.852 ;
+; bitPair[2]   ; sum[6]      ; 4.818 ; 5.133 ; 5.552 ; 5.866 ;
+; bitPair[2]   ; sum[7]      ; 5.013 ; 5.200 ; 5.758 ; 5.944 ;
+; bitPair[3]   ; Cout        ; 5.089 ;       ;       ; 6.054 ;
+; bitPair[3]   ; sum[3]      ; 3.901 ; 3.999 ; 4.448 ; 4.548 ;
+; bitPair[3]   ; sum[4]      ; 3.789 ; 3.860 ; 4.344 ; 4.414 ;
+; bitPair[3]   ; sum[5]      ; 4.230 ; 4.317 ; 4.802 ; 4.866 ;
+; bitPair[3]   ; sum[6]      ; 4.844 ; 5.159 ; 5.566 ; 5.880 ;
+; bitPair[3]   ; sum[7]      ; 5.039 ; 5.226 ; 5.772 ; 5.958 ;
+; bitPair[4]   ; Cout        ; 4.323 ;       ;       ; 5.078 ;
+; bitPair[4]   ; sum[4]      ; 3.775 ; 3.852 ; 4.191 ; 4.268 ;
+; bitPair[4]   ; sum[5]      ; 3.770 ; 3.841 ; 4.289 ; 4.359 ;
+; bitPair[4]   ; sum[6]      ; 4.115 ; 4.387 ; 4.640 ; 4.911 ;
+; bitPair[4]   ; sum[7]      ; 4.273 ; 4.460 ; 4.796 ; 4.982 ;
+; bitPair[5]   ; Cout        ; 4.474 ;       ;       ; 5.266 ;
+; bitPair[5]   ; sum[5]      ; 4.040 ; 4.148 ; 4.591 ; 4.706 ;
+; bitPair[5]   ; sum[6]      ; 4.262 ; 4.571 ; 4.778 ; 5.094 ;
+; bitPair[5]   ; sum[7]      ; 4.424 ; 4.611 ; 4.984 ; 5.170 ;
+; bitPair[6]   ; Cout        ; 4.054 ;       ;       ; 4.765 ;
+; bitPair[6]   ; sum[6]      ; 4.467 ; 4.743 ; 4.949 ; 5.225 ;
+; bitPair[6]   ; sum[7]      ; 4.008 ; 4.191 ; 4.495 ; 4.675 ;
+; bitPair[7]   ; Cout        ; 4.059 ;       ;       ; 4.797 ;
+; bitPair[7]   ; sum[7]      ; 4.051 ; 4.254 ; 4.535 ; 4.759 ;
+; registerC[0] ; Cout        ; 5.075 ;       ;       ; 5.882 ;
+; registerC[0] ; sum[0]      ; 3.806 ; 4.001 ; 4.193 ; 4.390 ;
+; registerC[0] ; sum[1]      ; 3.770 ; 3.970 ; 4.154 ; 4.360 ;
+; registerC[0] ; sum[2]      ; 4.032 ; 4.151 ; 4.489 ; 4.615 ;
+; registerC[0] ; sum[3]      ; 3.886 ; 3.987 ; 4.281 ; 4.379 ;
+; registerC[0] ; sum[4]      ; 4.026 ; 4.134 ; 4.481 ; 4.596 ;
+; registerC[0] ; sum[5]      ; 4.216 ; 4.303 ; 4.630 ; 4.694 ;
+; registerC[0] ; sum[6]      ; 4.830 ; 5.145 ; 5.394 ; 5.708 ;
+; registerC[0] ; sum[7]      ; 5.025 ; 5.212 ; 5.600 ; 5.786 ;
+; registerC[1] ; Cout        ; 5.411 ;       ;       ; 6.322 ;
+; registerC[1] ; sum[1]      ; 4.105 ; 4.309 ; 4.590 ; 4.794 ;
+; registerC[1] ; sum[2]      ; 4.368 ; 4.487 ; 4.929 ; 5.055 ;
+; registerC[1] ; sum[3]      ; 4.222 ; 4.323 ; 4.721 ; 4.819 ;
+; registerC[1] ; sum[4]      ; 4.362 ; 4.470 ; 4.921 ; 5.036 ;
+; registerC[1] ; sum[5]      ; 4.552 ; 4.639 ; 5.070 ; 5.134 ;
+; registerC[1] ; sum[6]      ; 5.166 ; 5.481 ; 5.834 ; 6.148 ;
+; registerC[1] ; sum[7]      ; 5.361 ; 5.548 ; 6.040 ; 6.226 ;
+; registerC[2] ; Cout        ; 5.134 ;       ;       ; 6.054 ;
+; registerC[2] ; sum[2]      ; 3.875 ; 3.960 ; 4.372 ; 4.459 ;
+; registerC[2] ; sum[3]      ; 3.859 ; 3.991 ; 4.392 ; 4.531 ;
+; registerC[2] ; sum[4]      ; 3.899 ; 3.973 ; 4.399 ; 4.475 ;
+; registerC[2] ; sum[5]      ; 4.275 ; 4.362 ; 4.802 ; 4.866 ;
+; registerC[2] ; sum[6]      ; 4.889 ; 5.204 ; 5.566 ; 5.880 ;
+; registerC[2] ; sum[7]      ; 5.084 ; 5.271 ; 5.772 ; 5.958 ;
+; registerC[3] ; Cout        ; 5.039 ;       ;       ; 6.028 ;
+; registerC[3] ; sum[3]      ; 3.797 ; 3.892 ; 4.408 ; 4.502 ;
+; registerC[3] ; sum[4]      ; 3.763 ; 3.850 ; 4.267 ; 4.331 ;
+; registerC[3] ; sum[5]      ; 4.180 ; 4.267 ; 4.776 ; 4.840 ;
+; registerC[3] ; sum[6]      ; 4.794 ; 5.109 ; 5.540 ; 5.854 ;
+; registerC[3] ; sum[7]      ; 4.989 ; 5.176 ; 5.746 ; 5.932 ;
+; registerC[4] ; Cout        ; 4.534 ;       ;       ; 5.286 ;
+; registerC[4] ; sum[4]      ; 3.848 ; 3.922 ; 4.250 ; 4.327 ;
+; registerC[4] ; sum[5]      ; 3.880 ; 3.954 ; 4.336 ; 4.412 ;
+; registerC[4] ; sum[6]      ; 4.327 ; 4.602 ; 4.841 ; 5.118 ;
+; registerC[4] ; sum[7]      ; 4.484 ; 4.671 ; 5.004 ; 5.190 ;
+; registerC[5] ; Cout        ; 4.492 ;       ;       ; 5.264 ;
+; registerC[5] ; sum[5]      ; 4.072 ; 4.149 ; 4.617 ; 4.691 ;
+; registerC[5] ; sum[6]      ; 4.284 ; 4.572 ; 4.830 ; 5.095 ;
+; registerC[5] ; sum[7]      ; 4.442 ; 4.629 ; 4.982 ; 5.168 ;
+; registerC[6] ; Cout        ; 4.306 ;       ;       ; 5.172 ;
+; registerC[6] ; sum[6]      ; 4.766 ; 5.041 ; 5.370 ; 5.645 ;
+; registerC[6] ; sum[7]      ; 4.211 ; 4.428 ; 4.851 ; 5.021 ;
+; registerC[7] ; Cout        ; 4.260 ;       ;       ; 4.963 ;
+; registerC[7] ; sum[7]      ; 4.210 ; 4.396 ; 4.679 ; 4.867 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 4.854 ;       ;       ; 5.715 ;
+; Cin          ; sum[0]      ; 3.790 ; 3.992 ; 4.298 ; 4.478 ;
+; Cin          ; sum[1]      ; 3.837 ; 4.005 ; 4.329 ; 4.493 ;
+; Cin          ; sum[2]      ; 3.963 ; 4.062 ; 4.547 ; 4.624 ;
+; Cin          ; sum[3]      ; 3.839 ; 3.947 ; 4.347 ; 4.452 ;
+; Cin          ; sum[4]      ; 3.958 ; 4.045 ; 4.540 ; 4.605 ;
+; Cin          ; sum[5]      ; 4.105 ; 4.211 ; 4.614 ; 4.696 ;
+; Cin          ; sum[6]      ; 4.636 ; 4.902 ; 5.280 ; 5.521 ;
+; Cin          ; sum[7]      ; 4.820 ; 5.006 ; 5.459 ; 5.643 ;
+; bitPair[0]   ; Cout        ; 4.837 ;       ;       ; 5.686 ;
+; bitPair[0]   ; sum[0]      ; 3.783 ; 3.968 ; 4.276 ; 4.460 ;
+; bitPair[0]   ; sum[1]      ; 3.788 ; 3.945 ; 4.285 ; 4.439 ;
+; bitPair[0]   ; sum[2]      ; 3.946 ; 4.045 ; 4.518 ; 4.595 ;
+; bitPair[0]   ; sum[3]      ; 3.822 ; 3.930 ; 4.318 ; 4.423 ;
+; bitPair[0]   ; sum[4]      ; 3.941 ; 4.028 ; 4.511 ; 4.576 ;
+; bitPair[0]   ; sum[5]      ; 4.088 ; 4.194 ; 4.585 ; 4.667 ;
+; bitPair[0]   ; sum[6]      ; 4.619 ; 4.885 ; 5.251 ; 5.492 ;
+; bitPair[0]   ; sum[7]      ; 4.803 ; 4.989 ; 5.430 ; 5.614 ;
+; bitPair[1]   ; Cout        ; 4.496 ;       ;       ; 5.236 ;
+; bitPair[1]   ; sum[1]      ; 3.424 ; 3.611 ; 3.839 ; 4.008 ;
+; bitPair[1]   ; sum[2]      ; 3.605 ; 3.704 ; 4.068 ; 4.145 ;
+; bitPair[1]   ; sum[3]      ; 3.481 ; 3.589 ; 3.868 ; 3.973 ;
+; bitPair[1]   ; sum[4]      ; 3.600 ; 3.687 ; 4.061 ; 4.126 ;
+; bitPair[1]   ; sum[5]      ; 3.747 ; 3.853 ; 4.135 ; 4.217 ;
+; bitPair[1]   ; sum[6]      ; 4.278 ; 4.544 ; 4.801 ; 5.042 ;
+; bitPair[1]   ; sum[7]      ; 4.462 ; 4.648 ; 4.980 ; 5.164 ;
+; bitPair[2]   ; Cout        ; 4.640 ;       ;       ; 5.565 ;
+; bitPair[2]   ; sum[2]      ; 3.426 ; 3.508 ; 3.890 ; 3.971 ;
+; bitPair[2]   ; sum[3]      ; 3.597 ; 3.728 ; 4.119 ; 4.226 ;
+; bitPair[2]   ; sum[4]      ; 3.528 ; 3.615 ; 4.008 ; 4.070 ;
+; bitPair[2]   ; sum[5]      ; 3.891 ; 3.997 ; 4.464 ; 4.546 ;
+; bitPair[2]   ; sum[6]      ; 4.422 ; 4.688 ; 5.130 ; 5.371 ;
+; bitPair[2]   ; sum[7]      ; 4.606 ; 4.792 ; 5.309 ; 5.493 ;
+; bitPair[3]   ; Cout        ; 4.647 ;       ;       ; 5.522 ;
+; bitPair[3]   ; sum[3]      ; 3.631 ; 3.738 ; 4.148 ; 4.252 ;
+; bitPair[3]   ; sum[4]      ; 3.554 ; 3.624 ; 4.076 ; 4.145 ;
+; bitPair[3]   ; sum[5]      ; 3.898 ; 4.004 ; 4.421 ; 4.503 ;
+; bitPair[3]   ; sum[6]      ; 4.429 ; 4.695 ; 5.087 ; 5.328 ;
+; bitPair[3]   ; sum[7]      ; 4.613 ; 4.799 ; 5.266 ; 5.450 ;
+; bitPair[4]   ; Cout        ; 4.004 ;       ;       ; 4.710 ;
+; bitPair[4]   ; sum[4]      ; 3.512 ; 3.593 ; 3.913 ; 3.992 ;
+; bitPair[4]   ; sum[5]      ; 3.529 ; 3.600 ; 4.011 ; 4.081 ;
+; bitPair[4]   ; sum[6]      ; 3.832 ; 4.081 ; 4.316 ; 4.564 ;
+; bitPair[4]   ; sum[7]      ; 3.970 ; 4.156 ; 4.454 ; 4.638 ;
+; bitPair[5]   ; Cout        ; 4.115 ;       ;       ; 4.841 ;
+; bitPair[5]   ; sum[5]      ; 3.741 ; 3.829 ; 4.271 ; 4.337 ;
+; bitPair[5]   ; sum[6]      ; 3.939 ; 4.205 ; 4.447 ; 4.691 ;
+; bitPair[5]   ; sum[7]      ; 4.081 ; 4.267 ; 4.585 ; 4.769 ;
+; bitPair[6]   ; Cout        ; 3.780 ;       ;       ; 4.448 ;
+; bitPair[6]   ; sum[6]      ; 4.122 ; 4.383 ; 4.579 ; 4.839 ;
+; bitPair[6]   ; sum[7]      ; 3.749 ; 3.926 ; 4.209 ; 4.383 ;
+; bitPair[7]   ; Cout        ; 3.772 ;       ;       ; 4.478 ;
+; bitPair[7]   ; sum[7]      ; 3.791 ; 3.958 ; 4.244 ; 4.432 ;
+; registerC[0] ; Cout        ; 4.599 ;       ;       ; 5.345 ;
+; registerC[0] ; sum[0]      ; 3.545 ; 3.741 ; 3.924 ; 4.117 ;
+; registerC[0] ; sum[1]      ; 3.502 ; 3.676 ; 3.899 ; 4.051 ;
+; registerC[0] ; sum[2]      ; 3.708 ; 3.807 ; 4.177 ; 4.254 ;
+; registerC[0] ; sum[3]      ; 3.584 ; 3.692 ; 3.977 ; 4.082 ;
+; registerC[0] ; sum[4]      ; 3.703 ; 3.790 ; 4.170 ; 4.235 ;
+; registerC[0] ; sum[5]      ; 3.850 ; 3.956 ; 4.244 ; 4.326 ;
+; registerC[0] ; sum[6]      ; 4.381 ; 4.647 ; 4.910 ; 5.151 ;
+; registerC[0] ; sum[7]      ; 4.565 ; 4.751 ; 5.089 ; 5.273 ;
+; registerC[1] ; Cout        ; 4.908 ;       ;       ; 5.743 ;
+; registerC[1] ; sum[1]      ; 3.808 ; 3.981 ; 4.291 ; 4.439 ;
+; registerC[1] ; sum[2]      ; 4.017 ; 4.116 ; 4.575 ; 4.652 ;
+; registerC[1] ; sum[3]      ; 3.893 ; 4.001 ; 4.375 ; 4.480 ;
+; registerC[1] ; sum[4]      ; 4.012 ; 4.099 ; 4.568 ; 4.633 ;
+; registerC[1] ; sum[5]      ; 4.159 ; 4.265 ; 4.642 ; 4.724 ;
+; registerC[1] ; sum[6]      ; 4.690 ; 4.956 ; 5.308 ; 5.549 ;
+; registerC[1] ; sum[7]      ; 4.874 ; 5.060 ; 5.487 ; 5.671 ;
+; registerC[2] ; Cout        ; 4.711 ;       ;       ; 5.590 ;
+; registerC[2] ; sum[2]      ; 3.619 ; 3.712 ; 4.088 ; 4.178 ;
+; registerC[2] ; sum[3]      ; 3.597 ; 3.710 ; 4.138 ; 4.229 ;
+; registerC[2] ; sum[4]      ; 3.642 ; 3.723 ; 4.114 ; 4.192 ;
+; registerC[2] ; sum[5]      ; 3.962 ; 4.068 ; 4.489 ; 4.571 ;
+; registerC[2] ; sum[6]      ; 4.493 ; 4.759 ; 5.155 ; 5.396 ;
+; registerC[2] ; sum[7]      ; 4.677 ; 4.863 ; 5.334 ; 5.518 ;
+; registerC[3] ; Cout        ; 4.616 ;       ;       ; 5.530 ;
+; registerC[3] ; sum[3]      ; 3.542 ; 3.638 ; 4.109 ; 4.204 ;
+; registerC[3] ; sum[4]      ; 3.512 ; 3.617 ; 4.006 ; 4.087 ;
+; registerC[3] ; sum[5]      ; 3.867 ; 3.973 ; 4.429 ; 4.511 ;
+; registerC[3] ; sum[6]      ; 4.398 ; 4.664 ; 5.095 ; 5.336 ;
+; registerC[3] ; sum[7]      ; 4.582 ; 4.768 ; 5.274 ; 5.458 ;
+; registerC[4] ; Cout        ; 4.192 ;       ;       ; 4.906 ;
+; registerC[4] ; sum[4]      ; 3.560 ; 3.642 ; 3.975 ; 4.057 ;
+; registerC[4] ; sum[5]      ; 3.630 ; 3.712 ; 4.081 ; 4.160 ;
+; registerC[4] ; sum[6]      ; 4.019 ; 4.279 ; 4.502 ; 4.759 ;
+; registerC[4] ; sum[7]      ; 4.158 ; 4.344 ; 4.650 ; 4.834 ;
+; registerC[5] ; Cout        ; 4.145 ;       ;       ; 4.895 ;
+; registerC[5] ; sum[5]      ; 3.791 ; 3.874 ; 4.303 ; 4.383 ;
+; registerC[5] ; sum[6]      ; 3.973 ; 4.257 ; 4.488 ; 4.748 ;
+; registerC[5] ; sum[7]      ; 4.111 ; 4.297 ; 4.639 ; 4.823 ;
+; registerC[6] ; Cout        ; 3.995 ;       ;       ; 4.773 ;
+; registerC[6] ; sum[6]      ; 4.324 ; 4.585 ; 4.897 ; 5.155 ;
+; registerC[6] ; sum[7]      ; 3.918 ; 4.142 ; 4.503 ; 4.695 ;
+; registerC[7] ; Cout        ; 3.966 ;       ;       ; 4.633 ;
+; registerC[7] ; sum[7]      ; 3.932 ; 4.118 ; 4.379 ; 4.561 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+-----------------------------------------------
+; Fast 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1100mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1100mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 5.059 ;       ;       ; 5.915 ;
+; Cin          ; sum[0]      ; 3.819 ; 4.002 ; 4.316 ; 4.516 ;
+; Cin          ; sum[1]      ; 3.867 ; 3.989 ; 4.366 ; 4.490 ;
+; Cin          ; sum[2]      ; 4.065 ; 4.138 ; 4.659 ; 4.749 ;
+; Cin          ; sum[3]      ; 3.919 ; 4.001 ; 4.461 ; 4.539 ;
+; Cin          ; sum[4]      ; 4.046 ; 4.124 ; 4.638 ; 4.733 ;
+; Cin          ; sum[5]      ; 4.244 ; 4.298 ; 4.806 ; 4.835 ;
+; Cin          ; sum[6]      ; 4.801 ; 5.036 ; 5.479 ; 5.731 ;
+; Cin          ; sum[7]      ; 5.001 ; 5.126 ; 5.694 ; 5.817 ;
+; bitPair[0]   ; Cout        ; 5.033 ;       ;       ; 5.862 ;
+; bitPair[0]   ; sum[0]      ; 3.800 ; 3.954 ; 4.319 ; 4.470 ;
+; bitPair[0]   ; sum[1]      ; 3.810 ; 3.932 ; 4.334 ; 4.451 ;
+; bitPair[0]   ; sum[2]      ; 4.039 ; 4.112 ; 4.606 ; 4.696 ;
+; bitPair[0]   ; sum[3]      ; 3.893 ; 3.975 ; 4.408 ; 4.486 ;
+; bitPair[0]   ; sum[4]      ; 4.020 ; 4.098 ; 4.585 ; 4.680 ;
+; bitPair[0]   ; sum[5]      ; 4.218 ; 4.272 ; 4.753 ; 4.782 ;
+; bitPair[0]   ; sum[6]      ; 4.775 ; 5.010 ; 5.426 ; 5.678 ;
+; bitPair[0]   ; sum[7]      ; 4.975 ; 5.100 ; 5.641 ; 5.764 ;
+; bitPair[1]   ; Cout        ; 4.696 ;       ;       ; 5.384 ;
+; bitPair[1]   ; sum[1]      ; 3.448 ; 3.588 ; 3.884 ; 3.994 ;
+; bitPair[1]   ; sum[2]      ; 3.702 ; 3.775 ; 4.128 ; 4.218 ;
+; bitPair[1]   ; sum[3]      ; 3.556 ; 3.638 ; 3.930 ; 4.008 ;
+; bitPair[1]   ; sum[4]      ; 3.683 ; 3.761 ; 4.107 ; 4.202 ;
+; bitPair[1]   ; sum[5]      ; 3.881 ; 3.935 ; 4.275 ; 4.304 ;
+; bitPair[1]   ; sum[6]      ; 4.438 ; 4.673 ; 4.948 ; 5.200 ;
+; bitPair[1]   ; sum[7]      ; 4.638 ; 4.763 ; 5.163 ; 5.286 ;
+; bitPair[2]   ; Cout        ; 4.781 ;       ;       ; 5.647 ;
+; bitPair[2]   ; sum[2]      ; 3.459 ; 3.503 ; 3.940 ; 3.981 ;
+; bitPair[2]   ; sum[3]      ; 3.624 ; 3.719 ; 4.167 ; 4.237 ;
+; bitPair[2]   ; sum[4]      ; 3.585 ; 3.670 ; 4.043 ; 4.145 ;
+; bitPair[2]   ; sum[5]      ; 3.966 ; 4.020 ; 4.538 ; 4.567 ;
+; bitPair[2]   ; sum[6]      ; 4.523 ; 4.758 ; 5.211 ; 5.463 ;
+; bitPair[2]   ; sum[7]      ; 4.723 ; 4.848 ; 5.426 ; 5.549 ;
+; bitPair[3]   ; Cout        ; 4.780 ;       ;       ; 5.651 ;
+; bitPair[3]   ; sum[3]      ; 3.643 ; 3.722 ; 4.190 ; 4.272 ;
+; bitPair[3]   ; sum[4]      ; 3.529 ; 3.578 ; 4.087 ; 4.133 ;
+; bitPair[3]   ; sum[5]      ; 3.965 ; 4.019 ; 4.542 ; 4.571 ;
+; bitPair[3]   ; sum[6]      ; 4.522 ; 4.757 ; 5.215 ; 5.467 ;
+; bitPair[3]   ; sum[7]      ; 4.722 ; 4.847 ; 5.430 ; 5.553 ;
+; bitPair[4]   ; Cout        ; 4.098 ;       ;       ; 4.769 ;
+; bitPair[4]   ; sum[4]      ; 3.580 ; 3.633 ; 4.008 ; 4.061 ;
+; bitPair[4]   ; sum[5]      ; 3.577 ; 3.614 ; 4.089 ; 4.123 ;
+; bitPair[4]   ; sum[6]      ; 3.878 ; 4.077 ; 4.392 ; 4.588 ;
+; bitPair[4]   ; sum[7]      ; 4.040 ; 4.165 ; 4.548 ; 4.671 ;
+; bitPair[5]   ; Cout        ; 4.250 ;       ;       ; 4.961 ;
+; bitPair[5]   ; sum[5]      ; 3.834 ; 3.900 ; 4.371 ; 4.454 ;
+; bitPair[5]   ; sum[6]      ; 4.029 ; 4.257 ; 4.531 ; 4.776 ;
+; bitPair[5]   ; sum[7]      ; 4.192 ; 4.317 ; 4.740 ; 4.863 ;
+; bitPair[6]   ; Cout        ; 3.835 ;       ;       ; 4.484 ;
+; bitPair[6]   ; sum[6]      ; 4.212 ; 4.415 ; 4.701 ; 4.904 ;
+; bitPair[6]   ; sum[7]      ; 3.780 ; 3.904 ; 4.274 ; 4.393 ;
+; bitPair[7]   ; Cout        ; 3.816 ;       ;       ; 4.482 ;
+; bitPair[7]   ; sum[7]      ; 3.809 ; 3.950 ; 4.291 ; 4.454 ;
+; registerC[0] ; Cout        ; 4.802 ;       ;       ; 5.521 ;
+; registerC[0] ; sum[0]      ; 3.568 ; 3.723 ; 3.971 ; 4.129 ;
+; registerC[0] ; sum[1]      ; 3.535 ; 3.686 ; 3.937 ; 4.103 ;
+; registerC[0] ; sum[2]      ; 3.808 ; 3.881 ; 4.265 ; 4.355 ;
+; registerC[0] ; sum[3]      ; 3.662 ; 3.744 ; 4.067 ; 4.145 ;
+; registerC[0] ; sum[4]      ; 3.789 ; 3.867 ; 4.244 ; 4.339 ;
+; registerC[0] ; sum[5]      ; 3.987 ; 4.041 ; 4.412 ; 4.441 ;
+; registerC[0] ; sum[6]      ; 4.544 ; 4.779 ; 5.085 ; 5.337 ;
+; registerC[0] ; sum[7]      ; 4.744 ; 4.869 ; 5.300 ; 5.423 ;
+; registerC[1] ; Cout        ; 5.132 ;       ;       ; 5.941 ;
+; registerC[1] ; sum[1]      ; 3.867 ; 4.024 ; 4.344 ; 4.519 ;
+; registerC[1] ; sum[2]      ; 4.138 ; 4.211 ; 4.685 ; 4.775 ;
+; registerC[1] ; sum[3]      ; 3.992 ; 4.074 ; 4.487 ; 4.565 ;
+; registerC[1] ; sum[4]      ; 4.119 ; 4.197 ; 4.664 ; 4.759 ;
+; registerC[1] ; sum[5]      ; 4.317 ; 4.371 ; 4.832 ; 4.861 ;
+; registerC[1] ; sum[6]      ; 4.874 ; 5.109 ; 5.505 ; 5.757 ;
+; registerC[1] ; sum[7]      ; 5.074 ; 5.199 ; 5.720 ; 5.843 ;
+; registerC[2] ; Cout        ; 4.865 ;       ;       ; 5.665 ;
+; registerC[2] ; sum[2]      ; 3.675 ; 3.720 ; 4.165 ; 4.213 ;
+; registerC[2] ; sum[3]      ; 3.639 ; 3.746 ; 4.150 ; 4.274 ;
+; registerC[2] ; sum[4]      ; 3.682 ; 3.732 ; 4.174 ; 4.227 ;
+; registerC[2] ; sum[5]      ; 4.050 ; 4.104 ; 4.556 ; 4.585 ;
+; registerC[2] ; sum[6]      ; 4.607 ; 4.842 ; 5.229 ; 5.481 ;
+; registerC[2] ; sum[7]      ; 4.807 ; 4.932 ; 5.444 ; 5.567 ;
+; registerC[3] ; Cout        ; 4.764 ;       ;       ; 5.629 ;
+; registerC[3] ; sum[3]      ; 3.573 ; 3.651 ; 4.157 ; 4.232 ;
+; registerC[3] ; sum[4]      ; 3.549 ; 3.615 ; 4.044 ; 4.085 ;
+; registerC[3] ; sum[5]      ; 3.949 ; 4.003 ; 4.520 ; 4.549 ;
+; registerC[3] ; sum[6]      ; 4.506 ; 4.741 ; 5.193 ; 5.445 ;
+; registerC[3] ; sum[7]      ; 4.706 ; 4.831 ; 5.408 ; 5.531 ;
+; registerC[4] ; Cout        ; 4.311 ;       ;       ; 4.974 ;
+; registerC[4] ; sum[4]      ; 3.645 ; 3.694 ; 4.066 ; 4.119 ;
+; registerC[4] ; sum[5]      ; 3.700 ; 3.738 ; 4.152 ; 4.193 ;
+; registerC[4] ; sum[6]      ; 4.091 ; 4.291 ; 4.591 ; 4.794 ;
+; registerC[4] ; sum[7]      ; 4.253 ; 4.378 ; 4.753 ; 4.876 ;
+; registerC[5] ; Cout        ; 4.252 ;       ;       ; 4.935 ;
+; registerC[5] ; sum[5]      ; 3.867 ; 3.908 ; 4.396 ; 4.433 ;
+; registerC[5] ; sum[6]      ; 4.032 ; 4.248 ; 4.564 ; 4.755 ;
+; registerC[5] ; sum[7]      ; 4.194 ; 4.319 ; 4.714 ; 4.837 ;
+; registerC[6] ; Cout        ; 4.071 ;       ;       ; 4.845 ;
+; registerC[6] ; sum[6]      ; 4.485 ; 4.684 ; 5.072 ; 5.271 ;
+; registerC[6] ; sum[7]      ; 3.957 ; 4.115 ; 4.567 ; 4.678 ;
+; registerC[7] ; Cout        ; 4.035 ;       ;       ; 4.671 ;
+; registerC[7] ; sum[7]      ; 3.978 ; 4.101 ; 4.447 ; 4.573 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 4.565 ;       ;       ; 5.320 ;
+; Cin          ; sum[0]      ; 3.532 ; 3.701 ; 4.042 ; 4.174 ;
+; Cin          ; sum[1]      ; 3.593 ; 3.717 ; 4.075 ; 4.197 ;
+; Cin          ; sum[2]      ; 3.711 ; 3.778 ; 4.281 ; 4.311 ;
+; Cin          ; sum[3]      ; 3.594 ; 3.683 ; 4.088 ; 4.174 ;
+; Cin          ; sum[4]      ; 3.693 ; 3.765 ; 4.262 ; 4.297 ;
+; Cin          ; sum[5]      ; 3.854 ; 3.926 ; 4.348 ; 4.393 ;
+; Cin          ; sum[6]      ; 4.327 ; 4.527 ; 4.950 ; 5.108 ;
+; Cin          ; sum[7]      ; 4.518 ; 4.642 ; 5.119 ; 5.240 ;
+; bitPair[0]   ; Cout        ; 4.568 ;       ;       ; 5.310 ;
+; bitPair[0]   ; sum[0]      ; 3.543 ; 3.690 ; 4.026 ; 4.171 ;
+; bitPair[0]   ; sum[1]      ; 3.552 ; 3.668 ; 4.040 ; 4.152 ;
+; bitPair[0]   ; sum[2]      ; 3.714 ; 3.781 ; 4.271 ; 4.301 ;
+; bitPair[0]   ; sum[3]      ; 3.597 ; 3.686 ; 4.078 ; 4.164 ;
+; bitPair[0]   ; sum[4]      ; 3.696 ; 3.768 ; 4.252 ; 4.287 ;
+; bitPair[0]   ; sum[5]      ; 3.857 ; 3.929 ; 4.338 ; 4.383 ;
+; bitPair[0]   ; sum[6]      ; 4.330 ; 4.530 ; 4.940 ; 5.098 ;
+; bitPair[0]   ; sum[7]      ; 4.521 ; 4.645 ; 5.109 ; 5.230 ;
+; bitPair[1]   ; Cout        ; 4.259 ;       ;       ; 4.917 ;
+; bitPair[1]   ; sum[1]      ; 3.223 ; 3.368 ; 3.652 ; 3.778 ;
+; bitPair[1]   ; sum[2]      ; 3.405 ; 3.472 ; 3.878 ; 3.908 ;
+; bitPair[1]   ; sum[3]      ; 3.288 ; 3.377 ; 3.685 ; 3.771 ;
+; bitPair[1]   ; sum[4]      ; 3.387 ; 3.459 ; 3.859 ; 3.894 ;
+; bitPair[1]   ; sum[5]      ; 3.548 ; 3.620 ; 3.945 ; 3.990 ;
+; bitPair[1]   ; sum[6]      ; 4.021 ; 4.221 ; 4.547 ; 4.705 ;
+; bitPair[1]   ; sum[7]      ; 4.212 ; 4.336 ; 4.716 ; 4.837 ;
+; bitPair[2]   ; Cout        ; 4.380 ;       ;       ; 5.205 ;
+; bitPair[2]   ; sum[2]      ; 3.243 ; 3.288 ; 3.706 ; 3.749 ;
+; bitPair[2]   ; sum[3]      ; 3.373 ; 3.487 ; 3.888 ; 3.975 ;
+; bitPair[2]   ; sum[4]      ; 3.325 ; 3.395 ; 3.815 ; 3.843 ;
+; bitPair[2]   ; sum[5]      ; 3.669 ; 3.741 ; 4.233 ; 4.278 ;
+; bitPair[2]   ; sum[6]      ; 4.142 ; 4.342 ; 4.835 ; 4.993 ;
+; bitPair[2]   ; sum[7]      ; 4.333 ; 4.457 ; 5.004 ; 5.125 ;
+; bitPair[3]   ; Cout        ; 4.353 ;       ;       ; 5.139 ;
+; bitPair[3]   ; sum[3]      ; 3.381 ; 3.470 ; 3.902 ; 3.987 ;
+; bitPair[3]   ; sum[4]      ; 3.301 ; 3.351 ; 3.828 ; 3.876 ;
+; bitPair[3]   ; sum[5]      ; 3.642 ; 3.714 ; 4.167 ; 4.212 ;
+; bitPair[3]   ; sum[6]      ; 4.115 ; 4.315 ; 4.769 ; 4.927 ;
+; bitPair[3]   ; sum[7]      ; 4.306 ; 4.430 ; 4.938 ; 5.059 ;
+; bitPair[4]   ; Cout        ; 3.794 ;       ;       ; 4.427 ;
+; bitPair[4]   ; sum[4]      ; 3.321 ; 3.378 ; 3.735 ; 3.792 ;
+; bitPair[4]   ; sum[5]      ; 3.345 ; 3.382 ; 3.830 ; 3.865 ;
+; bitPair[4]   ; sum[6]      ; 3.609 ; 3.789 ; 4.091 ; 4.269 ;
+; bitPair[4]   ; sum[7]      ; 3.747 ; 3.871 ; 4.226 ; 4.347 ;
+; bitPair[5]   ; Cout        ; 3.902 ;       ;       ; 4.552 ;
+; bitPair[5]   ; sum[5]      ; 3.540 ; 3.599 ; 4.074 ; 4.096 ;
+; bitPair[5]   ; sum[6]      ; 3.714 ; 3.916 ; 4.225 ; 4.390 ;
+; bitPair[5]   ; sum[7]      ; 3.855 ; 3.979 ; 4.351 ; 4.472 ;
+; bitPair[6]   ; Cout        ; 3.576 ;       ;       ; 4.188 ;
+; bitPair[6]   ; sum[6]      ; 3.887 ; 4.075 ; 4.351 ; 4.538 ;
+; bitPair[6]   ; sum[7]      ; 3.532 ; 3.649 ; 4.001 ; 4.114 ;
+; bitPair[7]   ; Cout        ; 3.543 ;       ;       ; 4.181 ;
+; bitPair[7]   ; sum[7]      ; 3.556 ; 3.661 ; 4.012 ; 4.138 ;
+; registerC[0] ; Cout        ; 4.339 ;       ;       ; 5.003 ;
+; registerC[0] ; sum[0]      ; 3.313 ; 3.470 ; 3.710 ; 3.863 ;
+; registerC[0] ; sum[1]      ; 3.268 ; 3.405 ; 3.691 ; 3.792 ;
+; registerC[0] ; sum[2]      ; 3.485 ; 3.552 ; 3.964 ; 3.994 ;
+; registerC[0] ; sum[3]      ; 3.368 ; 3.457 ; 3.771 ; 3.857 ;
+; registerC[0] ; sum[4]      ; 3.467 ; 3.539 ; 3.945 ; 3.980 ;
+; registerC[0] ; sum[5]      ; 3.628 ; 3.700 ; 4.031 ; 4.076 ;
+; registerC[0] ; sum[6]      ; 4.101 ; 4.301 ; 4.633 ; 4.791 ;
+; registerC[0] ; sum[7]      ; 4.292 ; 4.416 ; 4.802 ; 4.923 ;
+; registerC[1] ; Cout        ; 4.648 ;       ;       ; 5.388 ;
+; registerC[1] ; sum[1]      ; 3.575 ; 3.711 ; 4.076 ; 4.169 ;
+; registerC[1] ; sum[2]      ; 3.794 ; 3.861 ; 4.349 ; 4.379 ;
+; registerC[1] ; sum[3]      ; 3.677 ; 3.766 ; 4.156 ; 4.242 ;
+; registerC[1] ; sum[4]      ; 3.776 ; 3.848 ; 4.330 ; 4.365 ;
+; registerC[1] ; sum[5]      ; 3.937 ; 4.009 ; 4.416 ; 4.461 ;
+; registerC[1] ; sum[6]      ; 4.410 ; 4.610 ; 5.018 ; 5.176 ;
+; registerC[1] ; sum[7]      ; 4.601 ; 4.725 ; 5.187 ; 5.308 ;
+; registerC[2] ; Cout        ; 4.459 ;       ;       ; 5.225 ;
+; registerC[2] ; sum[2]      ; 3.424 ; 3.479 ; 3.890 ; 3.941 ;
+; registerC[2] ; sum[3]      ; 3.376 ; 3.477 ; 3.904 ; 3.968 ;
+; registerC[2] ; sum[4]      ; 3.430 ; 3.490 ; 3.898 ; 3.954 ;
+; registerC[2] ; sum[5]      ; 3.748 ; 3.820 ; 4.253 ; 4.298 ;
+; registerC[2] ; sum[6]      ; 4.221 ; 4.421 ; 4.855 ; 5.013 ;
+; registerC[2] ; sum[7]      ; 4.412 ; 4.536 ; 5.024 ; 5.145 ;
+; registerC[3] ; Cout        ; 4.364 ;       ;       ; 5.169 ;
+; registerC[3] ; sum[3]      ; 3.329 ; 3.408 ; 3.878 ; 3.955 ;
+; registerC[3] ; sum[4]      ; 3.308 ; 3.393 ; 3.792 ; 3.850 ;
+; registerC[3] ; sum[5]      ; 3.653 ; 3.725 ; 4.197 ; 4.242 ;
+; registerC[3] ; sum[6]      ; 4.126 ; 4.326 ; 4.799 ; 4.957 ;
+; registerC[3] ; sum[7]      ; 4.317 ; 4.441 ; 4.968 ; 5.089 ;
+; registerC[4] ; Cout        ; 3.981 ;       ;       ; 4.614 ;
+; registerC[4] ; sum[4]      ; 3.366 ; 3.426 ; 3.796 ; 3.856 ;
+; registerC[4] ; sum[5]      ; 3.455 ; 3.502 ; 3.903 ; 3.946 ;
+; registerC[4] ; sum[6]      ; 3.795 ; 3.985 ; 4.269 ; 4.455 ;
+; registerC[4] ; sum[7]      ; 3.934 ; 4.058 ; 4.413 ; 4.534 ;
+; registerC[5] ; Cout        ; 3.924 ;       ;       ; 4.590 ;
+; registerC[5] ; sum[5]      ; 3.597 ; 3.644 ; 4.100 ; 4.144 ;
+; registerC[5] ; sum[6]      ; 3.738 ; 3.953 ; 4.243 ; 4.431 ;
+; registerC[5] ; sum[7]      ; 3.877 ; 4.001 ; 4.389 ; 4.510 ;
+; registerC[6] ; Cout        ; 3.778 ;       ;       ; 4.471 ;
+; registerC[6] ; sum[6]      ; 4.068 ; 4.258 ; 4.617 ; 4.804 ;
+; registerC[6] ; sum[7]      ; 3.678 ; 3.842 ; 4.243 ; 4.371 ;
+; registerC[7] ; Cout        ; 3.755 ;       ;       ; 4.358 ;
+; registerC[7] ; sum[7]      ; 3.708 ; 3.832 ; 4.157 ; 4.278 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Fast 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 9.284 ;       ;       ; 9.929 ;
+; Cin          ; sum[0]      ; 6.733 ; 6.926 ; 6.945 ; 7.171 ;
+; Cin          ; sum[1]      ; 6.840 ; 6.956 ; 7.046 ; 7.167 ;
+; Cin          ; sum[2]      ; 7.297 ; 7.392 ; 7.641 ; 7.769 ;
+; Cin          ; sum[3]      ; 7.080 ; 7.117 ; 7.360 ; 7.389 ;
+; Cin          ; sum[4]      ; 7.242 ; 7.329 ; 7.584 ; 7.704 ;
+; Cin          ; sum[5]      ; 7.667 ; 7.707 ; 7.974 ; 7.964 ;
+; Cin          ; sum[6]      ; 8.667 ; 8.963 ; 9.147 ; 9.478 ;
+; Cin          ; sum[7]      ; 9.183 ; 9.318 ; 9.645 ; 9.772 ;
+; bitPair[0]   ; Cout        ; 9.140 ;       ;       ; 9.737 ;
+; bitPair[0]   ; sum[0]      ; 6.598 ; 6.742 ; 6.860 ; 6.990 ;
+; bitPair[0]   ; sum[1]      ; 6.597 ; 6.729 ; 6.865 ; 6.979 ;
+; bitPair[0]   ; sum[2]      ; 7.153 ; 7.248 ; 7.449 ; 7.577 ;
+; bitPair[0]   ; sum[3]      ; 6.936 ; 6.973 ; 7.168 ; 7.197 ;
+; bitPair[0]   ; sum[4]      ; 7.098 ; 7.185 ; 7.392 ; 7.512 ;
+; bitPair[0]   ; sum[5]      ; 7.523 ; 7.563 ; 7.782 ; 7.772 ;
+; bitPair[0]   ; sum[6]      ; 8.523 ; 8.819 ; 8.955 ; 9.286 ;
+; bitPair[0]   ; sum[7]      ; 9.039 ; 9.174 ; 9.453 ; 9.580 ;
+; bitPair[1]   ; Cout        ; 8.627 ;       ;       ; 9.042 ;
+; bitPair[1]   ; sum[1]      ; 6.023 ; 6.197 ; 6.239 ; 6.337 ;
+; bitPair[1]   ; sum[2]      ; 6.640 ; 6.735 ; 6.754 ; 6.882 ;
+; bitPair[1]   ; sum[3]      ; 6.423 ; 6.460 ; 6.473 ; 6.502 ;
+; bitPair[1]   ; sum[4]      ; 6.585 ; 6.672 ; 6.697 ; 6.817 ;
+; bitPair[1]   ; sum[5]      ; 7.010 ; 7.050 ; 7.087 ; 7.077 ;
+; bitPair[1]   ; sum[6]      ; 8.010 ; 8.306 ; 8.260 ; 8.591 ;
+; bitPair[1]   ; sum[7]      ; 8.526 ; 8.661 ; 8.758 ; 8.885 ;
+; bitPair[2]   ; Cout        ; 8.679 ;       ;       ; 9.351 ;
+; bitPair[2]   ; sum[2]      ; 6.049 ; 6.095 ; 6.256 ; 6.288 ;
+; bitPair[2]   ; sum[3]      ; 6.423 ; 6.503 ; 6.694 ; 6.724 ;
+; bitPair[2]   ; sum[4]      ; 6.306 ; 6.392 ; 6.490 ; 6.611 ;
+; bitPair[2]   ; sum[5]      ; 7.062 ; 7.102 ; 7.396 ; 7.386 ;
+; bitPair[2]   ; sum[6]      ; 8.062 ; 8.358 ; 8.569 ; 8.900 ;
+; bitPair[2]   ; sum[7]      ; 8.578 ; 8.713 ; 9.067 ; 9.194 ;
+; bitPair[3]   ; Cout        ; 8.854 ;       ;       ; 9.511 ;
+; bitPair[3]   ; sum[3]      ; 6.661 ; 6.691 ; 6.932 ; 6.968 ;
+; bitPair[3]   ; sum[4]      ; 6.278 ; 6.316 ; 6.576 ; 6.600 ;
+; bitPair[3]   ; sum[5]      ; 7.237 ; 7.277 ; 7.556 ; 7.546 ;
+; bitPair[3]   ; sum[6]      ; 8.237 ; 8.533 ; 8.729 ; 9.060 ;
+; bitPair[3]   ; sum[7]      ; 8.753 ; 8.888 ; 9.227 ; 9.354 ;
+; bitPair[4]   ; Cout        ; 7.287 ;       ;       ; 7.686 ;
+; bitPair[4]   ; sum[4]      ; 6.409 ; 6.439 ; 6.541 ; 6.571 ;
+; bitPair[4]   ; sum[5]      ; 6.320 ; 6.325 ; 6.565 ; 6.556 ;
+; bitPair[4]   ; sum[6]      ; 6.773 ; 7.021 ; 7.020 ; 7.254 ;
+; bitPair[4]   ; sum[7]      ; 7.186 ; 7.321 ; 7.402 ; 7.529 ;
+; bitPair[5]   ; Cout        ; 7.585 ;       ;       ; 8.069 ;
+; bitPair[5]   ; sum[5]      ; 6.795 ; 6.849 ; 7.083 ; 7.170 ;
+; bitPair[5]   ; sum[6]      ; 7.066 ; 7.363 ; 7.302 ; 7.632 ;
+; bitPair[5]   ; sum[7]      ; 7.484 ; 7.619 ; 7.785 ; 7.912 ;
+; bitPair[6]   ; Cout        ; 6.703 ;       ;       ; 7.070 ;
+; bitPair[6]   ; sum[6]      ; 7.501 ; 7.741 ; 7.683 ; 7.923 ;
+; bitPair[6]   ; sum[7]      ; 6.606 ; 6.754 ; 6.793 ; 6.923 ;
+; bitPair[7]   ; Cout        ; 6.731 ;       ;       ; 7.198 ;
+; bitPair[7]   ; sum[7]      ; 6.753 ; 6.936 ; 6.933 ; 7.162 ;
+; registerC[0] ; Cout        ; 8.968 ;       ;       ; 9.387 ;
+; registerC[0] ; sum[0]      ; 6.426 ; 6.555 ; 6.502 ; 6.637 ;
+; registerC[0] ; sum[1]      ; 6.304 ; 6.483 ; 6.388 ; 6.601 ;
+; registerC[0] ; sum[2]      ; 6.981 ; 7.076 ; 7.099 ; 7.227 ;
+; registerC[0] ; sum[3]      ; 6.764 ; 6.801 ; 6.818 ; 6.847 ;
+; registerC[0] ; sum[4]      ; 6.926 ; 7.013 ; 7.042 ; 7.162 ;
+; registerC[0] ; sum[5]      ; 7.351 ; 7.391 ; 7.432 ; 7.422 ;
+; registerC[0] ; sum[6]      ; 8.351 ; 8.647 ; 8.605 ; 8.936 ;
+; registerC[0] ; sum[7]      ; 8.867 ; 9.002 ; 9.103 ; 9.230 ;
+; registerC[1] ; Cout        ; 9.461 ;       ;       ; 9.983 ;
+; registerC[1] ; sum[1]      ; 6.807 ; 6.984 ; 6.981 ; 7.193 ;
+; registerC[1] ; sum[2]      ; 7.474 ; 7.569 ; 7.695 ; 7.823 ;
+; registerC[1] ; sum[3]      ; 7.257 ; 7.294 ; 7.414 ; 7.443 ;
+; registerC[1] ; sum[4]      ; 7.419 ; 7.506 ; 7.638 ; 7.758 ;
+; registerC[1] ; sum[5]      ; 7.844 ; 7.884 ; 8.028 ; 8.018 ;
+; registerC[1] ; sum[6]      ; 8.844 ; 9.140 ; 9.201 ; 9.532 ;
+; registerC[1] ; sum[7]      ; 9.360 ; 9.495 ; 9.699 ; 9.826 ;
+; registerC[2] ; Cout        ; 8.902 ;       ;       ; 9.443 ;
+; registerC[2] ; sum[2]      ; 6.572 ; 6.603 ; 6.783 ; 6.820 ;
+; registerC[2] ; sum[3]      ; 6.470 ; 6.564 ; 6.728 ; 6.855 ;
+; registerC[2] ; sum[4]      ; 6.550 ; 6.573 ; 6.763 ; 6.792 ;
+; registerC[2] ; sum[5]      ; 7.285 ; 7.325 ; 7.488 ; 7.478 ;
+; registerC[2] ; sum[6]      ; 8.285 ; 8.581 ; 8.661 ; 8.992 ;
+; registerC[2] ; sum[7]      ; 8.801 ; 8.936 ; 9.159 ; 9.286 ;
+; registerC[3] ; Cout        ; 8.606 ;       ;       ; 9.245 ;
+; registerC[3] ; sum[3]      ; 6.277 ; 6.322 ; 6.634 ; 6.665 ;
+; registerC[3] ; sum[4]      ; 6.189 ; 6.262 ; 6.407 ; 6.430 ;
+; registerC[3] ; sum[5]      ; 6.989 ; 7.029 ; 7.290 ; 7.280 ;
+; registerC[3] ; sum[6]      ; 7.989 ; 8.285 ; 8.463 ; 8.794 ;
+; registerC[3] ; sum[7]      ; 8.505 ; 8.640 ; 8.961 ; 9.088 ;
+; registerC[4] ; Cout        ; 7.740 ;       ;       ; 8.128 ;
+; registerC[4] ; sum[4]      ; 6.493 ; 6.515 ; 6.675 ; 6.705 ;
+; registerC[4] ; sum[5]      ; 6.616 ; 6.606 ; 6.775 ; 6.771 ;
+; registerC[4] ; sum[6]      ; 7.226 ; 7.459 ; 7.455 ; 7.694 ;
+; registerC[4] ; sum[7]      ; 7.639 ; 7.774 ; 7.844 ; 7.971 ;
+; registerC[5] ; Cout        ; 7.568 ;       ;       ; 7.992 ;
+; registerC[5] ; sum[5]      ; 6.883 ; 6.880 ; 7.149 ; 7.138 ;
+; registerC[5] ; sum[6]      ; 7.054 ; 7.337 ; 7.326 ; 7.559 ;
+; registerC[5] ; sum[7]      ; 7.467 ; 7.602 ; 7.708 ; 7.835 ;
+; registerC[6] ; Cout        ; 7.184 ;       ;       ; 7.788 ;
+; registerC[6] ; sum[6]      ; 8.037 ; 8.269 ; 8.398 ; 8.630 ;
+; registerC[6] ; sum[7]      ; 6.945 ; 7.172 ; 7.415 ; 7.517 ;
+; registerC[7] ; Cout        ; 7.160 ;       ;       ; 7.499 ;
+; registerC[7] ; sum[7]      ; 7.059 ; 7.187 ; 7.208 ; 7.342 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; Cin          ; Cout        ; 4.565 ;       ;       ; 5.320 ;
+; Cin          ; sum[0]      ; 3.532 ; 3.701 ; 4.042 ; 4.174 ;
+; Cin          ; sum[1]      ; 3.593 ; 3.717 ; 4.075 ; 4.197 ;
+; Cin          ; sum[2]      ; 3.711 ; 3.778 ; 4.281 ; 4.311 ;
+; Cin          ; sum[3]      ; 3.594 ; 3.683 ; 4.088 ; 4.174 ;
+; Cin          ; sum[4]      ; 3.693 ; 3.765 ; 4.262 ; 4.297 ;
+; Cin          ; sum[5]      ; 3.854 ; 3.926 ; 4.348 ; 4.393 ;
+; Cin          ; sum[6]      ; 4.327 ; 4.527 ; 4.950 ; 5.108 ;
+; Cin          ; sum[7]      ; 4.518 ; 4.642 ; 5.119 ; 5.240 ;
+; bitPair[0]   ; Cout        ; 4.568 ;       ;       ; 5.310 ;
+; bitPair[0]   ; sum[0]      ; 3.543 ; 3.690 ; 4.026 ; 4.171 ;
+; bitPair[0]   ; sum[1]      ; 3.552 ; 3.668 ; 4.040 ; 4.152 ;
+; bitPair[0]   ; sum[2]      ; 3.714 ; 3.781 ; 4.271 ; 4.301 ;
+; bitPair[0]   ; sum[3]      ; 3.597 ; 3.686 ; 4.078 ; 4.164 ;
+; bitPair[0]   ; sum[4]      ; 3.696 ; 3.768 ; 4.252 ; 4.287 ;
+; bitPair[0]   ; sum[5]      ; 3.857 ; 3.929 ; 4.338 ; 4.383 ;
+; bitPair[0]   ; sum[6]      ; 4.330 ; 4.530 ; 4.940 ; 5.098 ;
+; bitPair[0]   ; sum[7]      ; 4.521 ; 4.645 ; 5.109 ; 5.230 ;
+; bitPair[1]   ; Cout        ; 4.259 ;       ;       ; 4.917 ;
+; bitPair[1]   ; sum[1]      ; 3.223 ; 3.368 ; 3.652 ; 3.778 ;
+; bitPair[1]   ; sum[2]      ; 3.405 ; 3.472 ; 3.878 ; 3.908 ;
+; bitPair[1]   ; sum[3]      ; 3.288 ; 3.377 ; 3.685 ; 3.771 ;
+; bitPair[1]   ; sum[4]      ; 3.387 ; 3.459 ; 3.859 ; 3.894 ;
+; bitPair[1]   ; sum[5]      ; 3.548 ; 3.620 ; 3.945 ; 3.990 ;
+; bitPair[1]   ; sum[6]      ; 4.021 ; 4.221 ; 4.547 ; 4.705 ;
+; bitPair[1]   ; sum[7]      ; 4.212 ; 4.336 ; 4.716 ; 4.837 ;
+; bitPair[2]   ; Cout        ; 4.380 ;       ;       ; 5.205 ;
+; bitPair[2]   ; sum[2]      ; 3.243 ; 3.288 ; 3.706 ; 3.749 ;
+; bitPair[2]   ; sum[3]      ; 3.373 ; 3.487 ; 3.888 ; 3.975 ;
+; bitPair[2]   ; sum[4]      ; 3.325 ; 3.395 ; 3.815 ; 3.843 ;
+; bitPair[2]   ; sum[5]      ; 3.669 ; 3.741 ; 4.233 ; 4.278 ;
+; bitPair[2]   ; sum[6]      ; 4.142 ; 4.342 ; 4.835 ; 4.993 ;
+; bitPair[2]   ; sum[7]      ; 4.333 ; 4.457 ; 5.004 ; 5.125 ;
+; bitPair[3]   ; Cout        ; 4.353 ;       ;       ; 5.139 ;
+; bitPair[3]   ; sum[3]      ; 3.381 ; 3.470 ; 3.902 ; 3.987 ;
+; bitPair[3]   ; sum[4]      ; 3.301 ; 3.351 ; 3.828 ; 3.876 ;
+; bitPair[3]   ; sum[5]      ; 3.642 ; 3.714 ; 4.167 ; 4.212 ;
+; bitPair[3]   ; sum[6]      ; 4.115 ; 4.315 ; 4.769 ; 4.927 ;
+; bitPair[3]   ; sum[7]      ; 4.306 ; 4.430 ; 4.938 ; 5.059 ;
+; bitPair[4]   ; Cout        ; 3.794 ;       ;       ; 4.427 ;
+; bitPair[4]   ; sum[4]      ; 3.321 ; 3.378 ; 3.735 ; 3.792 ;
+; bitPair[4]   ; sum[5]      ; 3.345 ; 3.382 ; 3.830 ; 3.865 ;
+; bitPair[4]   ; sum[6]      ; 3.609 ; 3.789 ; 4.091 ; 4.269 ;
+; bitPair[4]   ; sum[7]      ; 3.747 ; 3.871 ; 4.226 ; 4.347 ;
+; bitPair[5]   ; Cout        ; 3.902 ;       ;       ; 4.552 ;
+; bitPair[5]   ; sum[5]      ; 3.540 ; 3.599 ; 4.074 ; 4.096 ;
+; bitPair[5]   ; sum[6]      ; 3.714 ; 3.916 ; 4.225 ; 4.390 ;
+; bitPair[5]   ; sum[7]      ; 3.855 ; 3.979 ; 4.351 ; 4.472 ;
+; bitPair[6]   ; Cout        ; 3.576 ;       ;       ; 4.188 ;
+; bitPair[6]   ; sum[6]      ; 3.887 ; 4.075 ; 4.351 ; 4.538 ;
+; bitPair[6]   ; sum[7]      ; 3.532 ; 3.649 ; 4.001 ; 4.114 ;
+; bitPair[7]   ; Cout        ; 3.543 ;       ;       ; 4.181 ;
+; bitPair[7]   ; sum[7]      ; 3.556 ; 3.661 ; 4.012 ; 4.138 ;
+; registerC[0] ; Cout        ; 4.339 ;       ;       ; 5.003 ;
+; registerC[0] ; sum[0]      ; 3.313 ; 3.470 ; 3.710 ; 3.863 ;
+; registerC[0] ; sum[1]      ; 3.268 ; 3.405 ; 3.691 ; 3.792 ;
+; registerC[0] ; sum[2]      ; 3.485 ; 3.552 ; 3.964 ; 3.994 ;
+; registerC[0] ; sum[3]      ; 3.368 ; 3.457 ; 3.771 ; 3.857 ;
+; registerC[0] ; sum[4]      ; 3.467 ; 3.539 ; 3.945 ; 3.980 ;
+; registerC[0] ; sum[5]      ; 3.628 ; 3.700 ; 4.031 ; 4.076 ;
+; registerC[0] ; sum[6]      ; 4.101 ; 4.301 ; 4.633 ; 4.791 ;
+; registerC[0] ; sum[7]      ; 4.292 ; 4.416 ; 4.802 ; 4.923 ;
+; registerC[1] ; Cout        ; 4.648 ;       ;       ; 5.388 ;
+; registerC[1] ; sum[1]      ; 3.575 ; 3.711 ; 4.076 ; 4.169 ;
+; registerC[1] ; sum[2]      ; 3.794 ; 3.861 ; 4.349 ; 4.379 ;
+; registerC[1] ; sum[3]      ; 3.677 ; 3.766 ; 4.156 ; 4.242 ;
+; registerC[1] ; sum[4]      ; 3.776 ; 3.848 ; 4.330 ; 4.365 ;
+; registerC[1] ; sum[5]      ; 3.937 ; 4.009 ; 4.416 ; 4.461 ;
+; registerC[1] ; sum[6]      ; 4.410 ; 4.610 ; 5.018 ; 5.176 ;
+; registerC[1] ; sum[7]      ; 4.601 ; 4.725 ; 5.187 ; 5.308 ;
+; registerC[2] ; Cout        ; 4.459 ;       ;       ; 5.225 ;
+; registerC[2] ; sum[2]      ; 3.424 ; 3.479 ; 3.890 ; 3.941 ;
+; registerC[2] ; sum[3]      ; 3.376 ; 3.477 ; 3.904 ; 3.968 ;
+; registerC[2] ; sum[4]      ; 3.430 ; 3.490 ; 3.898 ; 3.954 ;
+; registerC[2] ; sum[5]      ; 3.748 ; 3.820 ; 4.253 ; 4.298 ;
+; registerC[2] ; sum[6]      ; 4.221 ; 4.421 ; 4.855 ; 5.013 ;
+; registerC[2] ; sum[7]      ; 4.412 ; 4.536 ; 5.024 ; 5.145 ;
+; registerC[3] ; Cout        ; 4.364 ;       ;       ; 5.169 ;
+; registerC[3] ; sum[3]      ; 3.329 ; 3.408 ; 3.878 ; 3.955 ;
+; registerC[3] ; sum[4]      ; 3.308 ; 3.393 ; 3.792 ; 3.850 ;
+; registerC[3] ; sum[5]      ; 3.653 ; 3.725 ; 4.197 ; 4.242 ;
+; registerC[3] ; sum[6]      ; 4.126 ; 4.326 ; 4.799 ; 4.957 ;
+; registerC[3] ; sum[7]      ; 4.317 ; 4.441 ; 4.968 ; 5.089 ;
+; registerC[4] ; Cout        ; 3.981 ;       ;       ; 4.614 ;
+; registerC[4] ; sum[4]      ; 3.366 ; 3.426 ; 3.796 ; 3.856 ;
+; registerC[4] ; sum[5]      ; 3.455 ; 3.502 ; 3.903 ; 3.946 ;
+; registerC[4] ; sum[6]      ; 3.795 ; 3.985 ; 4.269 ; 4.455 ;
+; registerC[4] ; sum[7]      ; 3.934 ; 4.058 ; 4.413 ; 4.534 ;
+; registerC[5] ; Cout        ; 3.924 ;       ;       ; 4.590 ;
+; registerC[5] ; sum[5]      ; 3.597 ; 3.644 ; 4.100 ; 4.144 ;
+; registerC[5] ; sum[6]      ; 3.738 ; 3.953 ; 4.243 ; 4.431 ;
+; registerC[5] ; sum[7]      ; 3.877 ; 4.001 ; 4.389 ; 4.510 ;
+; registerC[6] ; Cout        ; 3.778 ;       ;       ; 4.471 ;
+; registerC[6] ; sum[6]      ; 4.068 ; 4.258 ; 4.617 ; 4.804 ;
+; registerC[6] ; sum[7]      ; 3.678 ; 3.842 ; 4.243 ; 4.371 ;
+; registerC[7] ; Cout        ; 3.755 ;       ;       ; 4.358 ;
+; registerC[7] ; sum[7]      ; 3.708 ; 3.832 ; 4.157 ; 4.278 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                             ;
++--------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin    ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++--------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; sum[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sum[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sum[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sum[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sum[4] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sum[5] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sum[6] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; sum[7] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Cout   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++--------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-----------------------------------------------------------------+
+; Input Transition Times                                          ;
++--------------+--------------+-----------------+-----------------+
+; Pin          ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++--------------+--------------+-----------------+-----------------+
+; Cin          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[0]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[1]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[2]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[3]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[4] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[4]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[5] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[5]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[6] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[6]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; registerC[7] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bitPair[7]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++--------------+--------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sum[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; sum[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; sum[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; sum[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; sum[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
+; sum[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; sum[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; sum[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
+; Cout   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sum[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; sum[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; sum[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; sum[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; sum[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
+; sum[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; sum[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; sum[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
+; Cout   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sum[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; sum[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; sum[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; sum[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; sum[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; sum[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; sum[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; sum[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Cout   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; sum[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; sum[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; sum[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; sum[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; sum[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; sum[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; sum[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; sum[7] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; Cout   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 17    ; 17   ;
+; Unconstrained Input Port Paths  ; 97    ; 97   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 97    ; 97   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+    Info: Processing started: Wed Nov 15 04:31:39 2017
+Info: Command: quartus_sta adder -c adder
+Info: qsta_default_script.tcl version: #11
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'adder.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1100mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1100mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1214 megabytes
+    Info: Processing ended: Wed Nov 15 04:31:51 2017
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:06
+
+

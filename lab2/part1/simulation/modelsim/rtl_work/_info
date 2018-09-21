@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim
+Elab2_1
+Z1 w1506692041
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/lab2_1.vhd
+Z5 F/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/lab2_1.vhd
+l0
+L10
+V0PbAW`QPd=dJc3Q:73?Hk2
+!s100 Zb]WOR0H`3DhAZf[0mBd03
+Z6 OV;C;10.3d;59
+31
+Z7 !s110 1506694956
+!i10b 1
+Z8 !s108 1506694956.970822
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/lab2_1.vhd|
+Z10 !s107 /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/lab2_1.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Abehavior_lab2_1
+R2
+R3
+DEx4 work 6 lab2_1 0 22 0PbAW`QPd=dJc3Q:73?Hk2
+l20
+L18
+Vb7>L2;n[DVN@E@@ha1WVC3
+!s100 0<PlS@XJN1<bWK3NS[6NU1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Elab2_1_vhd_tst
+Z13 w1506692213
+R2
+R3
+R0
+Z14 8/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht
+Z15 F/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht
+l0
+L31
+V<K=4W=mEj23o9Q;j1fT682
+!s100 YGJom2U6Sn[F@XKC34`O?3
+R6
+31
+Z16 !s110 1506694957
+!i10b 1
+Z17 !s108 1506694956.996212
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht|
+Z19 !s107 /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht|
+!i113 1
+R11
+R12
+Alab2_1_arch
+R2
+R3
+DEx4 work 14 lab2_1_vhd_tst 0 22 <K=4W=mEj23o9Q;j1fT682
+l46
+L33
+VVMObMD[=1ObX11[Q5bjP90
+!s100 UHdoUa:mBO5_MEz4>=MVJ2
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12

@@ -1,0 +1,33 @@
+
+//float convolution(float *, int, int);
+
+__kernel void convolution_kernel(__global const float* restrict inputArray, __global const int* restrict  size,__global float* restrict result)
+
+{
+	int c1; 
+	//int temp;
+ 	
+ 	c1 = get_global_id(0);	
+	
+	//temp =  0 | A[i];
+	//temp = (temp << 16) | B[i];
+	
+	float kernelArray[3] = {1.0/3.0, 1.0/2.0, 1.0/6.0};
+	
+	if (c1 == 0)
+	{
+		result[0] = (inputArray[c1] * kernelArray[1]) + (inputArray[c1 + 1] * kernelArray[2]);
+	}
+	else if (c1 == (*size - 1))
+	{
+		result[c1] = (inputArray[c1 - 1] * kernelArray[0]) + (inputArray[c1] * kernelArray[1]);
+	}
+	else
+	{
+		result[c1] = (inputArray[c1 - 1]  * kernelArray[0]) + (inputArray[c1] * kernelArray[1]) + (inputArray[c1 + 1] * kernelArray[2]);
+	}
+
+
+	//result[i] = convolution(inputArray, size, c1);
+//	printf("Sending%d,received%don%d", temp, product[i], i);
+}

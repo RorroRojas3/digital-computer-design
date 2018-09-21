@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/simulation/modelsim
+Etraffic_machine
+Z1 w1508348260
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/traffic_machine.vhd
+Z5 F/home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/traffic_machine.vhd
+l0
+L13
+VDnJdOQde1FF]hkD?Ul:NO3
+!s100 N7ccgk]_3?<h7;C=cNOEa3
+Z6 OV;C;10.3d;59
+31
+Z7 !s110 1508939658
+!i10b 1
+Z8 !s108 1508939658.869678
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/traffic_machine.vhd|
+Z10 !s107 /home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/traffic_machine.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Abehavior_traffic_machine
+R2
+R3
+DEx4 work 15 traffic_machine 0 22 DnJdOQde1FF]hkD?Ul:NO3
+l30
+L24
+VcETbnk6Oz=WYZ46ibAlH`2
+!s100 <`c4oEO69U`17TzQ@6lfJ2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etraffic_machine_vhd_tst
+Z13 w1508031295
+R2
+R3
+R0
+Z14 8/home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/simulation/modelsim/traffic_machine.vht
+Z15 F/home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/simulation/modelsim/traffic_machine.vht
+l0
+L31
+ViizfmW>nT2Q<?<JlKl74=1
+!s100 L]gfA;kn7eVDV?i]OW]oQ3
+R6
+31
+Z16 !s110 1508939659
+!i10b 1
+Z17 !s108 1508939659.002874
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/simulation/modelsim/traffic_machine.vht|
+Z19 !s107 /home/rodrigo/Dropbox/Fall 2017/ece3270/lab3/PartOne/simulation/modelsim/traffic_machine.vht|
+!i113 1
+R11
+R12
+Atraffic_machine_arch
+R2
+R3
+DEx4 work 23 traffic_machine_vhd_tst 0 22 iizfmW>nT2Q<?<JlKl74=1
+l50
+L33
+Vfg48m[A`4S?l:P^9UVOdb2
+!s100 CBAPP[b5BXaj2FK4eT7oO0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12

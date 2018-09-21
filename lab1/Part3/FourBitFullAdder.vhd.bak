@@ -1,0 +1,33 @@
+-- Author: Rodrigo Rojas
+-- Contact: rrojas@clemson.edu
+
+-- Four Bit Full Adders
+
+-- Libary Declaration Section 
+LIBRARY ieee;
+-- Library ieee is used
+USE ieee.std_logic_1164.ALL;
+
+-- Entity for a Four Bit Full Adder is declared which contains nine
+-- std_logic inputs B0, B1, B2, B3, A0, A1, A2, A3 and Cin. It also
+-- contains five std_logic outputs Cout, S3, S2, S1, and S0
+ENTITY FourBitFullAdder IS
+	PORT (B0, A0, Cin, B1, A1, B2, A2, B3, A3: IN std_logic;
+			Cout, S3, S2, S1, S0: OUT	std_logic
+			);
+END FourBitFullAdder;
+
+-- Architecture of a Four Bit Full Adder is declared and described its functionality
+-- through Boolean logic based on Truth Table and Kornough Maps.
+ARCHITECTURE behavior_FourBitFullAdder OF FourBitFullAdder IS
+	COMPONENT FullAdder 
+		PORT (B, A, Cin: IN std_logic;
+				Cout, Sum: OUT std_logic);
+	END COMPONENT;
+	SIGNAL Carry0, Carry1, Carry2: std_logic;
+BEGIN
+	FullAdder0: FullAdder PORT MAP(B => B0, A => A0, Cin => Cin, Cout => Carry0, Sum => S0);
+	FullAdder1: FullAdder PORT MAP(B => B1, A => A1, Cin => Carry0, Cout => Carry1, Sum => S1);
+	FullAdder2: FullAdder PORT MAP(B => B2, A => A2, Cin => Carry1, Cout => Carry2, Sum => S2);
+	FULLAdder3: FullAdder PORT MAP(B => B3, A => A3, Cin => Carry2, Cout => Cout, Sum => S3);
+END behavior_FourBitFullAdder;

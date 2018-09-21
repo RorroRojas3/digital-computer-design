@@ -1,0 +1,64 @@
+# do lab2_1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim LE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/rodrigo/altera/15.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/lab2_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:22:36 on Sep 29,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/lab2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lab2_1
+# -- Compiling architecture behavior_lab2_1 of lab2_1
+# End time: 10:22:36 on Sep 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:22:36 on Sep 29,2017
+# vcom -reportprogress 300 -93 -work work /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lab2_1_vhd_tst
+# -- Compiling architecture lab2_1_arch of lab2_1_vhd_tst
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht(68): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht(72): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht(76): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht(84): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/lab2_1.vht(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 10:22:36 on Sep 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  TB2_1
+# vsim -i -l msim_transcript -do "lab2_1_run_msim_rtl_vhdl.do" 
+# Start time: 10:22:37 on Sep 29,2017
+# ** Error: (vsim-3170) Could not find '/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part1/simulation/modelsim/rtl_work.TB2_1'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./lab2_1_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.lab2_1_vhd_tst
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_1_vhd_tst(lab2_1_arch)
+# Loading work.lab2_1(behavior_lab2_1)
+add wave -position insertpoint  \
+sim:/lab2_1_vhd_tst/decEnable \
+sim:/lab2_1_vhd_tst/decInputs \
+sim:/lab2_1_vhd_tst/decOutput
+run 100 ns
+# End time: 10:23:26 on Sep 29,2017, Elapsed time: 0:00:49
+# Errors: 1, Warnings: 0

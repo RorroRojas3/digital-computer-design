@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "fpga_led_output[0]",
+					"strict" : false
+				},
+				{
+					"name" : "fpga_led_output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fpga_led_output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "fpga_led_output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "fpga_clk_50",
+					"strict" : false
+				},
+				{
+					"name" : "fpga_reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

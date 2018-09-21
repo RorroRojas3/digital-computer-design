@@ -1,0 +1,9 @@
+
+State Machine - |traffic|traffic_machine:trafficColors|trafficColors
+Name trafficColors.right_turn trafficColors.left_turn trafficColors.yellow trafficColors.green trafficColors.red trafficColors.flash_red 
+trafficColors.flash_red 0 0 0 0 0 0 
+trafficColors.red 0 0 0 0 1 1 
+trafficColors.green 0 0 0 1 0 1 
+trafficColors.yellow 0 0 1 0 0 1 
+trafficColors.left_turn 0 1 0 0 0 1 
+trafficColors.right_turn 1 0 0 0 0 1 

@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim
+Etraffic
+Z1 w1506707786
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic.vhd
+Z5 F/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic.vhd
+l0
+L5
+VO?D2Q7dSIZ3S^^ZUf_DFO3
+!s100 @55d`TC^AF<:=k<;zQg:T1
+Z6 OV;C;10.3d;59
+31
+Z7 !s110 1506708183
+!i10b 1
+Z8 !s108 1506708183.334556
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic.vhd|
+Z10 !s107 /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Astructure
+R2
+R3
+DEx4 work 7 traffic 0 22 O?D2Q7dSIZ3S^^ZUf_DFO3
+l19
+L12
+Vj0gcFcP<TgTbBEIP@II;11
+!s100 34QHFkZ2;Ugo8`GDUcAI<0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etraffic_decoder
+Z13 w1506707321
+R2
+R3
+R0
+Z14 8/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic_decoder.vhd
+Z15 F/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic_decoder.vhd
+l0
+L4
+VhCWalDl1jEcDQ6YD^R@EK1
+!s100 gRO3JYiDdJeB18SYVoA@S1
+R6
+31
+R7
+!i10b 1
+Z16 !s108 1506708183.362530
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic_decoder.vhd|
+Z18 !s107 /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/traffic_decoder.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 15 traffic_decoder 0 22 hCWalDl1jEcDQ6YD^R@EK1
+l12
+L11
+VF@D5TW:^9^kmU=z5o=<0U3
+!s100 5^Ee`KIaQA]E3VzGnb4]n3
+R6
+31
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12
+Etraffic_vhd_tst
+Z19 w1506708139
+R2
+R3
+R0
+Z20 8/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht
+Z21 F/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht
+l0
+L31
+V2k>`Z64<D69E8@m76ckIm1
+!s100 8fBRMTe6[YHnaaCnJlWjR2
+R6
+31
+R7
+!i10b 1
+Z22 !s108 1506708183.387427
+Z23 !s90 -reportprogress|300|-93|-work|work|/home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht|
+Z24 !s107 /home/rodrigo/Dropbox/Fall 2017/ece3270/lab2/part2/simulation/modelsim/traffic.vht|
+!i113 1
+R11
+R12
+Atraffic_arch
+R2
+R3
+DEx4 work 15 traffic_vhd_tst 0 22 2k>`Z64<D69E8@m76ckIm1
+l56
+L33
+VS0W5AVTVA:eJIiQc<ikHZ3
+!s100 0gVDGOj`G<bMZg5RI_e<;2
+R6
+31
+R7
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12

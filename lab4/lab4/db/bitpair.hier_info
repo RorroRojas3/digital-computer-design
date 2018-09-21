@@ -1,0 +1,22 @@
+|control
+clock => controlState~6.DATAIN
+reset => controlState~8.DATAIN
+start => Selector5.IN4
+start => controlState.OUTPUTSELECT
+start => controlState.OUTPUTSELECT
+start => controlState.OUTPUTSELECT
+start => controlState.OUTPUTSELECT
+start => controlState.OUTPUTSELECT
+start => controlState.OUTPUTSELECT
+start => Selector4.IN2
+timeCount => Selector2.IN5
+timeCount => Selector3.IN2
+busy << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+load << load.DB_MAX_OUTPUT_PORT_TYPE
+shift << shift.DB_MAX_OUTPUT_PORT_TYPE
+add << add.DB_MAX_OUTPUT_PORT_TYPE
+resetO << resetO.DB_MAX_OUTPUT_PORT_TYPE
+countO << countO.DB_MAX_OUTPUT_PORT_TYPE
+ovalid << ovalid.DB_MAX_OUTPUT_PORT_TYPE
+
+
